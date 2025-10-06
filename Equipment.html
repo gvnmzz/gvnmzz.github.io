@@ -487,11 +487,11 @@ In other cases, a weapon can deal either of two types of damage. In a situation 
     </tr>
     <tr>
       <td>Scythe</td><td>18 gp</td><td>1d6</td><td>2d4</td><td>x4</td><td>-</td><td>10 lb.</td>
-      <td>Piercing or slashing</td><td>Two-Handed, Bleed, Sunder</td>
+      <td>Piercing or slashing</td><td>Two-Handed, Bleed, Sunder, Trip</td>
     </tr>
     <tr>
       <td>Whip</td><td>1 gp</td><td>1d2</td><td>1d3</td><td>x2</td><td>-</td><td>2 lb.</td>
-      <td>Slashing</td><td>Reach, Entangle</td>
+      <td>Slashing</td><td>Reach, Entangle, Trip</td>
     </tr>
     
     <!-- MARTIAL RANGED -->
@@ -513,81 +513,58 @@ In other cases, a weapon can deal either of two types of damage. In a situation 
 
 1 Weight figures are for Medium weapons. A Small weapon weighs half as much, and a Large weapon weighs twice as much.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
 2 When two types are given, the weapon is both types if the entry specifies &#147;and,&#148; or either type (player's choice at time of attack) if the entry specifies &#147;or.&#148;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-3 The weapon deals nonlethal damage rather than lethal damage.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-4 Reach weapon.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-5 Double weapon.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
 <br>
-Tags found on Table: Weapons that have special options for the wielder (“you”) are described below.<br>
+<B>Tags found on Table: Weapons that have special options for the wielder ("you") are described below.<br></B>
 
 <B>Bleed:</B> Weapons with this tag can cause bleeding wounds. On a critical hit, the target takes ongoing damage each round until treated. The amount depends on the weapon's size: 1d4 (light), 1d6 (one-handed), or 1d8 (two-handed). A creature can end bleeding with a successful Medicine check or magical healing. <I>Example: axes and swords often have Bleed.</I><br>
 <B>Impale:</B> On a critical hit, or when the weapon has the <I>Piercing</I> trait and the target's Armor bonus is equal or lower than the Piercing value, the weapon lodges inside the target. While impaled, the victim suffers penalties to actions. Removing the weapon requires an action and causes additional damage. Light weapons, such as arrows, daggers, or bolts, impose a minor hindrance: the target suffers a -1 penalty to actions, and removing the weapon deals 1d4 damage. Medium weapons, like rapiers, spears, or javelins, are more troublesome, imposing a -2 penalty to actions, halving the target's movement, and causing 1d6 damage plus a 50% chance of bleeding when removed. Heavy weapons, including lances, pikes, or a greatsword thrust, are particularly severe: the target may be pinned or severely restricted in movement, and removing the weapon inflicts 2d6 damage plus a 1d8 bleeding effect. <I>Example: spears and rapiers can Impale.</I><br>
 
-<B>Piercing (X):</B> This weapon penetrates armor effectively. Reduce the target's Armor bonus to AC by the listed value (X) when making an attack with it. If the reduced armor is ≤ 0, the weapon automatically gains the <I>Impale</I> effect even without a critical hit. <I>Example: heavy crossbow Piercing(3), spear Piercing(1).</I><br>
+<B>Piercing (X):</B> This weapon penetrates armor effectively. If the armor component of the AC is less or equal than the piercing value X, the weapon automatically gains the <I>Impale</I> effect even without a critical hit. <I>Example: heavy crossbow Piercing(3), spear Piercing(1).</I><br>
 
-<B>Bash:</B> A bash attack can stagger opponents with the force of impact. On a critical hit, the target must succeed on a Fortitude save or suffer the <I>staggered</I> condition. <I>Example: flails and warhammers have Bash.</I><br>
+<B>Bash:</B> The attacker knocks back the opponent. Shields knock back the opponent by 5 ft. for each 3 points of damage rolled, while bludgeoning weapons knock back by 5 ft. for each 5 points of damage rolled. You can only bash a creature up to une step higher than your size.  <I>Example: flails and warhammers have Bash.</I><br>
 
-<B>Stagger:</B> A staggered creature may take either a move action or a standard action on its next turn, but not both. <I>Example: club or light hammer criticals can Stagger.</I><br>
+<B>Stagger:</B> A staggered creature may take either move or take an action on its next turn, but not both. <I>Example: club or light hammer criticals can Stagger.</I><br>
 
 <B>Brutal:</B> When rolling weapon damage, reroll any 1s and use the new result. This increases average damage but does not guarantee a higher minimum. <I>Example: axes often have Brutal.</I><br>
 
-<B>Reliable:</B> When rolling weapon damage, treat any 1s as 2s. This makes the weapon consistent but caps maximum potential damage. <I>Example: swords typically have Reliable.</I><br>
+<B>Reliable:</B> You can reroll a missed attack once per round. <I>Example: swords typically have Reliable.</I><br>
 
 <B>Reach:</B> This weapon allows you to attack creatures 10 feet away but not adjacent foes. Spears, polearms, and whips often have this property. <I>Example: spear, halberd, glaive, lance, whip.</I><br>
 
-<B>Finesse:</B> You may use your Dexterity modifier instead of Strength on attack rolls with this weapon. Dexterity may also apply to damage if the system permits. Finesse weapons are typically precise and balanced. <I>Example: rapier, scimitar, dagger.</I><br>
+<B>Finesse:</B> You may use your Dexterity modifier instead of Strength on attack rolls with this weapon. Finesse weapons are typically precise and balanced. <I>Example: rapier, scimitar, dagger.</I><br>
 
-<B>Light:</B> A light weapon is easier to handle and can be used in two-weapon fighting without the usual penalties. Light weapons are also easier to conceal. <I>Example: dagger, kukri, shortsword.</I><br>
+<B>Light:</B> A light weapon is easier to handle and can be used in the off-hand while fighting with two weapons. Light weapons are also easier to conceal. <I>Example: dagger, kukri, shortsword.</I><br>
 
-<B>Heavy:</B> Heavy weapons are difficult to use for smaller creatures. A creature can wield a heavy weapon of one size category larger than itself with a -5 penalty per size difference. Conversely, light weapons can be wielded one size higher as if they were normal, and normal weapons as if they were heavy. <I>Example: greataxe, greatsword.</I><br>
+<B>Heavy:</B> Heavy weapons are difficult to use for weaker creatures. A creature can wield a heavy weapon of one size category larger than itself with a -5 penalty per size difference. Conversely, light weapons can be wielded one size higher as if they were normal, and normal weapons as if they were heavy. <I>Example: greataxe, greatsword.</I><br>
 
 <B>Two-Handed:</B> These weapons require two hands to wield effectively. Some are large and powerful, while others are lighter but still need both hands. <I>Example: greatsword, quarterstaff, shortbow.</I><br>
 
-<B>Simple:</B> Simple weapons are easier to learn and require little training. Most common folk can use them without penalty. <I>Example: club, dagger, light crossbow.</I><br>
+<B>Simple:</B> Simple weapons are easier to learn and require little training. When improving the skill of simple weapon, you roll a d2 instead of just raining the skill by 1 whenever you succed an experience roll. <I>Example: club, dagger, light crossbow.</I><br>
 
-<B>Martial:</B> Martial weapons are more specialized and require training. Characters proficient with martial weapons use them without penalty. <I>Example: longsword, battleaxe, halberd.</I><br>
+<B>Martial:</B> Martial weapons are more specialized and require training. <I>Example: longsword, battleaxe, halberd.</I><br>
 
 <B>Reload:</B> Some ranged weapons require time to reload between shots. A weapon with this tag can only fire one piece of ammunition per round, regardless of the number of attacks available. <I>Example: crossbows.</I><br>
 
-<B>Mounted:</B> Weapons with this property are designed for mounted combat. When used while charging on a mount, they may deal double damage. They are often awkward to use on foot. <I>Example: lance.</I><br>
+<B>Mounted:</B> Weapons with this property are designed for mounted combat. When used while charging on a mount, they may deal double damage. They are often awkward to use on foot. <I>Example: lance.</I><br><br>
 
-Weapons found on Table: Weapons that have special options for the wielder (&#147;you&#148;) are described below. Splash weapons are described under Special Substances and Items.<br>
+<B>Trip:</B> Weapons with this tag can be used to unbalance an opponent rather than strike them directly. When you hit with a trip weapon, you may choose to forgo damage and instead attempt to knock your foe prone. To do so, roll a d20 and add your weapon skill against the target's <em>Reflex Defence</em>. If you succeed, the target falls to the ground. If you fail, the attack causes no harm, and if your attempt is badly outmatched (by 5 or more), the target may seize the moment to turn the tables and trip you in return. Should that happen, you may drop the weapon to steady yourself and avoid being knocked down.</p>
+
+<B>Weapons found on Table: Weapons that have special options for the wielder (&#147;you&#148;) are described below. Splash weapons are described under Special Substances and Items.<br></B>
 <B>Arrows:</B> An arrow used as a melee weapon is treated as a light improvised weapon (&#150;4 penalty on attack rolls) and deals damage as a dagger of its size (critical multiplier x2). Arrows come in a leather quiver that holds 20 arrows. An arrow that hits its target is destroyed; one that misses has a 50% chance of being destroyed or lost.<br>
-<B>Axe, Orc Double:</B> An orc double axe is a double weapon. You can fight with it as if fighting with two weapons, but if you do, you incur all the normal attack penalties associated with fighting with two weapons, just as if you were using a one-handed weapon and a light weapon.<br>
-A creature wielding an orc double axe in one hand can't use it as a double weapon&#151;only one end of the weapon can be used in any given round.<br>
-<B>Bolas:</B> You can use this weapon to make a ranged trip attack against an opponent. You can't be tripped during your own trip attempt when using a set of bolas.<br>
 <B>Bolts:</B> A crossbow bolt used as a melee weapon is treated as a light improvised weapon (&#150;4 penalty on attack rolls) and deals damage as a dagger of its size (crit x2). Bolts come in a wooden case that holds 10 bolts (or 5, for a repeating crossbow). A bolt that hits its target is destroyed; one that misses has a 50% chance of being destroyed or lost.<br>
 <B>Bullets, Sling:</B> Bullets come in a leather pouch that holds 10 bullets. A bullet that hits its target is destroyed; one that misses has a 50% chance of being destroyed or lost.<br>
-<B>Chain, Spiked:</B> A spiked chain has reach, so you can strike opponents 10 feet away with it. In addition, unlike most other weapons with reach, it can be used against an adjacent foe.<br>
-You can make trip attacks with the chain. If you are tripped during your own trip attempt, you can drop the chain to avoid being tripped.<br>
-When using a spiked chain, you get a +2 bonus on opposed attack rolls made to disarm an opponent (including the roll to avoid being disarmed if such an attempt fails).<br>
-You can use the Weapon Finesse feat to apply your Dexterity modifier instead of your Strength modifier to attack rolls with a spiked chain sized for you, even though it isn't a light weapon for you.<br>
-<B>Crossbow, Hand:</B> You can draw a hand crossbow back by hand. Loading a hand crossbow is a move action that provokes attacks of opportunity.<br>
-You can shoot, but not load, a hand crossbow with one hand at no penalty. You can shoot a hand crossbow with each hand, but you take a penalty on attack rolls as if attacking with two light weapons.<br>
 <B>Crossbow, Heavy:</B> You draw a heavy crossbow back by turning a small winch. Loading a heavy crossbow is a full-round action that provokes attacks of opportunity.<br>
 Normally, operating a heavy crossbow requires two hands. However, you can shoot, but not load, a heavy crossbow with one hand at a &#150;4 penalty on attack rolls. You can shoot a heavy crossbow with each hand, but you take a penalty on attack rolls as if attacking with two one-handed weapons. This penalty is cumulative with the penalty for one-handed firing.<br>
 <B>Crossbow, Light:</B> You draw a light crossbow back by pulling a lever. Loading a light crossbow is a move action that provokes attacks of opportunity.<br>
 Normally, operating a light crossbow requires two hands. However, you can shoot, but not load, a light crossbow with one hand at a &#150;2 penalty on attack rolls. You can shoot a light crossbow with each hand, but you take a penalty on attack rolls as if attacking with two light weapons. This penalty is cumulative with the penalty for one-handed firing.<br>
-<B>Crossbow, Repeating:</B> The repeating crossbow (whether heavy or light) holds 5 crossbow bolts. As long as it holds bolts, you can reload it by pulling the reloading lever (a free action). Loading a new case of 5 bolts is a full-round action that provokes attacks of opportunity.<br>
-You can fire a repeating crossbow with one hand or fire a repeating crossbow in each hand in the same manner as you would a normal crossbow of the same size. However, you must fire the weapon with two hands in order to use the reloading lever, and you must use two hands to load a new case of bolts.<br>
 <B>Dagger:</B> You get a +2 bonus on Sleight of Hand checks made to conceal a dagger on your body (see the Sleight of Hand skill).<br>
-<B>Flail, Dire: </B>A dire flail is a double weapon. You can fight with it as if fighting with two weapons, but if you do, you incur all the normal attack penalties associated with fighting with two weapons, just as if you were using a one-handed weapon and a light weapon. A creature wielding a dire flail in one hand can't use it as a double weapon&#151; only one end of the weapon can be used in any given round.<br>
-When using a dire flail, you get a +2 bonus on opposed attack rolls made to disarm an enemy (including the opposed attack roll to avoid being disarmed if such an attempt fails).<br>
-You can also use this weapon to make trip attacks. If you are tripped during your own trip attempt, you can drop the dire flail to avoid being tripped.<br>
 <B>Flail or Heavy Flail:</B> With a flail, you get a +2 bonus on opposed attack rolls made to disarm an enemy (including the roll to avoid being disarmed if such an attempt fails).<br>
 You can also use this weapon to make trip attacks. If you are tripped during your own trip attempt, you can drop the flail to avoid being tripped.<br>
 <B>Gauntlet:</B> This metal glove lets you deal lethal damage rather than nonlethal damage with unarmed strikes. A strike with a gauntlet is otherwise considered an unarmed attack. The cost and weight given are for a single gauntlet. Medium and heavy armors (except breastplate) come with gauntlets.<br>
-<B>Gauntlet, Spiked:</B> Your opponent cannot use a disarm action to disarm you of spiked gauntlets. The cost and weight given are for a single gauntlet. An attack with a spiked gauntlet is considered an armed attack.<br>
 <B>Glaive:</B> A glaive has reach. You can strike opponents 10 feet away with it, but you can't use it against an adjacent foe.<br>
-<B>Guisarme: </B>A guisarme has reach. You can strike opponents 10 feet away with it, but you can't use it against an adjacent foe.<br>
-You can also use it to make trip attacks. If you are tripped during your own trip attempt, you can drop the guisarme to avoid being tripped.<br>
 <B>Halberd:</B> If you use a ready action to set a halberd against a charge, you deal double damage on a successful hit against a charging character.<br>
 You can use a halberd to make trip attacks. If you are tripped during your own trip attempt, you can drop the halberd to avoid being tripped.<br>
-<B>Hammer, Gnome Hooked:</B> A gnome hooked hammer is a double weapon. You can fight with it as if fighting with two weapons, but if you do, you incur all the normal attack penalties associated with fighting with two weapons, just as if you were using a one-handed weapon and a light weapon. The hammer's blunt head is a bludgeoning weapon that deals 1d6 points of damage (crit x3). Its hook is a piercing weapon that deals 1d4 points of damage (crit x4). You can use either head as the primary weapon. The other head is the offhand weapon. A creature wielding a gnome hooked hammer in one hand can't use it as a double weapon&#151;only one end of the weapon can be used in any given round.<br>
-You can use a gnome hooked hammer to make trip attacks. If you are tripped during your own trip attempt, you can drop the gnome hooked hammer to avoid being tripped.<br>
-Gnomes treat gnome hooked hammers as martial weapons.<br>
 <B>Javelin:</B> Since it is not designed for melee, you are treated as nonproficient with it and take a &#150;4 penalty on attack rolls if you use a javelin as a melee weapon.<br>
-<B>Kama:</B> The kama is a special monk weapon. This designation gives a monk wielding a kama special options.<br>
-You can use a kama to make trip attacks. If you are tripped during your own trip attempt, you can drop the kama to avoid being tripped.<br>
 <B>Lance:</B> A lance deals double damage when used from the back of a charging mount. It has reach, so you can strike opponents 10 feet away with it, but you can't use it against an adjacent foe.<br>
 While mounted, you can wield a lance with one hand.<br>
 <B>Longbow:</B> You need at least two hands to use a bow, regardless of its size. A longbow is too unwieldy to use while you are mounted. If you have a penalty for low Strength, apply it to damage rolls when you use a longbow. If you have a bonus for high Strength, you can apply it to damage rolls when you use a composite longbow (see below) but not a regular longbow.<br>
@@ -598,38 +575,23 @@ For purposes of weapon proficiency and similar feats, a composite longbow is tre
 An entangled creature can escape with a DC 20 Escape Artist check (a full-round action). The net has 5 hit points and can be burst with a DC 25 Strength check (also a full-round action).<br>
 A net is useful only against creatures within one size category of you.<br>
 A net must be folded to be thrown effectively. The first time you throw your net in a fight, you make a normal ranged touch attack roll. After the net is unfolded, you take a &#150;4 penalty on attack rolls with it. It takes 2 rounds for a proficient user to fold a net and twice that long for a nonproficient one to do so.<br>
-<B>Nunchaku:</B> The nunchaku is a special monk weapon. This designation gives a monk wielding a nunchaku special options. With a nunchaku, you get a +2 bonus on opposed attack rolls made to disarm an enemy (including the roll to avoid being disarmed if such an attempt fails).<br>
 <B>Quarterstaff:</B> A quarterstaff is a double weapon. You can fight with it as if fighting with two weapons, but if you do, you incur all the normal attack penalties associated with fighting with two weapons, just as if you were using a one-handed weapon and a light weapon. A creature wielding a quarterstaff in one hand can't use it as a double weapon&#151;only one end of the weapon can be used in any given round.<br>
 The quarterstaff is a special monk weapon. This designation gives a monk wielding a quarterstaff special options.<br>
-<B>Ranseur:</B> A ranseur has reach. You can strike opponents 10 feet away with it, but you can't use it against an adjacent foe.<br>
-With a ranseur, you get a +2 bonus on opposed attack rolls made to disarm an opponent (including the roll to avoid being disarmed if such an attempt fails).<br>
 <B>Rapier: </B>You can use the Weapon Finesse feat to apply your Dexterity modifier instead of your Strength modifier to attack rolls with a rapier sized for you, even though it isn't a light weapon for you. You can't wield a rapier in two hands in order to apply 1-1/2 times your Strength bonus to damage.<br>
-<B>Sai:</B> With a sai, you get a +4 bonus on opposed attack rolls made to disarm an enemy (including the roll to avoid being disarmed if such an attempt fails).<br>
-The sai is a special monk weapon. This designation gives a monk wielding a sai special options.<br>
 <B>Scythe:</B> A scythe can be used to make trip attacks. If you are tripped during your own trip attempt, you can drop the scythe to avoid being tripped.<br>
 <B>Shield, Heavy or Light:</B> You can bash with a shield instead of using it for defense. See Armor for details.<br>
 <B>Shortbow: </B>You need at least two hands to use a bow, regardless of its size. You can use a shortbow while mounted. If you have a penalty for low Strength, apply it to damage rolls when you use a shortbow. If you have a bonus for high Strength, you can apply it to damage rolls when you use a composite shortbow (see below) but not a regular shortbow.<br>
 <B>Shortbow, Composite: </B>You need at least two hands to use a bow, regardless of its size. You can use a composite shortbow while mounted. All composite bows are made with a particular strength rating (that is, each requires a minimum Strength modifier to use with proficiency). If your Strength bonus is lower than the strength rating of the composite bow, you can't effectively use it, so you take a &#150;2 penalty on attacks with it. The default composite shortbow requires a Strength modifier of +0 or higher to use with proficiency. A composite shortbow can be made with a high strength rating to take advantage of an above-average Strength score; this feature allows you to add your Strength bonus to damage, up to the maximum bonus indicated for the bow. Each point of Strength bonus granted by the bow adds 75 gp to its cost. <br>
 For purposes of weapon proficiency and similar feats, a composite shortbow is treated as if it were a shortbow.<br>
 <B>Shortspear:</B> A shortspear is small enough to wield one-handed. It may also be thrown.<br>
-<B>Shuriken:</B> A shuriken is a special monk weapon. This designation gives a monk wielding shuriken special options. A shuriken can't be used as a melee weapon.<br>
-Although they are thrown weapons, shuriken are treated as ammunition for the purposes of drawing them, crafting masterwork or otherwise special versions of them and what happens to them after they are thrown.<br>
-<B>Siangham: </B>The siangham is a special monk weapon. This designation gives a monk wielding a siangham special options.<br>
 <B>Sickle: </B>A sickle can be used to make trip attacks. If you are tripped during your own trip attempt, you can drop the sickle to avoid being tripped.<br>
 <B>Sling: </B>Your Strength modifier applies to damage rolls when you use a sling, just as it does for thrown weapons. You can fire, but not load, a sling with one hand. Loading a sling is a move action that requires two hands and provokes attacks of opportunity.<br>
 You can hurl ordinary stones with a sling, but stones are not as dense or as round as bullets. Thus, such an attack deals damage as if the weapon were designed for a creature one size category smaller than you and you take a &#150;1 penalty on attack rolls.<br>
 <B>Spear:</B> A spear can be thrown. If you use a ready action to set a spear against a charge, you deal double damage on a successful hit against a charging character.<br>
 <B>Spiked Armor:</B> You can outfit your armor with spikes, which can deal damage in a grapple or as a separate attack. See Armor for details.<br>
-<B>Spiked Shield, Heavy or Light:</B> You can bash with a spiked shield instead of using it for defense. See Armor for details.<br>
 <B>Strike, Unarmed: </B>A Medium character deals 1d3 points of nonlethal damage with an unarmed strike. A Small character deals 1d2 points of nonlethal damage. A monk or any character with the Improved Unarmed Strike feat can deal lethal or nonlethal damage with unarmed strikes, at her option. The damage from an unarmed strike is considered weapon damage for the purposes of effects that give you a bonus on weapon damage rolls.<br>
 An unarmed strike is always considered a light weapon. Therefore, you can use the Weapon Finesse feat to apply your Dexterity modifier instead of your Strength modifier to attack rolls with an unarmed strike.<br>
-<B>Sword, Bastard:</B> A bastard sword is too large to use in one hand without special training; thus, it is an exotic weapon. A character can use a bastard sword two-handed as a martial weapon.<br>
-<B>Sword, Two-Bladed:</B> A two-bladed sword is a double weapon. You can fight with it as if fighting with two weapons, but if you do, you incur all the normal attack penalties associated with fighting with two weapons, just as if you were using a one-handed weapon and a light weapon. A creature wielding a two-bladed sword in one hand can't use it as a double weapon&#151;only one end of the weapon can be used in any given round.<br>
 <B>Trident:</B> This weapon can be thrown. If you use a ready action to set a trident against a charge, you deal double damage on a successful hit against a charging character.<br>
-<B>Urgrosh, Dwarven:</B> A dwarven urgrosh is a double weapon. You can fight with it as if fighting with two weapons, but if you do, you incur all the normal attack penalties associated with fighting with two weapons, just as if you were using a one-handed weapon and a light weapon. The urgrosh's axe head is a slashing weapon that deals 1d8 points of damage. Its spear head is a piercing weapon that deals 1d6 points of damage. You can use either head as the primary weapon. The other is the off-hand weapon. A creature wielding a dwarven urgrosh in one hand can't use it as a double weapon&#151;only one end of the weapon can be used in any given round.<br>
-If you use a ready action to set an urgrosh against a charge, you deal double damage if you score a hit against a charging character. If you use an urgrosh against a charging character, the spear head is the part of the weapon that deals damage.<br>
-Dwarves treat dwarven urgroshes as martial weapons.<br>
-<B>Waraxe, Dwarven: </B>A dwarven waraxe is too large to use in one hand without special training; thus, it is an exotic weapon. A Medium character can use a dwarven waraxe two-handed as a martial weapon, or a Large creature can use it one-handed in the same way. A dwarf treats a dwarven waraxe as a martial weapon even when using it in one hand.<br>
 <B>Whip:</B> A whip deals nonlethal damage. It deals no damage to any creature with an armor bonus of +1 or higher or a natural armor bonus of +3 or higher. The whip is treated as a melee weapon with 15-foot reach, though you don't threaten the area into which you can make an attack. In addition, unlike most other weapons with reach, you can use it against foes anywhere within your reach (including adjacent foes).<br>
 Using a whip provokes an attack of opportunity, just as if you had used a ranged weapon.<br>
 You can make trip attacks with a whip. If you are tripped during your own trip attempt, you can drop the whip to avoid being tripped.<br>
@@ -660,43 +622,37 @@ Your character's encumbrance (the amount of gear he or she carries) may also res
 <I>Shields: </I>If a character is wearing armor and using a shield, both armor check penalties apply.<br>
 <I>Nonproficient with Armor Worn: </I>A character who wears armor and/or uses a shield with which he or she is not proficient takes the armor's (and/or shield's) armor check penalty on attack rolls and on all Strength-based and Dexterity-based ability and skill checks. The penalty for nonproficiency with armor stacks with the penalty for nonproficiency with shields.<br>
 <I>Sleeping in Armor: </I>A character who sleeps in medium or heavy armor is automatically fatigued the next day. He or she takes a &#150;2 penalty on Strength and Dexterity and can't charge or run. Sleeping in light armor does not cause fatigue.<br>
-<B>Arcane Spell Failure:</B> Armor interferes with the gestures that a spellcaster must make to cast an arcane spell that has a somatic component. Arcane spellcasters face the possibility of arcane spell failure if they're wearing armor. Bards can wear light armor without incurring any arcane spell failure chance for their bard spells.<br>
-<I>Casting an Arcane Spell in Armor: </I>A character who casts an arcane spell while wearing armor must usually make an arcane spell failure roll. The number in the Arcane Spell Failure Chance column on Table: Armor and Shields is the chance that the spell fails and is ruined. If the spell lacks a somatic component, however, it can be cast with no chance of arcane spell failure.<br>
-<I>Shields: </I>If a character is wearing armor and using a shield, add the two numbers together to get a single arcane spell failure chance.<br>
 <B>Speed:</B> Medium or heavy armor slows the wearer down. The number on Table: Armor and Shields is the character's speed while wearing the armor. Humans, elves, half-elves, and half-orcs have an unencumbered speed of 30 feet.<br>
 They use the first column. Dwarves, gnomes, and halflings have an unencumbered speed of 20 feet. They use the second column. Remember, however, that a dwarf 's land speed remains 20 feet even in medium or heavy armor or when carrying a medium or heavy load.<br>
 <I>Shields: </I>Shields do not affect a character's speed.<br>
 <B>Weight:</B> This column gives the weight of the armor sized for a Medium wearer. Armor fitted for Small characters weighs half as much, and armor for Large characters weighs twice as much.<br>
 <br>
-<B>Table: Armor and Shields&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-</font></B><table width="95%" border="1">
-<!-- Table 18 Row 01 -->
+<p><strong>Table: Armor and Shields&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /> </strong></p>
+<table border="1" width="95%"><!-- Table 18 Row 01 -->
+<tbody>
 <tr>
-<td><B> </B></td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
-<td align="center" colspan="2" nowrap><B>&#150;&#151; Speed &#151;&#150;</B></td>
+<td align="center" nowrap="nowrap"><strong>&ndash;&mdash; Speed &mdash;&ndash;</strong></td>
 <td>&nbsp;</td>
 </tr>
 <!-- Table 18 Row 02 -->
 <tr>
-<td><B>Armor</B></td>
-<td><B>Cost</B></td>
-<td><B>Armor/Shield  Bonus</B></td>
-<td><B>Maximum  Dex Bonus</B></td>
-<td><B>Armor  Check Penalty</B></td>
-<td><B>Arcane Spell  Failure Chance</B></td>
-<td><B>(30 ft.)</B></td>
-<td><B>(20 ft.)</B></td>
-<td><B>Weight<sup><font size="2">1</font></sup></B></td>
+<td><strong>Armor</strong></td>
+<td><strong>Cost</strong></td>
+<td><strong>Armor/Shield Bonus</strong></td>
+<td><strong>Maximum Dex Bonus</strong></td>
+<td><strong>Armor Check Penalty</strong></td>
+<td><strong>(30 ft.)</strong></td>
+<td><strong>(20 ft.)</strong></td>
+<td><strong>Weight<sup><span style="font-size: small;">1</span></sup></strong></td>
 </tr>
 <!-- Table 18 Row 03 -->
 <tr>
-<td>Light armor</td>
-<td>&nbsp;</td>
+<td><em>Light armor</em></td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -712,7 +668,6 @@ They use the first column. Dwarves, gnomes, and halflings have an unencumbered s
 <td>+1</td>
 <td>+8</td>
 <td>0</td>
-<td>5%</td>
 <td>30 ft.</td>
 <td>20 ft.</td>
 <td>10 lb.</td>
@@ -724,7 +679,6 @@ They use the first column. Dwarves, gnomes, and halflings have an unencumbered s
 <td>+2</td>
 <td>+6</td>
 <td>0</td>
-<td>10%</td>
 <td>30 ft.</td>
 <td>20 ft.</td>
 <td>15 lb.</td>
@@ -735,8 +689,7 @@ They use the first column. Dwarves, gnomes, and halflings have an unencumbered s
 <td>25 gp</td>
 <td>+3</td>
 <td>+5</td>
-<td>&#150;1</td>
-<td>15%</td>
+<td>&ndash;1</td>
 <td>30 ft.</td>
 <td>20 ft.</td>
 <td>20 lb.</td>
@@ -747,16 +700,14 @@ They use the first column. Dwarves, gnomes, and halflings have an unencumbered s
 <td>100 gp</td>
 <td>+4</td>
 <td>+4</td>
-<td>&#150;2</td>
-<td>20%</td>
+<td>&ndash;2</td>
 <td>30 ft.</td>
 <td>20 ft.</td>
 <td>25 lb.</td>
 </tr>
 <!-- Table 18 Row 08 -->
 <tr>
-<td>Medium armor</td>
-<td>&nbsp;</td>
+<td><em>Medium armor</em></td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -771,8 +722,7 @@ They use the first column. Dwarves, gnomes, and halflings have an unencumbered s
 <td>15 gp</td>
 <td>+3</td>
 <td>+4</td>
-<td>&#150;3</td>
-<td>20%</td>
+<td>&ndash;3</td>
 <td>20 ft.</td>
 <td>15 ft.</td>
 <td>25 lb.</td>
@@ -783,8 +733,7 @@ They use the first column. Dwarves, gnomes, and halflings have an unencumbered s
 <td>50 gp</td>
 <td>+4</td>
 <td>+3</td>
-<td>&#150;4</td>
-<td>25%</td>
+<td>&ndash;4</td>
 <td>20 ft.</td>
 <td>15 ft.</td>
 <td>30 lb.</td>
@@ -795,8 +744,7 @@ They use the first column. Dwarves, gnomes, and halflings have an unencumbered s
 <td>150 gp</td>
 <td>+5</td>
 <td>+2</td>
-<td>&#150;5</td>
-<td>30%</td>
+<td>&ndash;5</td>
 <td>20 ft.</td>
 <td>15 ft.</td>
 <td>40 lb.</td>
@@ -807,16 +755,14 @@ They use the first column. Dwarves, gnomes, and halflings have an unencumbered s
 <td>200 gp</td>
 <td>+5</td>
 <td>+3</td>
-<td>&#150;4</td>
-<td>25%</td>
+<td>&ndash;4</td>
 <td>20 ft.</td>
 <td>15 ft.</td>
 <td>30 lb.</td>
 </tr>
 <!-- Table 18 Row 13 -->
 <tr>
-<td>Heavy armor</td>
-<td>&nbsp;</td>
+<td><em>Heavy armor</em></td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -831,10 +777,9 @@ They use the first column. Dwarves, gnomes, and halflings have an unencumbered s
 <td>200 gp</td>
 <td>+6</td>
 <td>+0</td>
-<td>&#150;7</td>
-<td>40%</td>
-<td>20 ft.<B><sup><font size="2">2</font></sup></B></td>
-<td>15 ft.<B><sup><font size="2">2</font></sup></B></td>
+<td>&ndash;7</td>
+<td>20 ft.</td>
+<td>15 ft.</td>
 <td>45 lb.</td>
 </tr>
 <!-- Table 18 Row 15 -->
@@ -843,10 +788,9 @@ They use the first column. Dwarves, gnomes, and halflings have an unencumbered s
 <td>250 gp</td>
 <td>+6</td>
 <td>+1</td>
-<td>&#150;6</td>
-<td>35%</td>
-<td>20 ft.<B><sup><font size="2">2</font></sup></B></td>
-<td>15 ft.<B><sup><font size="2">2</font></sup></B></td>
+<td>&ndash;6</td>
+<td>20 ft.</td>
+<td>15 ft.</td>
 <td>35 lb.</td>
 </tr>
 <!-- Table 18 Row 16 -->
@@ -855,10 +799,9 @@ They use the first column. Dwarves, gnomes, and halflings have an unencumbered s
 <td>600 gp</td>
 <td>+7</td>
 <td>+0</td>
-<td>&#150;7</td>
-<td>40%</td>
-<td>20 ft.<B><sup><font size="2">2</font></sup></B></td>
-<td>15 ft.<B><sup><font size="2">2</font></sup></B></td>
+<td>&ndash;7</td>
+<td>20 ft.</td>
+<td>15 ft.</td>
 <td>50 lb.</td>
 </tr>
 <!-- Table 18 Row 17 -->
@@ -867,16 +810,14 @@ They use the first column. Dwarves, gnomes, and halflings have an unencumbered s
 <td>1,500 gp</td>
 <td>+8</td>
 <td>+1</td>
-<td>&#150;6</td>
-<td>35%</td>
-<td>20 ft.<B><sup><font size="2">2</font></sup></B></td>
-<td>15 ft.<B><sup><font size="2">2</font></sup></B></td>
+<td>&ndash;6</td>
+<td>20 ft.</td>
+<td>15 ft.</td>
 <td>50 lb.</td>
 </tr>
 <!-- Table 18 Row 18 -->
 <tr>
-<td>Shields</td>
-<td>&nbsp;</td>
+<td><em>Shields</em></td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -890,11 +831,10 @@ They use the first column. Dwarves, gnomes, and halflings have an unencumbered s
 <td>Buckler</td>
 <td>15 gp</td>
 <td>+1</td>
-<td>&#151;</td>
-<td>&#150;1</td>
-<td>5%</td>
-<td>&#151;</td>
-<td>&#151;</td>
+<td>&mdash;</td>
+<td>&ndash;1</td>
+<td>&mdash;</td>
+<td>&mdash;</td>
 <td>5 lb.</td>
 </tr>
 <!-- Table 18 Row 20 -->
@@ -902,11 +842,10 @@ They use the first column. Dwarves, gnomes, and halflings have an unencumbered s
 <td>Shield, light wooden</td>
 <td>3 gp</td>
 <td>+1</td>
-<td>&#151;</td>
-<td>&#150;1</td>
-<td>5%</td>
-<td>&#151;</td>
-<td>&#151;</td>
+<td>&mdash;</td>
+<td>&ndash;1</td>
+<td>&mdash;</td>
+<td>&mdash;</td>
 <td>5 lb.</td>
 </tr>
 <!-- Table 18 Row 21 -->
@@ -914,11 +853,10 @@ They use the first column. Dwarves, gnomes, and halflings have an unencumbered s
 <td>Shield, light steel</td>
 <td>9 gp</td>
 <td>+1</td>
-<td>&#151;</td>
-<td>&#150;1</td>
-<td>5%</td>
-<td>&#151;</td>
-<td>&#151;</td>
+<td>&mdash;</td>
+<td>&ndash;1</td>
+<td>&mdash;</td>
+<td>&mdash;</td>
 <td>6 lb.</td>
 </tr>
 <!-- Table 18 Row 22 -->
@@ -926,11 +864,10 @@ They use the first column. Dwarves, gnomes, and halflings have an unencumbered s
 <td>Shield, heavy wooden</td>
 <td>7 gp</td>
 <td>+2</td>
-<td>&#151;</td>
-<td>&#150;2</td>
-<td>15%</td>
-<td>&#151;</td>
-<td>&#151;</td>
+<td>&mdash;</td>
+<td>&ndash;2</td>
+<td>&mdash;</td>
+<td>&mdash;</td>
 <td>10 lb.</td>
 </tr>
 <!-- Table 18 Row 23 -->
@@ -938,83 +875,32 @@ They use the first column. Dwarves, gnomes, and halflings have an unencumbered s
 <td>Shield, heavy steel</td>
 <td>20 gp</td>
 <td>+2</td>
-<td>&#151;</td>
-<td>&#150;2</td>
-<td>15%</td>
-<td>&#151;</td>
-<td>&#151;</td>
+<td>&mdash;</td>
+<td>&ndash;2</td>
+<td>&mdash;</td>
+<td>&mdash;</td>
 <td>15 lb.</td>
 </tr>
 <!-- Table 18 Row 24 -->
 <tr>
 <td>Shield, tower</td>
 <td>30 gp</td>
-<td>+4<B><sup><font size="2">3</font></sup></B></td>
+<td>+4<span style="font-size: small;"><strong>2</strong></span></td>
 <td>+2</td>
-<td>&#150;10</td>
-<td>50%</td>
-<td>&#151;</td>
-<td>&#151;</td>
+<td>&ndash;10</td>
+<td>&mdash;</td>
+<td>&mdash;</td>
 <td>45 lb.</td>
 </tr>
-<!-- Table 18 Row 25 -->
-<tr>
-<td>Extras</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<!-- Table 18 Row 26 -->
-<tr>
-<td>Armor spikes</td>
-<td>+50 gp</td>
-<td>&#151;</td>
-<td>&#151;</td>
-<td>&#151;</td>
-<td>&#151;</td>
-<td>&#151;</td>
-<td>&#151;</td>
-<td>+10 lb.</td>
-</tr>
-<!-- Table 18 Row 27 -->
-<tr>
-<td>Gauntlet, locked</td>
-<td>8 gp</td>
-<td>&#151;</td>
-<td>&#151;</td>
-<td>Special</td>
-<td><B><sup><font size="2">4</font></sup></B></td>
-<td>&#151;</td>
-<td>&#151;</td>
-<td>+5 lb.</td>
-</tr>
-<!-- Table 18 Row 28 -->
-<tr>
-<td>Shield spikes</td>
-<td>+10 gp</td>
-<td>&#151;</td>
-<td>&#151;</td>
-<td>&#151;</td>
-<td>&#151;</td>
-<td>&#151;</td>
-<td>&#151;</td>
-<td>+5 lb.</td>
-</tr>
+<!-- Table 18 Row 25 --><!-- Table 18 Row 26 --><!-- Table 18 Row 27 --><!-- Table 18 Row 28 --></tbody>
 </table>
+
 1 Weight figures are for armor sized to fit Medium characters. Armor fitted for Small characters weighs half as much, and armor fitted for Large characters weighs twice as much.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-2 When running in heavy armor, you move only triple your speed, not quadruple.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-3 A tower shield can instead grant you cover. See the description.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-4 Hand not free to cast spells.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+2 A tower shield can instead grant you cover. See the description.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+
 <br>
 ARMOR DESCRIPTIONS<br>
 Any special benefits or accessories to the types of armor found on Table: Armor and Shields are described below.<br>
-<B>Armor Spikes:</B> You can have spikes added to your armor, which allow you to deal extra piercing damage (see Table: Weapons) on a successful grapple attack. The spikes count as a martial weapon. If you are not proficient with them, you take a &#150;4 penalty on grapple checks when you try to use them. You can also make a regular melee attack (or off-hand attack) with the spikes, and they count as a light weapon in this case. (You can't also make an attack with armor spikes if you have already made an attack with another off-hand weapon, and vice versa.)<br>
-An enhancement bonus to a suit of armor does not improve the spikes' effectiveness, but the spikes can be made into magic weapons in their own right.<br>
 <B>Banded Mail: </B>The suit includes gauntlets.<br>
 <B>Breastplate: </B>It comes with a helmet and greaves. <br>
 <B>Buckler:</B> This small metal shield is worn strapped to your forearm. You can use a bow or crossbow without penalty while carrying it. You can also use your shield arm to wield a weapon (whether you are using an off-hand weapon or using your off hand to help wield a two-handed weapon), but you take a &#150;1 penalty on attack rolls while doing so. This penalty stacks with those that may apply for fighting with your off hand and for fighting with two weapons. In any case, if you use a weapon in your off hand, you don't get the buckler's AC bonus for the rest of the round.<br>
@@ -1022,22 +908,14 @@ You can't bash someone with a buckler.<br>
 <B>Chain Shirt: </B>A chain shirt comes with a steel cap.<br>
 <B>Chainmail: </B>The suit includes gauntlets.<br>
 <B>Full Plate:</B> The suit includes gauntlets, heavy leather boots, a visored helmet, and a thick layer of padding that is worn underneath the armor. Each suit of full plate must be individually fitted to its owner by a master armorsmith, although a captured suit can be resized to fit a new owner at a cost of 200 to 800 (2d4x100) gold pieces.<br>
-<B>Gauntlet, Locked:</B> This armored gauntlet has small chains and braces that allow the wearer to attach a weapon to the gauntlet so that it cannot be dropped easily. It provides a +10 bonus on any roll made to keep from being disarmed in combat. Removing a weapon from a locked gauntlet or attaching a weapon to a locked gauntlet is a full-round action that provokes attacks of opportunity.<br>
-The price given is for a single locked gauntlet. The weight given applies only if you're wearing a breastplate, light armor, or no armor. Otherwise, the locked gauntlet replaces a gauntlet you already have as part of the armor.<br>
-While the gauntlet is locked, you can't use the hand wearing it for casting spells or employing skills. (You can still cast spells with somatic components, provided that your other hand is free.)<br>
-Like a normal gauntlet, a locked gauntlet lets you deal lethal damage rather than nonlethal damage with an unarmed strike.<br>
 <B>Half-Plate:</B> The suit includes gauntlets.<br>
 <B>Scale Mail:</B> The suit includes gauntlets.<br>
 <B>Shield, Heavy, Wooden or Steel:</B> You strap a shield to your forearm and grip it with your hand. A heavy shield is so heavy that you can't use your shield hand for anything else.<br>
 <I>Wooden or Steel: </I>Wooden and steel shields offer the same basic protection, though they respond differently to special attacks.<br>
-<I>Shield Bash Attacks: </I>You can bash an opponent with a heavy shield, using it as an off-hand weapon. See Table: Weapons for the damage dealt by a shield bash. Used this way, a heavy shield is a martial bludgeoning weapon. For the purpose of penalties on attack rolls, treat a heavy shield as a one-handed weapon. If you use your shield as a weapon, you lose its AC bonus until your next action (usually until the next round). An enhancement bonus on a shield does not improve the effectiveness of a shield bash made with it, but the shield can be made into a magic weapon in its own right.<br>
 <B>Shield, Light, Wooden or Steel:</B> You strap a shield to your forearm and grip it with your hand. A light shield's weight lets you carry other items in that hand, although you cannot use weapons with it.<br>
 <I>Wooden or Steel: </I>Wooden and steel shields offer the same basic protection, though they respond differently to special attacks.<br>
-<I>Shield Bash Attacks: </I>You can bash an opponent with a light shield, using it as an off-hand weapon. See Table: Weapons for the damage dealt by a shield bash. Used this way, a light shield is a martial bludgeoning weapon. For the purpose of penalties on attack rolls, treat a light shield as a light weapon. If you use your shield as a weapon, you lose its AC bonus until your next action (usually until the next round). An enhancement bonus on a shield does not improve the effectiveness of a shield bash made with it, but the shield can be made into a magic weapon in its own right.<br>
 <B>Shield, Tower:</B> This massive wooden shield is nearly as tall as you are. In most situations, it provides the indicated shield bonus to your AC. However, you can instead use it as total cover, though you must give up your attacks to do so. The shield does not, however, provide cover against targeted spells; a spellcaster can cast a spell on you by targeting the shield you are holding. You cannot bash with a tower shield, nor can you use your shield hand for anything else.<br>
 When employing a tower shield in combat, you take a &#150;2 penalty on attack rolls because of the shield's encumbrance.<br>
-<B>Shield Spikes:</B> When added to your shield, these spikes turn it into a martial piercing weapon that increases the damage dealt by a shield bash as if the shield were designed for a creature one size category larger than you. You can't put spikes on a buckler or a tower shield. Otherwise, attacking with a spiked shield is like making a shield bash attack (see above).<br>
-An enhancement bonus on a spiked shield does not improve the effectiveness of a shield bash made with it, but a spiked shield can be made into a magic weapon in its own right.<br>
 <B>Splint Mail:</B> The suit includes gauntlets.<br>
 <br>
 MASTERWORK ARMOR<br>
@@ -1125,9 +1003,9 @@ Armor and shields for unusually big creatures, unusually little creatures, and n
 <font size="3"><br>
 GETTING INTO AND OUT OF ARMOR<br>
 The time required to don armor depends on its type; see Table: Donning Armor.<br>
-<B>Don:</B> This column tells how long it takes a character to put the armor on. (One minute is 10 rounds.) Readying (strapping on) a shield is only a move action.<br>
+<B>Don:</B> This column tells how long it takes a character to put the armor on. (One minute is 10 rounds.) <br>
 <B>Don Hastily:</B> This column tells how long it takes to put the armor on in a hurry. The armor check penalty and armor bonus for hastily donned armor are each 1 point worse than normal. <br>
-<B>Remove:</B> This column tells how long it takes to get the armor off. Loosing a shield (removing it from the arm and dropping it) is only a move action.<br>
+<B>Remove:</B> This column tells how long it takes to get the armor off. <br>
 <B>Table: Donning Armor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
 </font></B><table width="95%" border="1">
 <!-- Table 20 Row 01 -->
@@ -1136,13 +1014,6 @@ The time required to don armor depends on its type; see Table: Donning Armor.<br
 <td><B>Don</B></td>
 <td><B>Don Hastily</B></td>
 <td><B>Remove</B></td>
-</tr>
-<!-- Table 20 Row 02 -->
-<tr>
-<td>Shield (any)</td>
-<td>1 move action</td>
-<td>n/a</td>
-<td>1 move action</td>
 </tr>
 <!-- Table 20 Row 03 -->
 <tr>
