@@ -97,7 +97,7 @@ An invisible barrier surrounds you and moves with you. The space within this bar
 An <I>antimagic field</I> suppresses any spell or magical effect used within, brought into, or cast into the area, but does not dispel it. Time spent within an <I>antimagic field</I> counts against the suppressed spell's duration.<br>
 Summoned creatures of any type and incorporeal undead wink out if they enter an <I>antimagic field</I>. They reappear in the same spot once the field goes away. Time spent winked out counts normally against the duration of the conjuration that is maintaining the creature. If you cast <I>antimagic field</I> in an area occupied by a summoned creature that has Magic Resistance, you use your skill check roll to determine if that creature is affected by the antimagic field. (The effects of instantaneous conjurations are not affected by an <I>antimagic field</I> because the conjuration itself is no longer in effect, only its result.)<br>
 A normal creature can enter the area, as can normal missiles. Furthermore, while a magic sword does not function magically within the area, it is still a sword (and a masterwork sword at that). The spell has no effect on golems and other constructs that are imbued with magic during their creation process and are thereafter self-supporting (unless they have been summoned, in which case they are treated like any other summoned creatures). Elementals, corporeal undead, and outsiders are likewise unaffected unless summoned. These creatures' spell-like or supernatural abilities, however, may be temporarily nullified by the field. <I>Dispel magic</I> does not remove the field.<br>
-Two or more <I>antimagic fields</I> sharing any of the same space have no effect on each other. Certain spells, such as <I>wall of force</I>, <I>prismatic sphere</I>, and <I>prismatic wall</I>, remain unaffected by <I>antimagic field</I> (see the individual spell descriptions). Artifacts and deities are unaffected by mortal magic such as this.<br>
+Two or more <I>antimagic fields</I> sharing any of the same space have no effect on each other. Certain spells, such as <I>force wall</I>, <I>prismatic sphere</I>, and <I>prismatic wall</I>, remain unaffected by <I>antimagic field</I> (see the individual spell descriptions). Artifacts and deities are unaffected by mortal magic such as this.<br>
 Should a creature be larger than the area enclosed by the barrier, any part of it that lies outside the barrier is unaffected by the field.
 <br><br>
 
@@ -1752,7 +1752,7 @@ Conjuration (Creation)<br>
 <B>Duration:</B> 1 minute<br>
 <B>Defence:</B> None<br>
 A thick mist rises around you, remaining stationary once formed. The vapor blocks vision beyond 5 feet—creatures within 5 feet have concealment (20% miss chance), while those farther away have total concealment (50% miss chance, and cannot be seen).<br>
-Moderate wind (around 11 mph) disperses the mist in 4 rounds; strong wind (21 mph or more) in 1 round. Fire effects such as <I>fireball</I>, <I>flame strike</I>, or a <I>wall of fire</I> burn away the mist in their area of effect.<br>
+Moderate wind (around 11 mph) disperses the mist in 4 rounds; strong wind (21 mph or more) in 1 round. Fire effects such as <I>fireball</I>, <I>flame strike</I>, or a <I>fire wall</I> burn away the mist in their area of effect.<br>
 This spell has no effect underwater.<br><br>
 
 
@@ -3534,7 +3534,7 @@ Divination<br>
 <B>Spell Resistance:</B> Yes (harmless)<br>
 You grant the subject the ability to see things as they truly are. The subject can see through normal and magical darkness, detect secret doors hidden by magic, perceive exact locations of creatures or objects under <I>blur</I> or <I>displacement</I> effects, see invisible creatures or objects, recognize illusions, and discern the true form of polymorphed or transmuted creatures and objects. The subject can also focus to see into the Ethereal Plane (but not into extradimensional spaces) within 120 feet.<br>
 <I>True seeing</I> does not penetrate solid objects and does not confer X-ray vision. It does not bypass concealment caused by fog or other effects, nor does it reveal mundane disguises, hidden creatures, or secret doors hidden by nonmagical means. The spell cannot be augmented by other magic; for instance, it does not function through a <I>crystal ball</I> or combined with <I>clairaudience/clairvoyance</I>.<br>
-<I>Material Component:</I> An ointment for the eyes costing 250 gp, made from mushroom powder, saffron, and fat.<br>
+<I>Material Component:</I> An ointment for the eyes costing 250 gp, made from mushroom powder, saffron, and fat.<br><br>
 
 
 True Strike<br>
@@ -3573,6 +3573,42 @@ Necromancy [Death, Sonic]<br>
 <B>Spell Resistance:</B> Yes<br>
 You emit a terrible scream that kills creatures that hear it (except for yourself). Creatures closest to the point of origin are affected first.<br>
 <br>
+
+Wall<br>
+Evocation/Conjuration [Fire, Cold, Force, Earth]<br>
+<B>Tier:</B> 4<br>
+<B>Components:</B> V, S, F<br>
+<B>Casting Time:</B> 1 action<br>
+<B>Range:</B> Far<br>
+<B>Effect:</B> Choose a wall type: Fire or Ice; Force or Stone if cast at Tier 5<br>
+<B>Duration:</B> Concentration + as many rounds as your skill roll<br>
+<B>Saving Throw:</B> Varies per effect; see text<br>
+<B>Spell Resistance:</B> Yes<br>
+This spell creates an elemental wall. Choose one wall type at casting:
+
+<I>Fire Wall:</I> An immobile, blazing curtain of shimmering violet fire springs into existence. One side of the wall, selected by you, sends forth waves of heat, dealing 2d4 points of fire damage to creatures within 10 feet and 1d4 points of fire damage to those past 10 feet but within 20 feet. The wall deals this damage when it appears and on your turn each round to all creatures in the area. In addition, the wall deals 4d6 points of fire damage to any creature passing through it. The wall deals double damage to undead creatures.<br>
+If you evoke the wall so that it appears where creatures are, each creature takes damage as if passing through the wall. If any 5-foot length of wall takes 20 points of cold damage or more in 1 round, that length goes out. (Do not divide cold damage by 4, as normal for objects.)<br>
+<I>fire wall </I>can be made permanent with a <I>permanency </I>spell. A permanent <I>fire wall </I>that is extinguished by cold damage becomes inactive for 10 minutes, then reforms at normal strength.<br>
+
+<I>Ice Wall:</I> This spell creates an anchored plane of ice or a hemisphere of ice, depending on the version selected. A <I>ice wall </I>cannot form in an area occupied by physical objects or creatures. Its surface must be smooth and unbroken when created. Any creature adjacent to the wall when it is created may attempt to disrupt the wall as it is being formed. You make an attack against the Reflex of the creature to avoid that. A failure indicates that the spell automatically fails. Fire can melt a <I>ice wall, </I>and it deals full damage to the wall (instead of the normal half damage taken by objects). Suddenly melting a <I>ice wall </I>creates a great cloud of steamy fog that lasts for 10 minutes.<br>
+<I>Ice Plane: </I>A sheet of strong, hard ice appears. The wall is 10 inches thick. It covers up to 10 areas of size 10-foot-square (so you can create a ice wall 100 feet long and 10 feet high, a wall 50 feet long and 20 feet high, or some other combination of length and height that does not exceed 1,000 square feet). The plane can be oriented in any fashion as long as it is anchored. A vertical wall need only be anchored on the floor, while a horizontal or slanting wall must be anchored on two opposite sides.<br>
+Each 10-foot square of wall has 30 hit points per inch of thickness. Creatures can hit the wall automatically. A section of wall whose hit points drop to 0 is breached. If a creature tries to break through the wall with a single attack, the DC for the Strength check is 25.<br>
+Even when the ice has been broken through, a sheet of frigid air remains. Any creature stepping through it (including the one who broke through the wall) takes 3d6 points of cold damage (no save).<br>
+<I>Hemisphere: </I>The wall takes the form of a hemisphere whose maximum radius is 10 feet. The <I>hemisphere </I>is as hard to break through as the <I>ice plane </I>form, but it does not deal damage to those who go through a breach.<br>
+
+<B>At Higher Tiers:</B>5<br>
+You can create one of the following additional wall types:<br>
+<I>Force Wall:</I>
+<B>Spell Resistance:</B> No<br>
+ A <I>force wall </I>spell creates an invisible force wall. The wall cannot move, it is immune to damage of all kinds, and it is unaffected by most spells, including <I>dispel magic</I>. However, <I>disintegrate </I>immediately destroys it, as does a <I>rod of cancellation</I>, a <I>sphere of annihilation, </I>or a <I>disjunction </I>spell. Breath weapons and spells cannot pass through the wall in either direction, although <I>dimension door, teleport, </I>and similar effects can bypass the barrier. It blocks ethereal creatures as well as material ones (though ethereal creatures can usually get around the wall by floating under or over it through material floors and ceilings). Gaze attacks can operate through a <I>force wall</I>.<br>
+The caster can form the wall into a flat, vertical plane whose area is up to 10 10-foot square per level. The wall must be continuous and unbroken when formed. If its surface is broken by any object or creature, the spell fails.<br>
+
+<I>Stone Wall:</I> 
+<B>Duration:</B> Instantaneous<br>
+This spell creates a wall of rock that merges into adjoining rock surfaces. A <I>stone wall </I>is 2.5 inches thick and composed of up to 10 5-foot squares. You can double the wall's area by halving its thickness. The wall cannot be conjured so that it occupies the same space as a creature or another object.<br>
+You can create a <I>stone wall </I>in almost any shape you desire. The wall created need not be vertical, nor rest upon any firm foundation; however, it must merge with and be solidly supported by existing stone. It can be used to bridge a chasm, for instance, or as a ramp. For this use, if the span is more than 20 feet, the wall must be arched and buttressed. This requirement reduces the spell's area by half. The wall can be crudely shaped to allow crenellations, battlements, and so forth by likewise reducing the area.<br>
+Like any other stone wall, this one can be destroyed by a <I>disintegrate </I>spell or by normal means such as breaking and chipping. Each 5-foot square of the wall has 15 hit points per inch of thickness and hardness 8. A section of wall whose hit points drop to 0 is breached. If a creature tries to break through the wall with a single attack, the DC for the Strength check is 20 + 2 per inch of thickness.<br>
+The caster determines orientation, shape, and composition at casting. Walls cannot occupy the same space as creatures or objects unless the wall's effect allows displacement.<br><br>
 
 
 </body>
