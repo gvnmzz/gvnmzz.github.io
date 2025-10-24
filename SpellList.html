@@ -779,9 +779,9 @@ Necromancy<br>
 <B>Effect:</B> Ray of negative energy<br>
 <B>Duration:</B> Instantaneous<br>
 <B>Defence:</B> None<br>
-You release a black ray of crackling negative energy that suppresses the life force of any living creature it strikes. You must make a ranged touch attack to hit. If the attack succeeds, the subject gains 1d4 negative levels.<br>
-If the subject has at least as many negative levels as Hit Dice, it dies. Each negative level gives a creature a -1 penalty on all skill scores. Negative levels stack.<br>
-Assuming the subject survives, it regains lost levels after a number of hours equal to your skill roll. Usually, negative levels have a chance of permanently draining the victim's levels, but the negative levels from <I>Enervation</I> don't last long enough to do so.<br>
+You release a black ray of crackling negative energy that suppresses the life force of any living creature it strikes. You must make a ranged touch attack to hit. If the attack succeeds, the subject gains 1d4 Fading.<br>
+If the subject has at least as many Fadings as Hit Dice, it dies. Each Fading gives a creature a -1 penalty on all skill scores. Fadings stack.<br>
+Assuming the subject survives, it regains lost levels after a number of hours equal to your skill roll. Usually, Fadings have a chance of become a permanent Drain, but the Fadings from <I>Enervation</I> don't last long enough to do so.<br>
 An undead creature struck by the ray gains 1d4x5 temporary hit points for 1 hour.<br>
 <br>
 
@@ -1170,7 +1170,7 @@ Conjuration (Healing)<br>
 You channel positive energy into a creature, instantly ending any of the following conditions: blinded, confused, dazed, dazzled, deafened, diseased, exhausted, fatigued, feebleminded, insanity, nauseated, poisoned, sickened, and stunned.  
 It also restores 100 hit points.  
 
-<I>Heal</I> does not remove negative levels or permanent ability damage. If cast on an undead creature, this spell instead functions as <I>Harm</I>. <br><br>
+<I>Heal</I> does not remove Fadings or permanent ability damage. If cast on an undead creature, this spell instead functions as <I>Harm</I>. <br><br>
 
 Heroes' Feast<br>
 Conjuration (Creation)<br>
@@ -2145,13 +2145,13 @@ Conjuration (Healing)<br>
 
 <B>At Higher Tier:</B> 4<br>
 <B>Components:</B> V, S, M<br>
-This version also removes negative levels and restores one drained level, provided the loss occurred within 7 days. <I>Restoration</I> cures all temporary ability damage and restores all points permanently drained from a single ability score (your choice if multiple are affected). It eliminates fatigue and exhaustion. It does not restore levels or Constitution points lost due ato death.<br>
+This version also removes Fadingss and restores one Drain, provided the loss occurred within 7 days. <I>Restoration</I> cures all temporary ability damage and restores all points permanently drained from a single ability score (your choice if multiple are affected). It eliminates fatigue and exhaustion. It does not restore levels or Constitution points lost due ato death.<br>
 <I>Material Component:</I> Diamond dust worth 100 gp, sprinkled over the target.<br>
 
 <B>At Higher Tier:</B> 7<br>
 <B>Components:</B> V, S, M<br>
 <B>Casting Time:</B> 10 minutes<br>
-You completely purge afflictions from the target. All negative levels are dispelled, and any drained levels are restored if the loss occurred within 3 months. The spell removes all magical penalties to abilities, cures all temporary ability damage, and restores all points permanently drained from all ability scores. It also eliminates fatigue, exhaustion, insanity, confusion, and similar mental effects. It does not restore levels or Constitution points lost through death.<br>
+You completely purge afflictions from the target. All Fadingss are dispelled, and any Drains are restored if the loss occurred within 3 months. The spell removes all magical penalties to abilities, cures all temporary ability damage, and restores all points permanently drained from all ability scores. It also eliminates fatigue, exhaustion, insanity, confusion, and similar mental effects. It does not restore levels or Constitution points lost through death.<br>
 <I>Material Component:</I> Diamond dust worth 2,500 gp, sprinkled over the target.<br><br>
 
  
@@ -3575,7 +3575,7 @@ You emit a terrible scream that kills creatures that hear it (except for yoursel
 <br>
 
 Wall<br>
-Evocation/Conjuration [Fire, Cold, Force, Earth]<br>
+  Evocation/Conjuration [Fire, Cold]<br>
 <B>Tier:</B> 4<br>
 <B>Components:</B> V, S, F<br>
 <B>Casting Time:</B> 1 action<br>
@@ -3597,6 +3597,7 @@ Even when the ice has been broken through, a sheet of frigid air remains. Any cr
 <I>Hemisphere: </I>The wall takes the form of a hemisphere whose maximum radius is 10 feet. The <I>hemisphere </I>is as hard to break through as the <I>ice plane </I>form, but it does not deal damage to those who go through a breach.<br>
 
 <B>At Higher Tiers:</B>5<br>
+Evocation/Conjuration [Force, Earth]<br>
 You can create one of the following additional wall types:<br>
 <I>Force Wall:</I>
 <B>Spell Resistance:</B> No<br>
@@ -3610,6 +3611,124 @@ You can create a <I>stone wall </I>in almost any shape you desire. The wall crea
 Like any other stone wall, this one can be destroyed by a <I>disintegrate </I>spell or by normal means such as breaking and chipping. Each 5-foot square of the wall has 15 hit points per inch of thickness and hardness 8. A section of wall whose hit points drop to 0 is breached. If a creature tries to break through the wall with a single attack, the DC for the Strength check is 20 + 2 per inch of thickness.<br>
 The caster determines orientation, shape, and composition at casting. Walls cannot occupy the same space as creatures or objects unless the wall's effect allows displacement.<br><br>
 
+
+Water Breathing<br>
+Transmutation<br>
+<B>Tier:</B> 3<br>
+<B>Components:</B> V, S, F<br>
+<B>Casting Time:</B> 1 action<br>
+<B>Range:</B> Touch<br>
+<B>Targets:</B> Living creatures touched<br>
+<B>Duration:</B> 10 hours; see text<br>
+<B>Defence:</B> Will negates (harmless)<br>
+You grant the ability to breathe underwater to the touched creatures. The total duration is divided evenly among all affected targets. This spell does not remove the ability to breathe air.<br><br>
+
+
+Water Walk<br>
+Transmutation [Water]<br>
+<B>Tier:</B> 3<br>
+<B>Components:</B> V, S, F<br>
+<B>Casting Time:</B> 1 action<br>
+<B>Range:</B> Touch<br>
+<B>Targets:</B> Up to 5 creatures<br>
+<B>Duration:</B> 1 hour (D)<br>
+<B>Defence:</B> Will negates (harmless)<br>
+The affected creatures can walk upon the surface of any liquid as though it were solid ground. Mud, snow, oil, quicksand, running water, and even lava can be traversed easily, though extreme heat still inflicts damage from proximity. Subjects may move normally across such surfaces, including running or charging.<br>
+If cast while the targets are submerged in liquid, they are carried upward at a speed of 60 feet per round until they reach the surface.<br>
+<B>At Higher Tiers:</B>6<br>
+Transmutation [Air]<br>
+You alter the substance of your body to a cloudlike vapor (as the <I>gaseous form </I>spell) and move through the air, possibly at great speed. You can take other creatures with you, each of which acts independently.<br>
+Normally, a <I>wind walker </I>flies at a speed of 10 feet with perfect maneuverability. If desired by the subject, a magical wind wafts a <I>wind walker </I>along at up to 600 feet per round (60 mph) with poor maneuverability. <I>Wind walkers </I>are not invisible but rather appear misty and translucent. If fully clothed in white, they are 80% likely to be mistaken for clouds, fog, vapors, or the like.<br>
+A <I>wind walker </I>can regain its physical form as desired and later resume the cloud form. Each change to and from vaporous form takes 5 rounds, which counts toward the duration of the spell (as does any time spent in physical form). As noted above, you can dismiss the spell, and you can even dismiss it for individual wind walkers and not others.<br>
+For the last minute of the spell's duration, a <I>wind walker </I>in cloud form automatically descends 60 feet per round (for a total of 600 feet), though it may descend faster if it wishes. This descent serves as a warning that the spell is about to end.<br><br>
+
+
+Waves of Fatigue<br>
+Necromancy<br>
+<B>Tier:</B> 5<br>
+<B>Components:</B> V, S<br>
+<B>Casting Time:</B> 1 action<br>
+<B>Range:</B> 30 ft.<br>
+<B>Area:</B> Cone-shaped burst<br>
+<B>Duration:</B> Instantaneous<br>
+<B>Defence:</B> None<br>
+Waves of negative energy render all living creatures in the spell's area fatigued. This spell has no effect on a creature that is already fatigued.<br>
+<B>At Higher Tiers:</B>7<br>
+<B>Range:</B> 60 ft.<br>
+Waves of negative energy cause all living creatures in the spell's area to become exhausted. This spell has no effect on a creature that is already exhausted.<br>
+<br>
+
+
+Web<br>
+Conjuration (Creation)<br>
+<B>Tier:</B> 2<br>
+<B>Components:</B> V, S, F<br>
+<B>Casting Time:</B> 1 action<br>
+<B>Range:</B> Far <br>
+<B>Effect:</B> Webs in a 6-meter-radius spread<br>
+<B>Duration:</B> 1 hour (D)<br>
+<B>Defence:</B> Reflex negates; see text<br>
+You conjure a thick mass of sticky, fibrous strands that fill the area, forming strong, elastic webs that cling to everything nearby. The webs must be anchored to at least two solid and opposing points; otherwise, they collapse and vanish.<br>
+You must succed on an attack on Reflex against Creatures caught within the area when the spell is cast. On a failure, they are <I>entangled</I> but can still move with difficulty. On a success, they are stuck in place, unable to move until they spend 1 round to attempt a DC 20 Strength check or DC 25 Agility check to break free. Once freed, a creature remains <I>entangled</I> but may move slowly, advancing 5 feet for every 5 points by which their check result exceeds 10.<br>
+The webs provide <I>cover</I> if at least 5 feet thick and <I>total cover</I> if 20 feet thick.<br>
+The webs are flammable: any source of fire burns away about 5 square feet per round. Creatures within burning webs take 2d4 fire damage each round.<br>
+<br>
+
+
+Whispering Wind<br>
+Transmutation [Air]<br>
+<B>Tier:</B> 2<br>
+<B>Components:</B> V, S<br>
+<B>Casting Time:</B> 1 action<br>
+<B>Range:</B> 3 miles <br>
+<B>Area:</B> 3-meter-radius spread<br>
+<B>Duration:</B> Up to 3 hours or until the message is delivered<br>
+<B>Defence:</B> None<br>
+You send a gentle, invisible current of air carrying a message or sound to a familiar location within range. The <I>whispering wind</I> travels unnoticed along any available path until it reaches its destination, where it softly delivers your message or chosen sound before dissipating.<br>
+The message can contain up to twenty-five words or a brief sound lasting up to 1 round. You may also choose for the wind to carry only a faint stirring of air with no message at all. The <I>whispering wind</I> can move as slowly as 1 mile per hour or as fast as 1 mile every 10 minutes.<br>
+Once the wind reaches its destination, it lingers momentarily as it releases the message, then fades away. The spell cannot articulate magical words of power, command words, or other verbal components.<br>
+<B>At Higher Tiers:</B>3-9<br>
+The range increases by 2 miles for each tier above 2nd.<br><br>
+
+
+Wish<br>
+Universal<br>
+<B>Tier:</B> 9<br>
+<B>Components:</B> V, M<br>
+<B>Casting Time:</B> 1 action<br>
+<B>Range:</B> See text<br>
+<B>Target, Effect, or Area:</B> See text<br>
+<B>Duration:</B> See text<br>
+<B>Defence:</B> See text<br>
+<I>Wish</I> is the mightiest spell a mortal can cast. By speaking a single word of power, you bend reality itself to your will.<br>
+Even <I>wish</I>, however, has limits.<br>
+A <I>wish</I> can produce any one of the following effects:<br>
+&#149; Replicate any spell of Tier 8 or lower.<br>
+&#149; Undo the harmful effects of many other spells or conditions, such as <I>geas</I> or <I>insanity</I>.<br>
+&#149; Create a nonmagical item of extraordinary quality and value.<br>
+&#149; Create or enhance a magic item, permanently adding or modifying its powers.<br>
+&#149; Grant a creature a permanent +1 inherent bonus to an ability score. Two to five <I>wishes</I> cast in succession can grant a +2 to +5 inherent bonus (two wishes for +2, three for +3, and so on). An inherent bonus cannot exceed +5, and only the highest applies.<br>
+&#149; Remove injuries or afflictions from one creature per caster level, provided they are of the same kind (for example, all wounds, or all poisons). A <I>wish</I> cannot restore drain lost through resurrection.<br>
+&#149; Restore life to the dead, as with a <I>resurrection</I> spell. If the body is destroyed, two <I>wishes</I> are required—one to recreate the body and one to restore life. The subject still suffers any normal penalties associated with returning from death.<br>
+&#149; Transport willing creatures across any distance or plane, regardless of barriers. You can move one creature per caster level. Unwilling creatures resist with an attack against Will.<br>
+&#149; Undo recent misfortune by forcing a reroll of any roll made within the last round. Reality reshapes itself to accommodate the new result, which may be better or worse. An unwilling target resists with Will.<br>
+You may attempt to use <I>wish</I> for greater effects than these, but doing so is perilous—the magic may twist your intent, producing only a partial or corrupted result.<br>
+Replicated spells allow defences and resistances as usual, though the attack values are those of a Tier 9 spell.<br>
+<I>Material Component:</I> A flawless diamond worth at least 25,000 gp. If the duplicated spell requires a component worth more than 10,000 gp, that component must also be provided. When creating or improving a magic item, the caster must also pay twice the normal cost.<br><br>
+
+
+Zone of Truth<br>
+Enchantment [Mind-Affecting, Compulsion]<br>
+<B>Tier:</B> 2<br>
+<B>Components:</B> V, S, F<br>
+<B>Casting Time:</B> 1 action<br>
+<B>Range:</B> Close <br>
+<B>Area:</B> 20-ft-radius emanation<br>
+<B>Duration:</B> 1 minute<br>
+<B>Defence:</B> Will negates<br>
+<B>Resistance:</B> Yes<br>
+Within the affected area, creatures are compelled to speak only the truth. You make an attack on Will against each creature entering or present in the area. If you succed, targets cannot deliberately lie but remain aware of the compulsion. They may still choose to remain silent, refuse to answer, or speak evasively, so long as they do not knowingly speak falsehoods.<br>
+Creatures that leave the zone are immediately freed from the effect and may speak freely again.<br>
 
 </body>
 </html>
