@@ -19,8 +19,8 @@ This material is Open Game Content, and is licensed for public use under the ter
 <B>Rings:</B> A ring is a circular metal band worn on the finger (no more than two rings per wearer) that has a spell-like power (often a constant effect that affects the wearer).<br>
 <B>Rods: </B>A rod is a scepter-like item with a special power unlike that of any known spell.<br>
 <B>Scrolls:</B> A scroll is a spell magically inscribed onto paper or parchment so that it can be used later.<br>
-<B>Staffs:</B> A staff has a number of different (but often related) spell effects. A newly created staff has 50 charges, and each use of the staff depletes one or more of those charges.<br>
-<B>Wands:</B> A wand is a short stick imbued with the power to cast a specific spell. A newly created wand has 50 charges, and each use of the wand depletes one of those charges.<br>
+<B>Staffs:</B> A staff has a number of different (but often related) spell effects. A newly created staff has 50 Power Points.<br>
+<B>Wands:</B> A wand is a short stick imbued with the power to cast a specific spell. A newly created wand has 25 Power Points.<br>
 <B>Wondrous Items:</B> These objects include magic jewelry, tools, books, clothing, and much more.<br>
 <br>
 Magic Items and Detect Magic<br>
@@ -100,15 +100,12 @@ REPAIRING MAGIC ITEMS<br>
 Some magic items take damage over the course of an adventure. It costs no more to repair a magic item with the Craft skill than it does to repair its nonmagical counterpart. The <I>make whole </I>spell also repairs a damaged&#151;but not completely broken&#151;magic item.<br>
 <br>
 INTELLIGENT ITEMS<br>
-Some magic items, particularly weapons, have an intelligence all their own. Only permanent magic items (as opposed to those with a single use or those with charges) can be intelligent. (This means that potions, scrolls, and wands, among other items, are never intelligent.)<br>
+Some magic items, particularly weapons, have an intelligence all their own. Only permanent magic items (as opposed to those with a single use or those with Power Points such as Wands or Staffs) can be intelligent. (This means that potions, scrolls, and wands, among other items, are never intelligent.)<br>
 In general, less than 1% of magic items have intelligence. <br>
 <br>
 CURSED ITEMS<br>
 Some items are cursed&#151;incorrectly made, or corrupted by outside forces. Cursed items might be particularly dangerous to the user, or they might be normal items with a minor flaw, an inconvenient requirement, or an unpredictable nature. Randomly generated items are cursed 5% of the time. <br>
 <br>
-CHARGES, DOSES, AND MULTIPLE USES<br>
-Many items, particularly wands and staffs, are limited in power by the number of charges they hold. Normally, charged items have 50 charges at most. If such an item is found as a random part of a treasure, roll d% and divide by 2 to determine the number of charges left (round down, minimum 1). If the item has a maximum number of charges other than 50, roll randomly to determine how many charges are left. <br>
-Prices listed are always for fully charged items. (When an item is created, it is fully charged.) For an item that's worthless when its charges run out (which is the case for almost all charged items), the value of the partially used item is proportional to the number of charges left. For an item that has usefulness in addition to its charges, only part of the item's value is based on the number of charges left.<br>
 <font size="5"><br>
 MAGIC ITEM DESCRIPTIONS<br>
 </font><font size="3">Each general type of magic item gets an overall description, followed by descriptions of specific items.<br>
@@ -287,8 +284,8 @@ Table: Summary of Magic Item Creation Costs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 <td>Brew Potion</td>
 <td> &#151; </td>
 <td>Cost (usually none) </td>
-<td>1/2 x 25 x level of spell x level of caster</td>
-<td>25 x level of spell x level of caster</td>
+<td>1/2 x 25 x level of spell x (2 x level of spell - 1)</td>
+<td>25 x level of spell x (2 x level of spell - 1)</td>
 </tr>
 <!-- Table 03 Row 07 -->
 <tr>
@@ -314,15 +311,15 @@ Table: Summary of Magic Item Creation Costs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 <td>Scribe Scroll </td>
 <td>&#151; </td>
 <td>Cost (usually none) </td>
-<td>1/2 x 12.5 x level of spell x level of caster</td>
-<td>12.5 x level of spell x level of caster</td>
+<td>1/2 x 12.5 x (2 x level of spell - 1)</td>
+<td>12.5 x (2 x level of spell - 1)</td>
 </tr>
 <!-- Table 03 Row 10 -->
 <tr>
 <td>Staff </td>
 <td>Craft Staff </td>
 <td>Masterwork quarterstaff (300 gp)</td>
-<td>x 50 / (# of charges used to activate spell)</td>
+<td>x 50</td>
 <td>See Creating Staffs, below </td>
 <td>See Creating Staffs, below</td>
 </tr>
@@ -332,8 +329,8 @@ Table: Summary of Magic Item Creation Costs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 <td>Craft Wand </td>
 <td>&#151; </td>
 <td>x 50 </td>
-<td>1/2 x 375 x level of spell x level of caster ?</td>
-<td>375 x level of spell x level of caster</td>
+<td>1/2 x 375 x (2 x level of spell - 1)</td>
+<td>375 x (2 x level of spell - 1)</td>
 </tr>
 <!-- Table 03 Row 12 -->
 <tr>
@@ -618,7 +615,7 @@ Crafting a rod requires one day for each 1,000 gp of the base price.<br>
 Item Creation Feat Required: Craft Rod.<br>
 <br>
 CREATING SCROLLS<br>
-To create a scroll, a character needs a supply of choice writing materials, the cost of which is subsumed in the cost for scribing the scroll&#151;12.5 gp x the level of the spell x the level of the caster.<br>
+To create a scroll, a character needs a supply of choice writing materials, the cost of which is subsumed in the cost for scribing the scroll&#151;12.5 gp x (2 x the level of the spell - 1).<br>
 All writing implements and materials used to scribe a scroll must be fresh and unused. A character must pay the full cost for scribing each spell scroll no matter how many times she previously has scribed the same spell.<br>
 The creator must have prepared the spell to be scribed (or must know the spell, in the case of a sorcerer or bard) and must provide any material component or focus the spell requires. If casting the spell would reduce the caster's XP total, she pays the cost upon beginning the scroll in addition to the XP cost for making the scroll itself. Likewise, a material component is consumed when she begins writing, but a focus is not. (A focus used in scribing a scroll can be reused.) The act of writing triggers the prepared spell, making it unavailable for casting until the character has rested and regained spells. (That is, that spell slot is expended from her currently prepared spells, just as if it had been cast.)<br>
 Scribing a scroll requires one day per each 1,000 gp of the base price.<br>
@@ -695,14 +692,14 @@ Item Creation Feat Required: Scribe Scroll.<br>
 <font size="3"><br>
 CREATING STAFFS<br>
 To create a magic staff, a character needs a supply of materials, the most obvious being a staff or the pieces of the staff to be assembled.<br>
-The cost for the materials is subsumed in the cost for creating the staff&#151;375 gp x (2 x the level of the highest-level spell - 1), plus 75% of the value of the next most costly ability, i.e. 281.25 gp x (2 x the level of the highest-level spell - 1), plus one-half of the value of any other abilities, i.e. 187.5 gp (2 x the level of the highest-level spell - 1). Staffs are always fully charged (50 Power points) when created, and recover 1d6 charges every day at dawn.<br>
+The cost for the materials is subsumed in the cost for creating the staff&#151;375 gp x (2 x the level of the highest-level spell - 1), plus 75% of the value of the next most costly ability, i.e. 281.25 gp x (2 x the level of the highest-level spell - 1), plus one-half of the value of any other abilities, i.e. 187.5 gp (2 x the level of the highest-level spell - 1). Staffs are always fully charged (50 Power points) when created, and recover 1d6 Power Points every day at dawn.<br>
 The creator must know the spells to be stored and must provide any focus the spells require as well as material component costs sufficient to activate the spell a maximum number of times (50 divided by the spell level). Material components are consumed when he begins working, but focuses are not. (A focus used in creating a staff can be reused.)<br>
 Creating a few staffs may entail other prerequisites beyond spellcasting. See the individual descriptions for details.<br>
 Crafting a staff requires one day for each 1,000 gp of the base price.<br>
 Item Creation Feat Required: Craft Staff.<br>
 <br>
 CREATING WANDS<br>
-To create a magic wand, a character needs a small supply of materials, the most obvious being a baton or the pieces of the wand to be assembled. The cost for the materials is subsumed in the cost for creating the wand&#151;375 gp x (2 x the level of the highest-level spell - 1). Wands are always fully charged (25 Power Points) when created, and recover 1d6 charges every day at dawn.<br>
+To create a magic wand, a character needs a small supply of materials, the most obvious being a baton or the pieces of the wand to be assembled. The cost for the materials is subsumed in the cost for creating the wand&#151;375 gp x (2 x the level of the highest-level spell - 1). Wands are always fully charged (25 Power Points) when created, and recover 1d6 Power Points every day at dawn.<br>
 The creator must know the spell to be stored and must provide any focuses the spell requires. Twentyfive of each needed material component are required, one for each charge. Material components are consumed when she begins working, but focuses are not. (A focus used in creating a wand can be reused.)<br>
 Crafting a wand requires one day per each 1,000 gp of the base price.<br>
 Item Creation Feat Required: Craft Wand.<br>
