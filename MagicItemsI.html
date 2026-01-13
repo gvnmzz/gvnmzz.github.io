@@ -153,7 +153,7 @@
             <br>
             SAVING THROWS AGAINST MAGIC ITEM POWERS<br>
             Magic items produce spells or spell-like effects. For a saving throw against a spell or spell-like effect
-            from a magic item, the DC is 10 + the level of the spell or effect + the ability modifier of the minimum
+            from a magic item, the DC is 10 + the tier of the spell or effect + the ability modifier of the minimum
             ability score needed to cast that level of spell. <br>
             Staffs are an exception to the rule. Treat the saving throw as if the wielder cast the spell, including
             their skill in any specific spell and all modifiers to save DC. <br>
@@ -354,12 +354,12 @@
                 <B>Item Cost:</B> Brew Potion, Craft Wand, and Scribe Scroll create items that directly reproduce spell
                 effects, and the power of these items depends on their level&#151; which is equal to twice the spell
                 level - 1. The price of these items (and thus the cost of the raw materials) also depends on the item
-                level. To find the final price in each case, multiply twice the spell level - 1 by a constant, as shown
+                level. To find the final price in each case, multiply twice the spell tier - 1 by a constant, as shown
                 below:<br>
-                <I>Scrolls: </I>Base price = (2 x spell level - 1) x 25 gp.<br>
-                <I>Potions: </I>Base price = (2 x spell level - 1) x 50 gp.<br>
-                <I>Wands: </I>Base price = (2 x spell level - 1) x 750 gp.<br>
-                A 0-level spell is considered to have a spell level of 3/4 for the purpose of this calculation,
+                <I>Scrolls: </I>Base price = (2 x spell tier - 1) x 25 gp.<br>
+                <I>Potions: </I>Base price = (2 x spell tier - 1) x 50 gp.<br>
+                <I>Wands: </I>Base price = (2 x spell tier - 1) x 750 gp.<br>
+                A 0-level spell is considered to have a spell tier of 3/4 for the purpose of this calculation,
                 resulting in a base price equal to half that of a 1st level spell.<br>
                 <B>Extra Costs: </B>Any potion, scroll, or wand that stores a spell with a costly material component
                 also carries a commensurate cost. For potions and scrolls, the creator must expend the material
@@ -371,7 +371,7 @@
                 item to be created. Most of the time, they take the form of spells that must be known by the item's
                 creator (although access through another magic item or spellcaster is allowed).<br>
                 While item creation costs are handled in detail below, note that normally the two primary factors are
-                the item level and the level of the spell or spells put into the item. A creator can create an item at
+                the item level and the tier of the spell or spells put into the item. A creator can create an item at
                 any level higher the minimum item level.<br>
                 Magic supplies for items are always half of the base price in gp. For many items, the market price
                 equals the base price.<br>
@@ -550,7 +550,7 @@
             <!-- Table 04 Row 04 -->
             <tr>
                 <td>Bonus spell </td>
-                <td>Spell level squared x 1,000 gp </td>
+                <td>Spell tier squared x 1,000 gp </td>
                 <td><I>Pearl of power</I></td>
             </tr>
             <!-- Table 04 Row 05 -->
@@ -618,31 +618,31 @@
     <!-- Table 04 Row 14 -->
     <tr>
         <td>Single use, spell completion </td>
-        <td>(2 x spell level - 1) x 25 gp </td>
+        <td>(2 x spell tier - 1) x 25 gp </td>
         <td>Scroll of <I>haste</I></td>
     </tr>
     <!-- Table 04 Row 15 -->
     <tr>
         <td>Single use, use-activated </td>
-        <td>(2 x spell level - 1) x 50 gp </td>
+        <td>(2 x spell tier - 1) x 50 gp </td>
         <td><I>Potion of cure light wounds</I></td>
     </tr>
     <!-- Table 04 Row 16 -->
     <tr>
         <td>50 charges, spell trigger </td>
-        <td>(2 x spell level - 1) x 750 gp </td>
+        <td>(2 x spell tier - 1) x 750 gp </td>
         <td><I>Wand of fireball</I></td>
     </tr>
     <!-- Table 04 Row 17 -->
     <tr>
         <td>Command word </td>
-        <td>(2 x spell level - 1) x 1,800 gp </td>
+        <td>(2 x spell tier - 1) x 1,800 gp </td>
         <td><I>Cape of the mountebank</I></td>
     </tr>
     <!-- Table 04 Row 18 -->
     <tr>
         <td>Use-activated or continuous </td>
-        <td>(2 x spell level - 1) x 2,000 gp<B><sup>
+        <td>(2 x spell tier - 1) x 2,000 gp<B><sup>
                     <font size="2">2
                 </sup></font>
                 <font size="3"> </font>
@@ -726,7 +726,7 @@
         <td><I>Ring of three wishes</I></td>
     </tr>
     </table>
-    <I>Spell Level: </I>A 0-level spell is half the value of a 1st-level spell for determining
+    <I>Spell Tier: </I>A 0-tier spell is half the value of a 1st-tier spell for determining
     price.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
     1 Such as a luck, insight, sacred, or profane bonus.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
     2 If a continuous item has an effect based on a spell with a duration measured in rounds, multiply the cost by 4. If
@@ -750,7 +750,7 @@
     function are not similar, and their values are simply added together to determine the cost. For items that do take
     up a space on a character's body each additional power not only has no discount but instead has a 50% increase in
     price.<br>
-    <B>0-Level Spells: </B>When multiplying spell levels to determine value, 0- level spells should be treated as 1/2
+    <B>0-Level Spells: </B>When multiplying spell tiers to determine value, 0-tier spells should be treated as 1/2
     level.<br>
     <B>Other Considerations: </B>Once you have a final cost figure, reduce that number if either of the following
     conditions applies:<br>
@@ -819,7 +819,7 @@
     CREATING POTIONS<br>
     The creator of a potion needs a level working surface and at least a few containers in which to mix liquids, as well
     as a source of heat to boil the brew. In addition, he needs ingredients. The costs for materials and ingredients are
-    subsumed in the cost for brewing the potion&#151;25 gp x (2 x the level of the spell - 1).<br>
+    subsumed in the cost for brewing the potion&#151;25 gp x (2 x the tier of the spell - 1).<br>
     All ingredients and materials used to brew a potion must be fresh and unused. The character must pay the full cost
     for brewing each potion. (Economies of scale do not apply.)<br>
     The imbiber of the potion is both the caster and the target. Spells with a range of personal cannot be made into
@@ -836,7 +836,7 @@
     <table width="95%" border="1">
         <!-- Table 05 Row 01 -->
         <tr>
-            <td><B>Spell Level</B></td>
+            <td><B>Spell Tier</B></td>
             <td><B>Base Price</B></td>
             <td><B>Base Cost</B></td>
         </tr>
@@ -900,7 +900,7 @@
         <br>
         CREATING SCROLLS<br>
         To create a scroll, a character needs a supply of choice writing materials, the cost of which is subsumed in the
-        cost for scribing the scroll&#151;12.5 gp x (2 x the level of the spell - 1).<br>
+        cost for scribing the scroll&#151;12.5 gp x (2 x the tier of the spell - 1).<br>
         All writing implements and materials used to scribe a scroll must be fresh and unused. A character must pay the
         full cost for scribing each spell scroll no matter how many times she previously has scribed the same spell.<br>
         The creator must have prepared the spell to be scribed (or must know the spell, in the case of a sorcerer or
@@ -917,7 +917,7 @@
     <table width="95%" border="1">
         <!-- Table 07 Row 01 -->
         <tr>
-            <td><B>Spell Level</B></td>
+            <td><B>Spell Tier</B></td>
             <td><B>Base Price</B></td>
             <td><B>Base Cost</B></td>
         </tr>
@@ -992,7 +992,7 @@
         of the highest-level spell - 1). Staffs are always fully charged (50 charges) when created, and recover 1d6
         charges every day at dawn.<br>
         The creator must know the spells to be stored and must provide any focus the spells require as well as material
-        component costs sufficient to activate the spell a maximum number of times (50 divided by the spell level).
+        component costs sufficient to activate the spell a maximum number of times (50 divided by the spell tier).
         Material components are consumed when he begins working, but focuses are not. (A focus used in creating a staff
         can be reused.)<br>
         Creating a few staffs may entail other prerequisites beyond spellcasting. See the individual descriptions for
@@ -1016,7 +1016,7 @@
     <table width="95%" border="1">
         <!-- Table 09 Row 01 -->
         <tr>
-            <td><B>Spell Level</B></td>
+            <td><B>Spell Tier</B></td>
             <td><B>Base Price</B></td>
             <td><B>Base Cost</B></td>
         </tr>
