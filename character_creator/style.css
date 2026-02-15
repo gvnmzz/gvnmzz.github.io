@@ -366,9 +366,23 @@ header p {
 
 .mini-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
     margin-top: 0.5rem;
+}
+
+.summary-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.summary-list li {
+    margin-bottom: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .total-cost {

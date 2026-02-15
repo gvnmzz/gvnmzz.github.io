@@ -2504,7 +2504,12 @@ function updateUI() {
     }
 
     const purchasedList = document.getElementById('purchased-list');
+    const attacksList = document.getElementById('attacks-list');
+    const skillsSummaryList = document.getElementById('skills-summary-list');
+
     purchasedList.innerHTML = '';
+    attacksList.innerHTML = '';
+    skillsSummaryList.innerHTML = '';
 
     const categories = {
         'Skills': [],
@@ -2518,6 +2523,8 @@ function updateUI() {
         let label = s.name;
         let bonusInfo = '';
         let targetCategory = 'Core/Other';
+
+        const weaponData = gameData.weapons.find(w => w.name === s.name);
 
         if (s.type === 'ordinary' || s.type === 'extraordinary' || s.type === 'supernatural' || s.type === 'spell') {
             targetCategory = 'Skills';
@@ -2544,15 +2551,30 @@ function updateUI() {
             const sign = totalBonus >= 0 ? '+' : '';
             bonusInfo = ` [Tot: ${sign}${totalBonus}] (Score ${level})`;
 
-            // Add Damage if it's a weapon
-            const weaponData = gameData.weapons.find(w => w.name === s.name);
             if (weaponData) {
                 label += ` (${weaponData.dmg_m})`;
             }
-
             if (s.level > 1) label += ` x${s.level}`;
+
+            // Add to Skills Summary if it's not a weapon or attack spell
+            const isAttack = weaponData || s.type === 'spell'; // Simplified check
+            if (isAttack) {
+                const liAtk = document.createElement('li');
+                const dmg = weaponData ? weaponData.dmg_m : (s.tier !== undefined ? `Tier ${s.tier}` : '');
+                const type = weaponData ? (weaponData.tags.includes('Slashing') ? 'S' : weaponData.tags.includes('Piercing') ? 'P' : 'B') : ''; // Very simplified
+                liAtk.innerHTML = `<span>${s.name}</span><span>${sign}${totalBonus} (${dmg})</span>`;
+                attacksList.appendChild(liAtk);
+            } else {
+                const liSkill = document.createElement('li');
+                liSkill.innerHTML = `<span>${s.name}</span><span>${sign}${totalBonus}</span>`;
+                skillsSummaryList.appendChild(liSkill);
+            }
+
         } else if (s.type === 'feat') {
             targetCategory = 'Feats';
+            const liFeat = document.createElement('li');
+            liFeat.innerHTML = `<span>${s.name}</span>`;
+            skillsSummaryList.appendChild(liFeat);
         } else if (s.type === 'equipment') {
             targetCategory = 'Equipment';
             if (s.weight) {
@@ -2584,16 +2606,12 @@ function updateUI() {
     const dexMod = Math.floor((character.abilities.DEX - 10) / 2);
     const wisMod = Math.floor((character.abilities.WIS - 10) / 2);
 
-    // HP calculation: Base 8 + (HD-1)*4.5? Or just simplified 8 + Con + (HD-1)*8?
-    // SRD: "At 1st level, a character has 1 Hit Die... HP equals the maximum possible roll..."
-    // Let's assume HD core skill adds more hit dice.
     let hdCount = 1;
     character.skills.forEach(s => { if (s.name === 'Hit Dice (HD)') hdCount += (s.level || 0); });
-
-    // HP = Max first HD (8) + (additional HD * 8) + (Total HD * Con Mod)
     document.getElementById('summary-hp').textContent = (hdCount * 8) + (hdCount * conMod);
+    document.getElementById('summary-hd').textContent = hdCount;
 
-    // AC Calculation (Relative Bonus)
+    // AC Calculation
     let dodgeValue = 0;
     character.skills.forEach(s => { if (s.name === 'Dodge') dodgeValue += (s.level || 1); });
 
@@ -2607,7 +2625,6 @@ function updateUI() {
         if (s.type === 'equipment') {
             const item = gameData.weapons.find(w => w.name === s.name);
             if (item && item.tags && item.tags.includes('Armor')) {
-                // Extract bonus from dmg_m (e.g. "+2 AC")
                 const bonusMatch = item.dmg_m.match(/\+(\d+)/);
                 if (bonusMatch) {
                     const bonus = parseInt(bonusMatch[1]);
@@ -2628,8 +2645,11 @@ function updateUI() {
         }
     });
 
-    const acBonus = dexMod + dodgeValue + sizeBonus + shieldBonus + armorBonus;
+    const touchAc = dexMod + dodgeValue + sizeBonus;
+    const acBonus = touchAc + shieldBonus + armorBonus;
+
     document.getElementById('summary-ac').textContent = (acBonus >= 0 ? '+' : '') + acBonus;
+    document.getElementById('summary-touch').textContent = (touchAc >= 0 ? '+' : '') + touchAc;
 
     // Defences
     let fortBonus = 0, refBonus = 0, willBonus = 0;
@@ -2639,7 +2659,6 @@ function updateUI() {
         if (s.name === 'Will') willBonus += (s.level || 1);
     });
 
-    // Racial Defence Bonuses
     if (character.race && gameData.races[character.race].skill_bonuses) {
         const raceBonuses = gameData.races[character.race].skill_bonuses;
         if (raceBonuses['Fortitude']) fortBonus += raceBonuses['Fortitude'];
@@ -2650,7 +2669,6 @@ function updateUI() {
     document.getElementById('summary-for').textContent = (conMod + fortBonus >= 0 ? '+' : '') + (conMod + fortBonus);
     document.getElementById('summary-ref').textContent = (dexMod + refBonus >= 0 ? '+' : '') + (dexMod + refBonus);
     document.getElementById('summary-wil').textContent = (wisMod + willBonus >= 0 ? '+' : '') + (wisMod + willBonus);
-    document.getElementById('summary-dodge').textContent = (dodgeValue >= 0 ? '+' : '') + dodgeValue;
 }
 
 function removeSkill(index) {
