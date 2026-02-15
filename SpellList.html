@@ -25,7 +25,7 @@
     <B>Range:</B> Close <br>
     <B>Effect:</B> One missile of acid<br>
     <B>Duration:</B> Instantaneous<br>
-    <B>Defence:</B> AC<br>
+    <B>Defence:</B> Touch AC<br>
     You fire a small orb of acid at the target. You must succeed on a ranged touch attack to hit your target. The orb
     deals 1d3 points of acid damage.<br>
     <b>Special:</b> This spell is not affected by Magic Resistance.<br>
@@ -237,10 +237,11 @@
     <B>Duration:</B> Permanent<br>
     <B>Defence:</B> Fortitude negates, Will partial; see text<br>
     As <I>polymorph</I>, except that you change the target into a Small or smaller animal of no more than 1 HD. If the
-    new form would be immediately fatal, you attack the targets Fortitude with a -5 malus.<br>
-    If you succed, you must also attack will (using the same roll). If you succeed again the target loses its
-    extraordinary, supernatural, and magical abilities, and adopts the Intelligence, Wisdom, Charisma scores, and
-    special abilities of the new form. It retains its core and ordinary skills.<br>
+    new form would be immediately fatal, you attack the target's Fortitude with a -5 malus.<br>
+    If you succeed on the first attack, you must also make a separate Magic Attack against the target's Will. If you
+    succeed again, the target loses its extraordinary, supernatural, and magical abilities, and adopts the
+    Intelligence, Wisdom, Charisma scores, and special abilities of the new form. It retains its core and ordinary
+    skills.<br>
     Incorporeal or gaseous creatures are immune to being <I>polymorphed</I>. A creature with the shapechanger subtype
     can revert to its natural form as a standard action.<br>
     <br><br>
@@ -799,6 +800,23 @@
     area, they are temporarily negated in the overlap.
     <br><br>
 
+    Death Ward<br>
+    Necromancy<br>
+    <B>Tier:</B> 4<br>
+    <B>Components:</B> V, S, F<br>
+    <B>Casting Time:</B> 1 action<br>
+    <B>Range:</B> Touch<br>
+    <B>Target:</B> Living creature touched<br>
+    <B>Duration:</B> 1 minute<br>
+    <B>Defence:</B> Will negates (harmless)<br>
+    <B>Spell Resistance:</B> Yes (harmless)<br>
+    The subject becomes immune to all death spells, magical death effects, energy drain, and any negative energy
+    effects.
+    This spell doesn't remove negative levels that the subject has already gained, nor does it affect the saving throw
+    necessary 24 hours after gaining a negative level. <I>Death Ward</I> does not protect against other sorts of attacks
+    even if those attacks might be lethal.
+    <br><br>
+
     Detect Magic<br>
     Divination<br>
     <B>Tier:</B> 0<br>
@@ -1039,7 +1057,7 @@
     <B>Range:</B> Close<br>
     <B>Effect:</B> Ray of negative energy<br>
     <B>Duration:</B> Instantaneous<br>
-    <B>Defence:</B> None<br>
+    <B>Defence:</B> Touch AC<br>
     You release a black ray of crackling negative energy that suppresses the life force of any living creature it
     strikes. You must make a ranged touch attack to hit. If the attack succeeds, the subject gains 1d4 Fading.<br>
     If the subject has at least as many Fadings as Hit Dice, it dies. Each Fading gives a creature a -1 penalty on all
@@ -1444,7 +1462,7 @@
     <B>Range:</B> Reach<br>
     <B>Target:</B> One living humanoid<br>
     <B>Duration:</B> 1d6+2 rounds<br>
-    <B>Defence:</B> Fortitude negates<br>
+    <B>Defence:</B> Touch AC, Fortitude negates<br>
     Your touch channels necrotic energy, paralyzing one living humanoid for the spell's duration on a successful melee
     touch attack.
 
@@ -1566,7 +1584,7 @@
     The transmuted creatures move and act faster than normal.
 
     - Gain one extra attack when making a full attack (not an extra action).
-    - Gain +1 to attack rolls, +1 dodge bonus to Defence, and +1 to Reflex saves.
+    - Gain +1 to attack rolls, +1 dodge bonus , and +1 to Reflex saves.
     - All movement modes increase by 9 m (to a maximum of twice the subject's base speed).
 
     Multiple <I>haste</I> effects don't stack. This spell dispels and counters <I>Slow</I>. <br><br>
@@ -2131,7 +2149,7 @@
     <B>Range:</B> Very Far<br>
     <B>Area:</B> Four 40-ft.-radius spreads<br>
     <B>Duration:</B> Instantaneous<br>
-    <B>Defence:</B> None or Reflex half, as indicated<br>
+    <B>Defence:</B> Touch AC or Reflex half, as indicated<br>
     <B>Spell Resistance:</B> Yes<br>
     <I>Meteor Swarm</I> is an extremely powerful spell similar to <I>fireball</I>. Four 2-foot-diameter spheres spring
     from your outstretched hand and streak in straight lines to your chosen locations, leaving fiery trails of sparks.
@@ -2469,7 +2487,7 @@
     <B>Range:</B> Touch<br>
     <B>Target:</B> One living creature<br>
     <B>Duration:</B> Instantaneous; see text<br>
-    <B>Defence:</B> Fortitude<br>
+    <B>Defence:</B> Touch AC, Fortitude<br>
     You channel the venomous essence of nature's deadliest predators, delivering a toxic touch that seeps into your
     target's body. On a successful melee touch attack, the victim suffers 1d10 points of Constitution damage immediately
     and another 1d10 points one minute later. Each instance of damage is reduced or negated if you fail an attack
@@ -2541,18 +2559,20 @@
     <I>Focus:</I> A jade circlet worn upon casting (worth at least 1,500 gp), which merges with your new form.<br><br>
 
 
-    Power Word Kill<br>
-    Enchantment (Compulsion) [Death, Mind-Affecting]<br>
+    Killing Curse<br>
+    Necromancy [Death]<br>
     <B>Tier:</B> 9<br>
-    <B>Components:</B> V<br>
+    <B>Components:</B> V, S, F<br>
     <B>Casting Time:</B> 1 action<br>
     <B>Range:</B> Close<br>
-    <B>Targets:</B> One living creature with 100 HP or less<br>
+    <B>Targets:</B> One creature<br>
     <B>Duration:</B> Instantaneous<br>
-    <B>Defence:</B> None<br>
-    You speak a word of absolute power that ends life instantly. The chosen creature dies outright if its current hit
-    points are 100 or fewer, regardless of whether it can hear the word. Creatures with more than 100 hit points are
-    unaffected.<br>
+    <B>Defence:</B> Touch AC<br>
+    <B>Spell Resistance:</B> Yes<br>
+    You fire a jet of green light that brings instant death. Make a ranged touch attack against the target's Touch AC.
+    On a hit, the target dies instantly. No saving throw is allowed. If the target is protected by <I>Death Ward</I>,
+    the <I>Killing Curse</I> is resisted, but the <I>Death Ward</I> is immediately dispelled.
+    <br><br>
 
 
     Prestidigitation<br>
@@ -2717,7 +2737,7 @@
     <B>Range:</B> Close<br>
     <B>Effect:</B> Ray<br>
     <B>Duration:</B> 1 minute<br>
-    <B>Defence:</B> None<br>
+    <B>Defence:</B> Touch AC<br>
 
     A ray of dark energy springs from your hand. Make a ranged attack against a creature within range. On a hit, the
     target suffers a penalty to Strength equal to <I>1d6</I> . The target's Strength score cannot drop below 1.
@@ -2731,7 +2751,7 @@
     <B>Range:</B> Close<br>
     <B>Effect:</B> Ray<br>
     <B>Duration:</B> 1 minute<br>
-    <B>Defence:</B> Fortitude partial<br>
+    <B>Defence:</B> Touch AC, Fortitude partial<br>
 
     A black ray shoots from your pointing finger. Make a ranged attack against a creature within range. Also make an
     attack against the target's Fortitude defence. On a hit, the target becomes <I>exhausted</I> for the duration. If
@@ -2749,7 +2769,7 @@
     <B>Range:</B> Close<br>
     <B>Effect:</B> Ray<br>
     <B>Duration:</B> Instantaneous<br>
-    <B>Defence:</B> None<br>
+    <B>Defence:</B> Touch AC<br>
 
     A ray of freezing air and ice shoots from your pointing finger. Make a ranged attack against a creature within
     range.
@@ -2916,17 +2936,16 @@
     <I>Note:</I> Creating an extradimensional space within another such space—or bringing one inside another—is
     extremely dangerous and may cause catastrophic collapse or planar rupture.<br>
 
-
     <br>
     Scorching Ray<br>
     Evocation [Fire]<br>
-    <B>Level:</B> 2<br>
+    <B>Tier:</B> 2<br>
     <B>Components:</B> V, S, F<br>
     <B>Casting Time:</B> 1 action<br>
     <B>Range:</B> Close<br>
     <B>Effect:</B> One ray<br>
     <B>Duration:</B> Instantaneous<br>
-    <B>Saving Throw:</B> None<br>
+    <B>Defence:</B> Touch AC<br>
     <B>Spell Resistance:</B> Yes<br>
     You blast your enemies with a fiery ray that requires a ranged touch attack to hit and deals 4d6 points of fire
     damage.<br>
@@ -3093,7 +3112,7 @@
     <B>Duration:</B> 1 minute<br>
 
     You summon an invisible disk of pure force that hovers before you like a shield, moving to intercept attacks. The
-    shield grants a +4 armor bonus to Defence and blocks incoming projectiles of pure energy, such as those created by
+    shield grants a +4 armor bonus to AC and blocks incoming projectiles of pure energy, such as those created by
     <I>magic missile</I>. <br>
 
     Because the shield is a force effect, its bonus applies even against incorporeal attacks. However, unlike a physical
@@ -3129,7 +3148,7 @@
     <B>Range:</B> Reach<br>
     <B>Target:</B> Creature or object touched<br>
     <B>Duration:</B> Instantaneous<br>
-    <B>Defence:</B> Armor Class<br>
+    <B>Defence:</B> Touch AC<br>
 
     You channel a surge of crackling electricity through your hand, releasing it into a creature or object you touch. On
     a successful melee touch attack, the target takes 1d6 points of electricity damage.<br>
@@ -4556,7 +4575,7 @@
     <B>Range:</B> Touch<br>
     <B>Target:</B> One living creature touched<br>
     <B>Duration:</B> Instantaneous; temporary hit points last 1 hour<br>
-    <B>Saving Throw:</B> None<br>
+    <B>Defence:</B> Touch AC<br>
     <B>Spell Resistance:</B> Yes<br>
     You must succeed on a melee touch attack. Your touch deals 3d6 points of damage. You gain temporary hit points equal
     to the damage dealt, up to the subject's current hit points +10. The temporary hit points disappear 1 hour after
