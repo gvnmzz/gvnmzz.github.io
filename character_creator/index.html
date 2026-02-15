@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swords and Magic | Character Creator</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="dark-theme">
+    <div class="app-container">
+        <header>
+            <h1>Character Creator</h1>
+            <p>Swords and Magic SRD 1.0</p>
+        </header>
+
+        <main>
+            <section id="step-1" class="creation-step card">
+                <div class="step-header">
+                    <h2>Step 1: Choose Your Ancestry</h2>
+                </div>
+                <div class="race-grid" id="race-selection">
+                    <!-- Race options populated by JS -->
+                </div>
+                <div id="race-details" class="details-panel hidden">
+                    <h3 id="selected-race-name"></h3>
+                    <p id="race-description"></p>
+                    <ul id="race-traits-list"></ul>
+                </div>
+            </section>
+
+            <section id="step-2" class="creation-step card">
+                <div class="step-header">
+                    <h2>Step 2: Ability Scores</h2>
+                    <div class="budget-tracker">
+                        Points Spent: <span id="points-spent">0</span>
+                    </div>
+                </div>
+                <div class="ability-grid">
+                    <div class="ability-card" data-ability="STR">
+                        <label>Strength</label>
+                        <div class="ability-controls">
+                            <button class="btn-minus" onclick="adjustAbility('STR', -1)">-</button>
+                            <span class="ability-val" id="val-STR">10</span>
+                            <button class="btn-plus" onclick="adjustAbility('STR', 1)">+</button>
+                        </div>
+                        <div class="modifier" id="mod-STR">+0</div>
+                    </div>
+                    <div class="ability-card" data-ability="DEX">
+                        <label>Dexterity</label>
+                        <div class="ability-controls">
+                            <button class="btn-minus" onclick="adjustAbility('DEX', -1)">-</button>
+                            <span class="ability-val" id="val-DEX">10</span>
+                            <button class="btn-plus" onclick="adjustAbility('DEX', 1)">+</button>
+                        </div>
+                        <div class="modifier" id="mod-DEX">+0</div>
+                    </div>
+                    <div class="ability-card" data-ability="CON">
+                        <label>Constitution</label>
+                        <div class="ability-controls">
+                            <button class="btn-minus" onclick="adjustAbility('CON', -1)">-</button>
+                            <span class="ability-val" id="val-CON">10</span>
+                            <button class="btn-plus" onclick="adjustAbility('CON', 1)">+</button>
+                        </div>
+                        <div class="modifier" id="mod-CON">+0</div>
+                    </div>
+                    <div class="ability-card" data-ability="INT">
+                        <label>Intelligence</label>
+                        <div class="ability-controls">
+                            <button class="btn-minus" onclick="adjustAbility('INT', -1)">-</button>
+                            <span class="ability-val" id="val-INT">10</span>
+                            <button class="btn-plus" onclick="adjustAbility('INT', 1)">+</button>
+                        </div>
+                        <div class="modifier" id="mod-INT">+0</div>
+                    </div>
+                    <div class="ability-card" data-ability="WIS">
+                        <label>Wisdom</label>
+                        <div class="ability-controls">
+                            <button class="btn-minus" onclick="adjustAbility('WIS', -1)">-</button>
+                            <span class="ability-val" id="val-WIS">10</span>
+                            <button class="btn-plus" onclick="adjustAbility('WIS', 1)">+</button>
+                        </div>
+                        <div class="modifier" id="mod-WIS">+0</div>
+                    </div>
+                    <div class="ability-card" data-ability="CHA">
+                        <label>Charisma</label>
+                        <div class="ability-controls">
+                            <button class="btn-minus" onclick="adjustAbility('CHA', -1)">-</button>
+                            <span class="ability-val" id="val-CHA">10</span>
+                            <button class="btn-plus" onclick="adjustAbility('CHA', 1)">+</button>
+                        </div>
+                        <div class="modifier" id="mod-CHA">+0</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="step-3" class="creation-step card">
+                <div class="step-header">
+                    <h2>Step 3: Skills & Magic</h2>
+                    <div class="budget-tracker">
+                        XR Spent: <span id="xr-spent">0</span>
+                    </div>
+                </div>
+                <div class="tabs">
+                    <button class="tab-link active" onclick="openTab(event, 'Core')">Core</button>
+                    <button class="tab-link" onclick="openTab(event, 'Ordinary')">Ordinary</button>
+                    <button class="tab-link" onclick="openTab(event, 'Extraordinary')">Extraordinary</button>
+                    <button class="tab-link" onclick="openTab(event, 'Feats')">Feats</button>
+                    <button class="tab-link" onclick="openTab(event, 'SupernaturalSpells')">Supernatural Spells</button>
+                    <button class="tab-link" onclick="openTab(event, 'Equipment')">Equipment</button>
+                </div>
+
+                <div id="Core" class="tab-content active">
+                    <p class="tab-desc">Improve your base stats and defenses using XR.</p>
+                    <div id="core-list" class="skill-grid"></div>
+                </div>
+
+                <div id="Ordinary" class="tab-content">
+                    <input type="text" class="search-bar" placeholder="Search skills..."
+                        onkeyup="filterList('ordinary-list', this.value)">
+                    <div id="ordinary-list" class="skill-grid"></div>
+                </div>
+
+                <div id="Extraordinary" class="tab-content">
+                    <input type="text" class="search-bar" placeholder="Search skills..."
+                        onkeyup="filterList('extraordinary-list', this.value)">
+                    <div id="extraordinary-list" class="skill-grid"></div>
+                </div>
+
+                <div id="Feats" class="tab-content">
+                    <input type="text" class="search-bar" placeholder="Search feats..."
+                        onkeyup="filterList('feats-list', this.value)">
+                    <div id="feats-list" class="skill-grid"></div>
+                </div>
+
+                <div id="SupernaturalSpells" class="tab-content">
+                    <div class="filter-group">
+                        <button class="tier-btn active" onclick="filterSpells(null)">All</button>
+                        <button class="tier-btn" onclick="filterSpells(0)">0</button>
+                        <button class="tier-btn" onclick="filterSpells(1)">1</button>
+                        <button class="tier-btn" onclick="filterSpells(2)">2</button>
+                        <button class="tier-btn" onclick="filterSpells(3)">3</button>
+                        <button class="tier-btn" onclick="filterSpells(4)">4</button>
+                    </div>
+                    <input type="text" class="search-bar" placeholder="Search supernatural & spells..."
+                        onkeyup="filterList('supernatural-spells-list', this.value)">
+                    <div id="supernatural-spells-list" class="skill-grid"></div>
+                </div>
+
+                <div id="Equipment" class="tab-content">
+                    <input type="text" class="search-bar" placeholder="Search equipment..."
+                        onkeyup="filterList('equipment-list', this.value)">
+                    <div id="equipment-list" class="skill-grid"></div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="character-sheet card shadow">
+            <div class="sheet-header">
+                <h3>Character Summary</h3>
+                <button class="btn-reset" onclick="resetCharacter()">Reset</button>
+            </div>
+            <div class="summary-section">
+                <strong>Race:</strong> <span id="summary-race">None</span>
+            </div>
+            <div class="summary-section">
+                <strong>Traits:</strong> <span id="summary-size">Medium</span>, <span id="summary-speed">30</span> ft.
+            </div>
+            <div class="summary-section">
+                <strong>HP:</strong> <span id="summary-hp">8</span> (HD: <span id="summary-hd">1</span>)
+            </div>
+            <div class="summary-section">
+                <strong>AC:</strong> <span id="summary-ac">10</span> (Dodge: <span id="summary-dodge">+0</span>)
+            </div>
+            <div class="summary-section">
+                <strong>Defences:</strong>
+                <div class="mini-grid">
+                    <span>FOR: <span id="summary-for">+0</span></span>
+                    <span>REF: <span id="summary-ref">+0</span></span>
+                    <span>WIL: <span id="summary-wil">+0</span></span>
+                </div>
+            </div>
+            <hr>
+            <div class="summary-section">
+                <strong>Purchased Abilities:</strong>
+                <ul id="purchased-list"></ul>
+            </div>
+            <div class="summary-section total-cost">
+                <strong>Total XR Spent:</strong> <span id="total-spent">0</span> XR
+            </div>
+            <div class="summary-section total-cost">
+                <strong>Total Gold Spent:</strong> <span id="gold-spent">0</span> gp
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

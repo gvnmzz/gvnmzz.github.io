@@ -1,0 +1,1493 @@
+{
+  "feats": [
+    {
+      "name": "Armor Proficiency (Heavy)",
+      "cost_xr": 2,
+      "prerequisites": "Armor Proficiency (light), Armor Proficiency (medium)."
+    },
+    {
+      "name": "Armor Proficiency (Light)",
+      "cost_xr": 2,
+      "prerequisites": ""
+    },
+    {
+      "name": "Armor Proficiency (Medium)",
+      "cost_xr": 2,
+      "prerequisites": "Armor Proficiency (light)."
+    },
+    {
+      "name": "Augment Summoning",
+      "cost_xr": 2,
+      "prerequisites": "Spell Focus (conjuration)."
+    },
+    {
+      "name": "Blind Fight",
+      "cost_xr": 2,
+      "prerequisites": ""
+    },
+    {
+      "name": "Brew Potions",
+      "cost_xr": 2,
+      "prerequisites": "Spellcraft 3"
+    },
+    {
+      "name": "Cleave",
+      "cost_xr": 2,
+      "prerequisites": "Str 13, Power Attack."
+    },
+    {
+      "name": "Cleave, Great",
+      "cost_xr": 2,
+      "prerequisites": "Str 13, Power Attack, Cleave."
+    },
+    {
+      "name": "Combat Expertise",
+      "cost_xr": 2,
+      "prerequisites": "Int 13."
+    },
+    {
+      "name": "Combat Reflexes",
+      "cost_xr": 2,
+      "prerequisites": ""
+    },
+    {
+      "name": "Counterspell",
+      "cost_xr": 2,
+      "prerequisites": ""
+    },
+    {
+      "name": "Craft Magic Arms and Armors",
+      "cost_xr": 2,
+      "prerequisites": "Spellcraft 5"
+    },
+    {
+      "name": "Craft Rod",
+      "cost_xr": 2,
+      "prerequisites": "Spellcraft 9"
+    },
+    {
+      "name": "Craft Staff",
+      "cost_xr": 2,
+      "prerequisites": "Spellcraft 12"
+    },
+    {
+      "name": "Craft Wand",
+      "cost_xr": 2,
+      "prerequisites": "Spellcraft 5"
+    },
+    {
+      "name": "Craft Wondrous Item",
+      "cost_xr": 2,
+      "prerequisites": "Spellcraft 3"
+    },
+    {
+      "name": "Deflect Arrows",
+      "cost_xr": 2,
+      "prerequisites": "Dex 13."
+    },
+    {
+      "name": "Far Shot",
+      "cost_xr": 2,
+      "prerequisites": "Point Blank Shot."
+    },
+    {
+      "name": "Forge Ring",
+      "cost_xr": 2,
+      "prerequisites": "Spellcraft 12"
+    },
+    {
+      "name": "Improved Critical",
+      "cost_xr": 2,
+      "prerequisites": "skill score 8 in the selected weapon."
+    },
+    {
+      "name": "Improved Disarm",
+      "cost_xr": 2,
+      "prerequisites": "Int 13, Combat Expertise."
+    },
+    {
+      "name": "Improved Familiar",
+      "cost_xr": 2,
+      "prerequisites": "Ability to acquire a new familiar, sufficiently high skill score (see below)."
+    },
+    {
+      "name": "Feint",
+      "cost_xr": 2,
+      "prerequisites": "Int 13, Combat Expertise."
+    },
+    {
+      "name": "Improved Grapple",
+      "cost_xr": 2,
+      "prerequisites": "Dex 13."
+    },
+    {
+      "name": "Improved Initiative",
+      "cost_xr": 2,
+      "prerequisites": ""
+    },
+    {
+      "name": "Precise Shot, Improved",
+      "cost_xr": 2,
+      "prerequisites": "Point Blank Shot, Precise Shot."
+    },
+    {
+      "name": "Improved Sunder",
+      "cost_xr": 2,
+      "prerequisites": "Str 13. Power Attack."
+    },
+    {
+      "name": "Manyshot",
+      "cost_xr": 2,
+      "prerequisites": "Point Blank Shot, Precise Shot."
+    },
+    {
+      "name": "Mobile",
+      "cost_xr": 2,
+      "prerequisites": "Dex 13, Dodge."
+    },
+    {
+      "name": "Natural Spell",
+      "cost_xr": 2,
+      "prerequisites": "Wis 13, Wild Shape."
+    },
+    {
+      "name": "Point Blank Shot",
+      "cost_xr": 2,
+      "prerequisites": ""
+    },
+    {
+      "name": "Power Attack",
+      "cost_xr": 2,
+      "prerequisites": ""
+    },
+    {
+      "name": "Precise Shot",
+      "cost_xr": 2,
+      "prerequisites": ""
+    },
+    {
+      "name": "Quick Draw",
+      "cost_xr": 2,
+      "prerequisites": ""
+    },
+    {
+      "name": "Rapid Reload",
+      "cost_xr": 2,
+      "prerequisites": ""
+    },
+    {
+      "name": "Rapid Shot",
+      "cost_xr": 2,
+      "prerequisites": ""
+    },
+    {
+      "name": "Scribe Scroll",
+      "cost_xr": 2,
+      "prerequisites": "Spellcraft 1"
+    },
+    {
+      "name": "Shield Proficiency",
+      "cost_xr": 2,
+      "prerequisites": ""
+    },
+    {
+      "name": "Snatch Arrows",
+      "cost_xr": 2,
+      "prerequisites": ""
+    },
+    {
+      "name": "Spell Focus</B>",
+      "cost_xr": 2,
+      "prerequisites": ""
+    },
+    {
+      "name": "Spell Focus, Greater",
+      "cost_xr": 2,
+      "prerequisites": "Spell Focus."
+    },
+    {
+      "name": "Spell Penetration",
+      "cost_xr": 2,
+      "prerequisites": "Spell Focus."
+    },
+    {
+      "name": "Spell Penetration, Greater",
+      "cost_xr": 2,
+      "prerequisites": "Spell Focus."
+    },
+    {
+      "name": "Stunning Fist",
+      "cost_xr": 2,
+      "prerequisites": "Dex 13, Wis 13, Unarmed Strike [8]."
+    },
+    {
+      "name": "Tower Shield Proficiency",
+      "cost_xr": 2,
+      "prerequisites": "Shield Proficiency."
+    },
+    {
+      "name": "Two-weapon Defense",
+      "cost_xr": 2,
+      "prerequisites": "Dex 15, Two-Weapon Fighting."
+    },
+    {
+      "name": "Two Weapon Fighting",
+      "cost_xr": 2,
+      "prerequisites": ""
+    },
+    {
+      "name": "Two Weapon Fighting, Improved",
+      "cost_xr": 2,
+      "prerequisites": "Two-Weapon Fighting."
+    },
+    {
+      "name": "Two Weapon Fighting, Greater",
+      "cost_xr": 2,
+      "prerequisites": "Two-Weapon Fighting, Improved Two-Weapon Fighting."
+    },
+    {
+      "name": "Wand Expertise",
+      "cost_xr": 2,
+      "prerequisites": ""
+    },
+    {
+      "name": "Whirlwind Attack",
+      "cost_xr": 2,
+      "prerequisites": "Dex 13, Int 13, Combat Expertise, Dodge, Mobility."
+    }
+  ],
+  "weapons": [
+    {
+      "name": "<B> </B></td>\n      <td align=\"center\" colspan=\"4\" nowrap><B>&#151;&#151;&#151;&#151;&#151; Exchange Value\n          &#151;&#151;&#151;&#151;</B></td>\n    </tr>\n    <!-- Table 01 Row 02 -->\n    <tr>\n      <td><B> </B>",
+      "cost": "<B>CP</B>",
+      "dmg_s": "<B>SP</B>",
+      "dmg_m": "<B>GP</B>",
+      "critical": "<B>PP</B></td>\n    </tr>\n    <!-- Table 01 Row 03 -->\n    <tr>\n      <td>Copper piece (cp) =",
+      "range": "1",
+      "weight": "1/10",
+      "type": "1/100",
+      "tags": "1/1,000"
+    },
+    {
+      "name": "Silver piece (sp) =",
+      "cost": "10",
+      "dmg_s": "1",
+      "dmg_m": "1/10",
+      "critical": "1/100</td>\n    </tr>\n    <!-- Table 01 Row 05 -->\n    <tr>\n      <td>Gold piece (gp) =",
+      "range": "100",
+      "weight": "10",
+      "type": "1",
+      "tags": "1/10"
+    },
+    {
+      "name": "Platinum piece (pp) =",
+      "cost": "1,000",
+      "dmg_s": "100",
+      "dmg_m": "10",
+      "critical": "1</td>\n    </tr>\n  </table>\n  <br>\n  WEALTH OTHER THAN COINS<br>\n  Merchants commonly exchange trade goods without using currency. As a means of comparison, some trade goods are\n  detailed below.<br>\n  <B><br>\n    Table: Trade Goods&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>\n  </B>\n  <table width=\"95%\" border=\"1\">\n    <!-- Table 02 Row 01 -->\n    <tr>\n      <td><B>Cost</B>",
+      "range": "<B>Item</B></td>\n    </tr>\n    <!-- Table 02 Row 02 -->\n    <tr>\n      <td>1 cp",
+      "weight": "One pound of wheat</td>\n    </tr>\n    <!-- Table 02 Row 03 -->\n    <tr>\n      <td>2 cp",
+      "type": "One pound of flour, or one chicken</td>\n    </tr>\n    <!-- Table 02 Row 04 -->\n    <tr>\n      <td>1 sp",
+      "tags": "One pound of iron"
+    },
+    {
+      "name": "5 sp",
+      "cost": "One pound of tobacco or copper</td>\n    </tr>\n    <!-- Table 02 Row 06 -->\n    <tr>\n      <td>1 gp",
+      "dmg_s": "One pound of cinnamon, or one goat</td>\n    </tr>\n    <!-- Table 02 Row 07 -->\n    <tr>\n      <td>2 gp",
+      "dmg_m": "One pound of ginger or pepper, or one sheep</td>\n    </tr>\n    <!-- Table 02 Row 08 -->\n    <tr>\n      <td>3 gp",
+      "critical": "One pig</td>\n    </tr>\n    <!-- Table 02 Row 09 -->\n    <tr>\n      <td>4 gp",
+      "range": "One square yard of linen</td>\n    </tr>\n    <!-- Table 02 Row 10 -->\n    <tr>\n      <td>5 gp",
+      "weight": "One pound of salt or silver</td>\n    </tr>\n    <!-- Table 02 Row 11 -->\n    <tr>\n      <td>10 gp",
+      "type": "One square yard of silk, or one cow</td>\n    </tr>\n    <!-- Table 02 Row 12 -->\n    <tr>\n      <td>15 gp",
+      "tags": "One pound of saffron or cloves, or one ox"
+    },
+    {
+      "name": "50 gp",
+      "cost": "One pound of gold</td>\n    </tr>\n    <!-- Table 02 Row 14 -->\n    <tr>\n      <td>500 gp",
+      "dmg_s": "One pound of platinum</td>\n    </tr>\n  </table>\n  <br>\n  <font size=\"3\">SELLING LOOT<br>\n    In general, a character can sell something for half its listed price.<br>\n    Trade goods are the exception to the half-price rule. A trade good, in this sense, is a valuable good that can be\n    easily exchanged almost as if it were cash itself.<br>\n  </font>\n  <font size=\"5\"><br>\n    WEAPONS<br>\n  </font>\n  <font size=\"3\">WEAPON CATEGORIES<br>\n    Weapons are grouped into several interlocking sets of categories.<br>\n    These categories pertain to what training is needed to become proficient in a weapon's use (simple, martial, or\n    exotic), the weapon's usefulness either in close combat (melee) or at a distance (ranged, which includes both thrown\n    and projectile weapons), its relative encumbrance (light, one-handed, or two-handed), and its size (Small, Medium,\n    or Large).<br>\n    <B>Simple, Martial, and Exotic Weapons:</B> Anybody but a druid, monk, rogue, or wizard is proficient with all\n    simple weapons. Barbarians, fighters, paladins, and rangers are proficient with all simple and all martial weapons.\n    Characters of other classes are proficient with an assortment of mainly simple weapons and possibly also some\n    martial or even exotic weapons. A character who uses a weapon with which he or she is not proficient takes a &#150;4\n    penalty on attack rolls.<br>\n    <B>Melee and Ranged Weapons:</B> Melee weapons are used for making melee attacks, though some of them can be thrown\n    as well. Ranged weapons are thrown weapons or projectile weapons that are not effective in melee.<br>\n    <I>Reach Weapons: </I>Glaives, guisarmes, lances, longspears, ranseurs, spiked chains, and whips are reach weapons.\n    A reach weapon is a melee weapon that allows its wielder to strike at targets that aren't adjacent to him or her.\n    Most reach double the wielder's natural reach, meaning that a typical Small or Medium wielder of such a weapon can\n    attack a creature 10 feet away, but not a creature in an adjacent square. A typical Large character wielding a reach\n    weapon of the appropriate size can attack a creature 15 or 20 feet away, but not adjacent creatures or creatures up\n    to 10 feet away.<br>\n    <I>Double Weapons: </I>Dire flails, dwarven urgroshes, gnome hooked hammers, orc double axes, quarterstaffs, and\n    two-bladed swords are double weapons. A character can fight with both ends of a double weapon as if fighting with\n    two weapons, but he or she incurs all the normal attack penalties associated with two-weapon combat, just as though\n    the character were wielding a one-handed weapon and a light weapon.<br>\n    The character can also choose to use a double weapon two handed, attacking with only one end of it. A creature\n    wielding a double weapon in one hand can't use it as a double weapon&#151;only one end of the weapon can be used in\n    any given round.<br>\n    <I>Thrown Weapons: </I>Daggers, clubs, shortspears, spears, darts, javelins, throwing axes, light hammers, tridents,\n    shuriken, and nets are thrown weapons. The wielder applies his or her Strength modifier to damage dealt by thrown\n    weapons (except for splash weapons). It is possible to throw a weapon that isn't designed to be thrown (that is, a\n    melee weapon that doesn't have a numeric entry in the Range Increment column on Table: Weapons), but a character who\n    does so takes a &#150;4 penalty on the attack roll. Throwing a light or one-handed weapon is a standard action,\n    while throwing a two-handed weapon is a full-round action. Regardless of the type of weapon, such an attack scores a\n    threat only on a natural roll of 20 and deals double damage on a critical hit. Such a weapon has a range increment\n    of 10 feet.<br>\n    <I>Projectile Weapons: </I>Light crossbows, slings, heavy crossbows, shortbows, composite shortbows, longbows,\n    composite longbows, hand crossbows, and repeating crossbows are projectile weapons. Most projectile weapons require\n    two hands to use (see specific weapon descriptions). A character gets no Strength bonus on damage rolls with a\n    projectile weapon unless it's a specially built composite shortbow, specially built composite longbow, or sling. If\n    the character has a penalty for low Strength, apply it to damage rolls when he or she uses a bow or a sling.<br>\n    <I>Ammunition: </I>Projectile weapons use ammunition: arrows (for bows), bolts (for crossbows), or sling bullets\n    (for slings). When using a bow, a character can draw ammunition as a free action; crossbows and slings require an\n    action for reloading. Generally speaking, ammunition that hits its target is destroyed or rendered useless, while\n    normal ammunition that misses has a 50% chance of being destroyed or lost.<br>\n    Although they are thrown weapons, shuriken are treated as ammunition for the purposes of drawing them, crafting\n    masterwork or otherwise special versions of them (see Masterwork Weapons), and what happens to them after they are\n    thrown.<br>\n    <br>\n    <B>Light, One-Handed, and Two-Handed Melee Weapons:</B> This designation is a measure of how much effort it takes to\n    wield a weapon in combat. It indicates whether a melee weapon, when wielded by a character of the weapon's size\n    category, is considered a light weapon, a one-handed weapon, or a two-handed weapon.<br>\n    <I>Light: </I>A light weapon is easier to use in one's off hand than a one-handed weapon is, and it can be used\n    while grappling. A light weapon is used in one hand. Add the wielder's Strength bonus (if any) to damage rolls for\n    melee attacks with a light weapon if it's used in the primary hand, or one-half the wielder's Strength bonus if it's\n    used in the off hand. Using two hands to wield a light weapon gives no advantage on damage; the Strength bonus\n    applies as though the weapon were held in the wielder's primary hand only.<br>\n    An unarmed strike is always considered a light weapon.<br>\n    <I>One-Handed: </I>A one-handed weapon can be used in either the primary hand or the off hand. Add the wielder's\n    Strength bonus to damage rolls for melee attacks with a one-handed weapon if it's used in the primary hand, or 1/2\n    his or her Strength bonus if it's used in the off hand. If a one-handed weapon is wielded with two hands during\n    melee combat, add 1-1/2 times the character's Strength bonus to damage rolls.<br>\n    <I>Two-Handed: </I>Two hands are required to use a two-handed melee weapon effectively. Apply 1-1/2 times the\n    character's Strength bonus to damage rolls for melee attacks with such a weapon. <br>\n    <br>\n    <B>Weapon Size:</B> Every weapon has a size category. This designation indicates the size of the creature for which\n    the weapon was designed.<br>\n    A weapon's size category isn't the same as its size as an object. Instead, a weapon's size category is keyed to the\n    size of the intended wielder. In general, a light weapon is an object two size categories smaller than the wielder,\n    a one-handed weapon is an object one size category smaller than the wielder, and a two-handed weapon is an object of\n    the same size category as the wielder.<br>\n    <I>Inappropriately Sized Weapons: </I>A creature can't make optimum use of a weapon that isn't properly sized for\n    it. A cumulative &#150;2 penalty applies on attack rolls for each size category of difference between the size of\n    its intended wielder and the size of its actual wielder. If the creature isn't proficient with the weapon a &#150;4\n    nonproficiency penalty also applies.<br>\n    The measure of how much effort it takes to use a weapon (whether the weapon is designated as a light, one-handed, or\n    two-handed weapon for a particular wielder) is altered by one step for each size category of difference between the\n    wielder's size and the size of the creature for which the weapon was designed. If a weapon's designation would be\n    changed to something other than light, one-handed, or two-handed by this alteration, the creature can't wield the\n    weapon at all.<br>\n    <B><br>\n      Improvised Weapons:</B> Sometimes objects not crafted to be weapons nonetheless see use in combat. Because such\n    objects are not designed for this use, any creature that uses one in combat is considered to be nonproficient with\n    it and takes a &#150;4 penalty on attack rolls made with that object. To determine the size category and appropriate\n    damage for an improvised weapon, compare its relative size and damage potential to the weapon list to find a\n    reasonable match. An improvised weapon scores a threat on a natural roll of 20 and deals double damage on a critical\n    hit. An improvised thrown weapon has a range increment of 10 feet.<br>\n    <br>\n    WEAPON QUALITIES<br>\n    Here is the format for weapon entries (given as column headings on Table: Weapons, below).<br>\n    <B>Cost:</B> This value is the weapon's cost in gold pieces (gp) or silver pieces (sp). The cost includes\n    miscellaneous gear that goes with the weapon.<br>\n    This cost is the same for a Small or Medium version of the weapon. A Large version costs twice the listed price.<br>\n    <B>Damage:</B> The Damage columns give the damage dealt by the weapon on a successful hit. The column labeled\n    &#147;Dmg (S)&#148; is for Small weapons. The column labeled &#147;Dmg (M)&#148; is for Medium weapons. If two\n    damage ranges are given then the weapon is a double weapon. Use the second damage figure given for the double\n    weapon's extra attack. Table: Tiny and Large Weapon Damage gives weapon damage values for weapons of those\n    sizes.<br>\n    <B><br>\n      Table: Tiny and Large Weapon Damage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>\n  </font></B>\n  <table width=\"95%\" border=\"1\">\n    <!-- Table 03 Row 01 -->\n    <tr>\n      <td><B>Medium Weapon Damage</B>",
+      "dmg_m": "<B>Tiny Weapon Damage</B>",
+      "critical": "<B>Large Weapon Damage</B></td>\n    </tr>\n    <!-- Table 03 Row 02 -->\n    <tr>\n      <td>1d2",
+      "range": "&#151;",
+      "weight": "1d3</td>\n    </tr>\n    <!-- Table 03 Row 03 -->\n    <tr>\n      <td>1d3",
+      "type": "1",
+      "tags": "1d4"
+    },
+    {
+      "name": "1d4",
+      "cost": "1d2",
+      "dmg_s": "1d6</td>\n    </tr>\n    <!-- Table 03 Row 05 -->\n    <tr>\n      <td>1d6",
+      "dmg_m": "1d3",
+      "critical": "1d8</td>\n    </tr>\n    <!-- Table 03 Row 06 -->\n    <tr>\n      <td>1d8",
+      "range": "1d4",
+      "weight": "2d6</td>\n    </tr>\n    <!-- Table 03 Row 07 -->\n    <tr>\n      <td>1d10",
+      "type": "1d6",
+      "tags": "2d8"
+    },
+    {
+      "name": "1d12",
+      "cost": "1d8",
+      "dmg_s": "3d6</td>\n    </tr>\n    <!-- Table 03 Row 09 -->\n    <tr>\n      <td>2d4",
+      "dmg_m": "1d4",
+      "critical": "2d6</td>\n    </tr>\n    <!-- Table 03 Row 10 -->\n    <tr>\n      <td>2d6",
+      "range": "1d8",
+      "weight": "3d6</td>\n    </tr>\n    <!-- Table 03 Row 11 -->\n    <tr>\n      <td>2d8",
+      "type": "1d10",
+      "tags": "3d8"
+    },
+    {
+      "name": "2d10",
+      "cost": "2d6",
+      "dmg_s": "4d8</td>\n    </tr>\n  </table>\n  <br>\n  <B>Critical:</B> The entry in this column notes how the weapon is used with the rules for critical hits. When your\n  character scores a critical hit, roll the damage two, three, or four times, as indicated by its critical multiplier\n  (using all applicable modifiers on each roll), and add all the results together.<br>\n  <I>Exception: </I>Extra damage over and above a weapon's normal damage is not multiplied when you score a critical\n  hit.<br>\n  x<I>2: </I>The weapon deals double damage on a critical hit.<br>\n  x<I>3: </I>The weapon deals triple damage on a critical hit.<br>\n  x<I>3/</I>x<I>4: </I>One head of this double weapon deals triple damage on a critical hit. The other head deals\n  quadruple damage on a critical hit.<br>\n  x<I>4: </I>The weapon deals quadruple damage on a critical hit.<br>\n  <I>19&#150;20/</I>x<I>2: </I>The weapon scores a threat on a natural roll of 19 or 20 (instead of just 20) and deals\n  double damage on a critical hit. (The weapon has a threat range of 19&#150;20.)<br>\n  <I>18&#150;20/</I>x<I>2: </I>The weapon scores a threat on a natural roll of 18, 19, or 20 (instead of just 20) and\n  deals double damage on a critical hit. (The weapon has a threat range of 18&#150;20.)<br>\n  <B>Range Increment:</B> Any attack at less than this distance is not penalized for range. However, each full range\n  increment imposes a cumulative &#150;2 penalty on the attack roll. A thrown weapon has a maximum range of five range\n  increments. A projectile weapon can shoot out to ten range increments.<br>\n  <B>Weight:</B> This column gives the weight of a Medium version of the weapon. Halve this number for Small weapons and\n  double it for Large weapons.<br>\n  <B>Type:</B> Weapons are classified according to the type of damage they deal: bludgeoning, piercing, or slashing.\n  Some monsters may be resistant or immune to attacks from certain types of weapons.<br>\n  Some weapons deal damage of multiple types. If a weapon is of two types, the damage it deals is not half one type and\n  half another; all of it is both types. Therefore, a creature would have to be immune to both types of damage to ignore\n  any of the damage from such a weapon.<br>\n  In other cases, a weapon can deal either of two types of damage. In a situation when the damage type is significant,\n  the wielder can choose which type of damage to deal with such a weapon.<br>\n  <B>Special:</B> Some weapons have special features. See the weapon descriptions for details.<br>\n  <br>\n  <p><strong>Table: Weapons</strong></p>\n  <table width=\"95%\" border=\"1\">\n    <tbody>\n      <tr>\n        <td><strong>Simple Weapons</strong>",
+      "dmg_m": "<strong>Cost</strong>",
+      "critical": "<strong>Dmg (S)</strong>",
+      "range": "<strong>Dmg (M)</strong>",
+      "weight": "<strong>Critical</strong>",
+      "type": "<strong>Range Increment</strong>",
+      "tags": "<strong>Weight</strong></td>\n        <td><strong>Type</strong></td>\n        <td><strong>Tags</strong>"
+    },
+    {
+      "name": "Dagger",
+      "cost": "2 gp",
+      "dmg_s": "1d3",
+      "dmg_m": "1d4",
+      "critical": "19-20/x2",
+      "range": "10 ft.",
+      "weight": "1 lb.",
+      "type": "Piercing or slashing",
+      "tags": "Finesse, Bleed, Thrown"
+    },
+    {
+      "name": "Club",
+      "cost": "-",
+      "dmg_s": "1d3",
+      "dmg_m": "1d4",
+      "critical": "x2",
+      "range": "10 ft.",
+      "weight": "3 lb.",
+      "type": "Bludgeoning",
+      "tags": "Stagger, Thrown"
+    },
+    {
+      "name": "Sickle",
+      "cost": "6 gp",
+      "dmg_s": "1d4",
+      "dmg_m": "1d6",
+      "critical": "x2",
+      "range": "-",
+      "weight": "2 lb.",
+      "type": "Slashing",
+      "tags": "Bleed"
+    },
+    {
+      "name": "Mace",
+      "cost": "12 gp",
+      "dmg_s": "1d4",
+      "dmg_m": "1d6",
+      "critical": "x2",
+      "range": "-",
+      "weight": "8 lb.",
+      "type": "Bludgeoning",
+      "tags": "Stagger"
+    },
+    {
+      "name": "Morningstar",
+      "cost": "8 gp",
+      "dmg_s": "1d6",
+      "dmg_m": "1d8",
+      "critical": "x2",
+      "range": "-",
+      "weight": "6 lb.",
+      "type": "Bludgeoning and piercing",
+      "tags": "Stagger"
+    },
+    {
+      "name": "Shortspear",
+      "cost": "1 gp",
+      "dmg_s": "1d4",
+      "dmg_m": "1d6",
+      "critical": "x2",
+      "range": "20 ft.",
+      "weight": "3 lb.",
+      "type": "Piercing",
+      "tags": "Impale, Piercing(1), Thrown"
+    },
+    {
+      "name": "Quarterstaff",
+      "cost": "-",
+      "dmg_s": "1d4/1d4",
+      "dmg_m": "1d6/1d6",
+      "critical": "x2",
+      "range": "-",
+      "weight": "4 lb.",
+      "type": "Bludgeoning",
+      "tags": "Two-Handed, Stagger"
+    },
+    {
+      "name": "Spear",
+      "cost": "2 gp",
+      "dmg_s": "1d6",
+      "dmg_m": "1d8",
+      "critical": "x3",
+      "range": "20 ft.",
+      "weight": "6 lb.",
+      "type": "Piercing",
+      "tags": "Two-Handed, Reach, Impale, Piercing(1), Thrown"
+    },
+    {
+      "name": "Crossbow, light",
+      "cost": "35 gp",
+      "dmg_s": "1d6",
+      "dmg_m": "1d8",
+      "critical": "19-20/x2",
+      "range": "80 ft.",
+      "weight": "4 lb.",
+      "type": "Piercing",
+      "tags": "Two-Handed, Loading, Piercing(2), Impale"
+    },
+    {
+      "name": "Shortbow",
+      "cost": "30 gp",
+      "dmg_s": "1d4",
+      "dmg_m": "1d6",
+      "critical": "x3",
+      "range": "60 ft.",
+      "weight": "2 lb.",
+      "type": "Piercing",
+      "tags": "Two-Handed, Piercing(0), Impale"
+    },
+    {
+      "name": "Dart",
+      "cost": "5 sp",
+      "dmg_s": "1d3",
+      "dmg_m": "1d4",
+      "critical": "x2",
+      "range": "20 ft.",
+      "weight": "\u00c2\u00bd lb.",
+      "type": "Piercing",
+      "tags": "Thrown, Piercing (0)"
+    },
+    {
+      "name": "Javelin",
+      "cost": "1 gp",
+      "dmg_s": "1d4",
+      "dmg_m": "1d6",
+      "critical": "x2",
+      "range": "30 ft.",
+      "weight": "2 lb.",
+      "type": "Piercing",
+      "tags": "Impale, Piercing(1), Thrown"
+    },
+    {
+      "name": "Sling",
+      "cost": "-",
+      "dmg_s": "1d3",
+      "dmg_m": "1d4",
+      "critical": "x2",
+      "range": "50 ft.",
+      "weight": "0 lb.",
+      "type": "Bludgeoning",
+      "tags": "Stagger"
+    },
+    {
+      "name": "Hammer, light",
+      "cost": "1 gp",
+      "dmg_s": "1d3",
+      "dmg_m": "1d4",
+      "critical": "x2",
+      "range": "20 ft.",
+      "weight": "2 lb.",
+      "type": "Bludgeoning",
+      "tags": "Thrown, Stagger"
+    },
+    {
+      "name": "Handaxe",
+      "cost": "6 gp",
+      "dmg_s": "1d4",
+      "dmg_m": "1d6",
+      "critical": "x3",
+      "range": "10 ft.",
+      "weight": "3 lb.",
+      "type": "Slashing",
+      "tags": "Thrown, Bleed"
+    },
+    {
+      "name": "Kukri",
+      "cost": "8 gp",
+      "dmg_s": "1d3",
+      "dmg_m": "1d4",
+      "critical": "18-20/x2",
+      "range": "-",
+      "weight": "2 lb.",
+      "type": "Slashing",
+      "tags": "Finesse, Bleed"
+    },
+    {
+      "name": "Pick, light",
+      "cost": "4 gp",
+      "dmg_s": "1d3",
+      "dmg_m": "1d4",
+      "critical": "x4",
+      "range": "-",
+      "weight": "3 lb.",
+      "type": "Piercing",
+      "tags": "Piercing(2)"
+    },
+    {
+      "name": "Shield, light",
+      "cost": "5 gp",
+      "dmg_s": "1d2",
+      "dmg_m": "1d3",
+      "critical": "x2",
+      "range": "&mdash;",
+      "weight": "6 lb.",
+      "type": "Bludgeoning",
+      "tags": "Bash"
+    },
+    {
+      "name": "Shortsword",
+      "cost": "10 gp",
+      "dmg_s": "1d4",
+      "dmg_m": "1d6",
+      "critical": "19-20/x2",
+      "range": "-",
+      "weight": "2 lb.",
+      "type": "Piercing or slashing",
+      "tags": "Finesse, Reliable, Bleed, Impale"
+    },
+    {
+      "name": "Battleaxe",
+      "cost": "10 gp",
+      "dmg_s": "1d6",
+      "dmg_m": "1d8",
+      "critical": "x3",
+      "range": "-",
+      "weight": "6 lb.",
+      "type": "Slashing",
+      "tags": "Brutal, Bleed, Sunder"
+    },
+    {
+      "name": "Flail",
+      "cost": "8 gp",
+      "dmg_s": "1d6",
+      "dmg_m": "1d8",
+      "critical": "x2",
+      "range": "-",
+      "weight": "5 lb.",
+      "type": "Bludgeoning",
+      "tags": "Bash"
+    },
+    {
+      "name": "Longsword",
+      "cost": "15 gp",
+      "dmg_s": "1d6",
+      "dmg_m": "1d8",
+      "critical": "19-20/x2",
+      "range": "-",
+      "weight": "4 lb.",
+      "type": "Slashing",
+      "tags": "Reliable, Bleed, Impale"
+    },
+    {
+      "name": "Pick, heavy",
+      "cost": "8 gp",
+      "dmg_s": "1d4",
+      "dmg_m": "1d6",
+      "critical": "x4",
+      "range": "-",
+      "weight": "6 lb.",
+      "type": "Piercing",
+      "tags": "Piercing(3)"
+    },
+    {
+      "name": "Rapier",
+      "cost": "20 gp",
+      "dmg_s": "1d4",
+      "dmg_m": "1d6",
+      "critical": "18-20/x2",
+      "range": "-",
+      "weight": "2 lb.",
+      "type": "Piercing",
+      "tags": "Finesse, Impale"
+    },
+    {
+      "name": "Shield, heavy",
+      "cost": "10 gp",
+      "dmg_s": "1d3",
+      "dmg_m": "1d4",
+      "critical": "x2",
+      "range": "&mdash;",
+      "weight": "12 lb.",
+      "type": "Bludgeoning",
+      "tags": "Bash, Stagger"
+    },
+    {
+      "name": "Scimitar",
+      "cost": "15 gp",
+      "dmg_s": "1d4",
+      "dmg_m": "1d6",
+      "critical": "18-20/x2",
+      "range": "-",
+      "weight": "4 lb.",
+      "type": "Slashing",
+      "tags": "Finesse, Bleed"
+    },
+    {
+      "name": "Trident",
+      "cost": "15 gp",
+      "dmg_s": "1d6",
+      "dmg_m": "1d8",
+      "critical": "x2",
+      "range": "10 ft.",
+      "weight": "4 lb.",
+      "type": "Piercing",
+      "tags": "Piercing(1), Impale"
+    },
+    {
+      "name": "Warhammer",
+      "cost": "12 gp",
+      "dmg_s": "1d6",
+      "dmg_m": "1d8",
+      "critical": "x3",
+      "range": "-",
+      "weight": "5 lb.",
+      "type": "Bludgeoning",
+      "tags": "Bash, Stagger"
+    },
+    {
+      "name": "Falchion",
+      "cost": "75 gp",
+      "dmg_s": "1d6",
+      "dmg_m": "2d4",
+      "critical": "18-20/x2",
+      "range": "-",
+      "weight": "8 lb.",
+      "type": "Slashing",
+      "tags": "Two-Handed, Bleed"
+    },
+    {
+      "name": "Glaive",
+      "cost": "8 gp",
+      "dmg_s": "1d8",
+      "dmg_m": "1d10",
+      "critical": "x3",
+      "range": "-",
+      "weight": "10 lb.",
+      "type": "Slashing",
+      "tags": "Two-Handed, Reach, Bleed, Sunder"
+    },
+    {
+      "name": "Greataxe",
+      "cost": "20 gp",
+      "dmg_s": "1d10",
+      "dmg_m": "1d12",
+      "critical": "x3",
+      "range": "-",
+      "weight": "12 lb.",
+      "type": "Slashing",
+      "tags": "Two-Handed, Brutal, Bleed, Sunder"
+    },
+    {
+      "name": "Greatclub",
+      "cost": "5 gp",
+      "dmg_s": "1d8",
+      "dmg_m": "1d10",
+      "critical": "x2",
+      "range": "-",
+      "weight": "8 lb.",
+      "type": "Bludgeoning",
+      "tags": "Two-Handed, Bash, Stagger"
+    },
+    {
+      "name": "Flail, heavy",
+      "cost": "15 gp",
+      "dmg_s": "1d8",
+      "dmg_m": "1d10",
+      "critical": "19-20/x2",
+      "range": "-",
+      "weight": "10 lb.",
+      "type": "Bludgeoning",
+      "tags": "Two-Handed, Bash"
+    },
+    {
+      "name": "Greatsword",
+      "cost": "50 gp",
+      "dmg_s": "1d10",
+      "dmg_m": "2d6",
+      "critical": "19-20/x2",
+      "range": "-",
+      "weight": "8 lb.",
+      "type": "Slashing",
+      "tags": "Two-Handed, Reliable, Bleed, Impale, Sunder"
+    },
+    {
+      "name": "Halberd",
+      "cost": "10 gp",
+      "dmg_s": "1d8",
+      "dmg_m": "1d10",
+      "critical": "x3",
+      "range": "-",
+      "weight": "12 lb.",
+      "type": "Piercing or slashing",
+      "tags": "Two-Handed, Reach, Piercing(2), Bleed, Impale, Sunder"
+    },
+    {
+      "name": "Lance",
+      "cost": "10 gp",
+      "dmg_s": "1d8",
+      "dmg_m": "1d10",
+      "critical": "x3",
+      "range": "-",
+      "weight": "10 lb.",
+      "type": "Piercing",
+      "tags": "Two-Handed, Reach, Mounted, Piercing(3), Sunder"
+    },
+    {
+      "name": "Scythe",
+      "cost": "18 gp",
+      "dmg_s": "1d6",
+      "dmg_m": "2d4",
+      "critical": "x4",
+      "range": "-",
+      "weight": "10 lb.",
+      "type": "Piercing or slashing",
+      "tags": "Two-Handed, Bleed, Sunder, Trip"
+    },
+    {
+      "name": "Whip",
+      "cost": "1 gp",
+      "dmg_s": "1d2",
+      "dmg_m": "1d3",
+      "critical": "x2",
+      "range": "-",
+      "weight": "2 lb.",
+      "type": "Slashing",
+      "tags": "Reach, Entangle, Trip"
+    },
+    {
+      "name": "Crossbow, heavy",
+      "cost": "50 gp",
+      "dmg_s": "1d8",
+      "dmg_m": "1d10",
+      "critical": "19-20/x2",
+      "range": "120 ft.",
+      "weight": "8 lb.",
+      "type": "Piercing",
+      "tags": "Two-Handed, Loading, Piercing(4), Impale"
+    },
+    {
+      "name": "Longbow",
+      "cost": "75 gp",
+      "dmg_s": "1d6",
+      "dmg_m": "1d8",
+      "critical": "x3",
+      "range": "100 ft.",
+      "weight": "3 lb.",
+      "type": "Piercing",
+      "tags": "Two-Handed, Impale, Piercing(2)"
+    },
+    {
+      "name": "Net",
+      "cost": "20 gp",
+      "dmg_s": "-",
+      "dmg_m": "-",
+      "critical": "-",
+      "range": "10 ft.",
+      "weight": "6 lb.",
+      "type": "-",
+      "tags": "Thrown, Entangle"
+    },
+    {
+      "name": "&nbsp;",
+      "cost": "&nbsp;",
+      "dmg_s": "&nbsp;",
+      "dmg_m": "&nbsp;",
+      "critical": "&nbsp;</td>\n          <td align=\"center\" nowrap=\"nowrap\"><strong>&ndash;&mdash; Speed &mdash;&ndash;</strong>",
+      "range": "&nbsp;</td>\n        </tr>\n        <!-- Table 18 Row 02 -->\n        <tr>\n          <td><strong>Armor</strong>",
+      "weight": "<strong>Cost</strong>",
+      "type": "<strong>Armor/Shield Bonus</strong>",
+      "tags": "<strong>Maximum Dex Bonus</strong></td>\n          <td><strong>Armor Check Penalty</strong></td>\n          <td><strong>(30 ft.)</strong></td>\n          <td><strong>(20 ft.)</strong></td>\n          <td><strong>Weight<sup><span style=\"font-size: small;\">1</span></sup></strong>"
+    },
+    {
+      "name": "Leather",
+      "cost": "10 gp",
+      "dmg_s": "+2",
+      "dmg_m": "+6",
+      "critical": "0",
+      "range": "30 ft.",
+      "weight": "20 ft.",
+      "type": "15 lb.</td>\n        </tr>\n        <!-- Table 18 Row 06 -->\n        <tr>\n          <td>Studded leather",
+      "tags": "25 gp</td>\n          <td>+3</td>\n          <td>+5</td>\n          <td>&ndash;1</td>\n          <td>30 ft.</td>\n          <td>20 ft.</td>\n          <td>20 lb."
+    },
+    {
+      "name": "Chain shirt",
+      "cost": "100 gp",
+      "dmg_s": "+4",
+      "dmg_m": "+4",
+      "critical": "&ndash;2",
+      "range": "30 ft.",
+      "weight": "20 ft.",
+      "type": "25 lb.</td>\n        </tr>\n        <!-- Table 18 Row 08 -->\n        <tr>\n          <td><em>Medium armor</em>",
+      "tags": "&nbsp;</td>\n          <td>&nbsp;</td>\n          <td>&nbsp;</td>\n          <td>&nbsp;</td>\n          <td>&nbsp;</td>\n          <td>&nbsp;</td>\n          <td>&nbsp;"
+    },
+    {
+      "name": "Hide",
+      "cost": "15 gp",
+      "dmg_s": "+3",
+      "dmg_m": "+4",
+      "critical": "&ndash;3",
+      "range": "20 ft.",
+      "weight": "15 ft.",
+      "type": "25 lb.</td>\n        </tr>\n        <!-- Table 18 Row 10 -->\n        <tr>\n          <td>Scale mail",
+      "tags": "50 gp</td>\n          <td>+4</td>\n          <td>+3</td>\n          <td>&ndash;4</td>\n          <td>20 ft.</td>\n          <td>15 ft.</td>\n          <td>30 lb."
+    },
+    {
+      "name": "Chainmail",
+      "cost": "150 gp",
+      "dmg_s": "+5",
+      "dmg_m": "+2",
+      "critical": "&ndash;5",
+      "range": "20 ft.",
+      "weight": "15 ft.",
+      "type": "40 lb.</td>\n        </tr>\n        <!-- Table 18 Row 12 -->\n        <tr>\n          <td>Breastplate",
+      "tags": "200 gp</td>\n          <td>+5</td>\n          <td>+3</td>\n          <td>&ndash;4</td>\n          <td>20 ft.</td>\n          <td>15 ft.</td>\n          <td>30 lb."
+    },
+    {
+      "name": "Banded mail",
+      "cost": "250 gp",
+      "dmg_s": "+6",
+      "dmg_m": "+1",
+      "critical": "&ndash;6",
+      "range": "20 ft.",
+      "weight": "15 ft.",
+      "type": "35 lb.</td>\n        </tr>\n        <!-- Table 18 Row 16 -->\n        <tr>\n          <td>Half-plate",
+      "tags": "600 gp</td>\n          <td>+7</td>\n          <td>+0</td>\n          <td>&ndash;7</td>\n          <td>20 ft.</td>\n          <td>15 ft.</td>\n          <td>50 lb."
+    },
+    {
+      "name": "Full plate",
+      "cost": "1,500 gp",
+      "dmg_s": "+8",
+      "dmg_m": "+1",
+      "critical": "&ndash;6",
+      "range": "20 ft.",
+      "weight": "15 ft.",
+      "type": "50 lb.</td>\n        </tr>\n        <!-- Table 18 Row 18 -->\n        <tr>\n          <td><em>Shields</em>",
+      "tags": "&nbsp;</td>\n          <td>&nbsp;</td>\n          <td>&nbsp;</td>\n          <td>&nbsp;</td>\n          <td>&nbsp;</td>\n          <td>&nbsp;</td>\n          <td>&nbsp;"
+    },
+    {
+      "name": "Buckler",
+      "cost": "15 gp",
+      "dmg_s": "+1",
+      "dmg_m": "&mdash;",
+      "critical": "&ndash;1",
+      "range": "&mdash;",
+      "weight": "&mdash;",
+      "type": "5 lb.</td>\n        </tr>\n        <!-- Table 18 Row 20 -->\n        <tr>\n          <td>Shield, light wooden",
+      "tags": "3 gp</td>\n          <td>+1</td>\n          <td>&mdash;</td>\n          <td>&ndash;1</td>\n          <td>&mdash;</td>\n          <td>&mdash;</td>\n          <td>5 lb."
+    },
+    {
+      "name": "Shield, light steel",
+      "cost": "9 gp",
+      "dmg_s": "+1",
+      "dmg_m": "&mdash;",
+      "critical": "&ndash;1",
+      "range": "&mdash;",
+      "weight": "&mdash;",
+      "type": "6 lb.</td>\n        </tr>\n        <!-- Table 18 Row 22 -->\n        <tr>\n          <td>Shield, heavy wooden",
+      "tags": "7 gp</td>\n          <td>+2</td>\n          <td>&mdash;</td>\n          <td>&ndash;2</td>\n          <td>&mdash;</td>\n          <td>&mdash;</td>\n          <td>10 lb."
+    },
+    {
+      "name": "Shield, heavy steel",
+      "cost": "20 gp",
+      "dmg_s": "+2",
+      "dmg_m": "&mdash;",
+      "critical": "&ndash;2",
+      "range": "&mdash;",
+      "weight": "&mdash;",
+      "type": "15 lb.</td>\n        </tr>\n        <!-- Table 18 Row 24 -->\n        <tr>\n          <td>Shield, tower",
+      "tags": "30 gp</td>\n          <td>+4<span style=\"font-size: small;\"><strong>2</strong></span></td>\n          <td>+2</td>\n          <td>&ndash;10</td>\n          <td>&mdash;</td>\n          <td>&mdash;</td>\n          <td>45 lb."
+    },
+    {
+      "name": "<B> </B></td>\n        <td align=\"center\" colspan=\"2\"><B>Humanoid</B></td>\n        <td align=\"center\" colspan=\"2\"><B>Nonhumanoid</B></td>\n      </tr>\n      <!-- Table 19 Row 02 -->\n      <tr>\n        <td><B>Size</B>",
+      "cost": "<B>Cost</B>",
+      "dmg_s": "<B>Weight</B>",
+      "dmg_m": "<B>Cost</B>",
+      "critical": "<B>Weight</B></td>\n      </tr>\n      <!-- Table 19 Row 03 -->\n      <tr>\n        <td>Tiny or smaller<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B>",
+      "range": "x1/2",
+      "weight": "x1/10",
+      "type": "x1",
+      "tags": "x1/10"
+    },
+    {
+      "name": "Small",
+      "cost": "x1",
+      "dmg_s": "x1/2",
+      "dmg_m": "x2",
+      "critical": "x1/2</td>\n      </tr>\n      <!-- Table 19 Row 05 -->\n      <tr>\n        <td>Medium",
+      "range": "x1",
+      "weight": "x1",
+      "type": "x2",
+      "tags": "x1"
+    },
+    {
+      "name": "Large",
+      "cost": "x2",
+      "dmg_s": "x2",
+      "dmg_m": "x4",
+      "critical": "x2</td>\n      </tr>\n      <!-- Table 19 Row 07 -->\n      <tr>\n        <td>Huge",
+      "range": "x4",
+      "weight": "x5",
+      "type": "x8",
+      "tags": "x5"
+    },
+    {
+      "name": "Gargantuan",
+      "cost": "x8",
+      "dmg_s": "x8",
+      "dmg_m": "x16",
+      "critical": "x8</td>\n      </tr>\n      <!-- Table 19 Row 09 -->\n      <tr>\n        <td>Colossal",
+      "range": "x16",
+      "weight": "x12",
+      "type": "x32",
+      "tags": "x12"
+    },
+    {
+      "name": "<B>Armor Type</B>",
+      "cost": "<B>Don</B>",
+      "dmg_s": "<B>Don Hastily</B>",
+      "dmg_m": "<B>Remove</B></td>\n      </tr>\n      <!-- Table 20 Row 03 -->\n      <tr>\n        <td>Padded, leather, hide, studded leather, or chain shirt",
+      "critical": "1 minute",
+      "range": "5 rounds",
+      "weight": "1 minute<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 20 Row 04 -->\n      <tr>\n        <td>Breastplate, scale mail, chainmail, banded mail, or splint mail",
+      "type": "4 minutes<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B>",
+      "tags": "1 minute</td>\n        <td>1 minute<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B>"
+    },
+    {
+      "name": "Half-plate or full plate",
+      "cost": "4 minutes<B><sup>\n              <font size=\"2\">2</font>\n            </sup></B>",
+      "dmg_s": "4 minutes<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B>",
+      "dmg_m": "1d4+1 minutes<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n    </table>\n    1 If the character has some help, cut this time in half. A single character doing nothing else can help one or two\n    adjacent characters. Two characters can't help each other don armor at the same\n    time.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>\n    2 The wearer must have help to don this armor. Without help, it can be donned only\n    hastily.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>\n    <font size=\"5\"><br>\n      GOODS AND SERVICES<br>\n    </font>\n    <table width=\"95%\" border=\"1\">\n      <!-- Table 21 Row 01 -->\n      <tr>\n        <td><B>Table: Goods and Services</B>",
+      "critical": "&nbsp;",
+      "range": "&nbsp;</td>\n      </tr>\n      <!-- Table 21 Row 02 -->\n      <tr>\n        <td><B>Adventuring Gear</B>",
+      "weight": "&nbsp;",
+      "type": "&nbsp;</td>\n      </tr>\n      <!-- Table 21 Row 03 -->\n      <tr>\n        <td><B>Item</B>",
+      "tags": "<B>Cost</B></td>\n        <td><B>Weight</B>"
+    },
+    {
+      "name": "Backpack (empty)",
+      "cost": "2 gp",
+      "dmg_s": "2 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 05 -->\n      <tr>\n        <td>Barrel (empty)",
+      "dmg_m": "2 gp",
+      "critical": "30 lb.</td>\n      </tr>\n      <!-- Table 21 Row 06 -->\n      <tr>\n        <td>Basket (empty)",
+      "range": "4 sp",
+      "weight": "1 lb.</td>\n      </tr>\n      <!-- Table 21 Row 07 -->\n      <tr>\n        <td>Bedroll",
+      "type": "1 sp",
+      "tags": "5 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B>"
+    },
+    {
+      "name": "Bell",
+      "cost": "1 gp",
+      "dmg_s": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 09 -->\n      <tr>\n        <td>Blanket, winter",
+      "dmg_m": "5 sp",
+      "critical": "3 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 10 -->\n      <tr>\n        <td>Block and tackle",
+      "range": "5 gp",
+      "weight": "5 lb.</td>\n      </tr>\n      <!-- Table 21 Row 11 -->\n      <tr>\n        <td>Bottle, wine, glass",
+      "type": "2 gp",
+      "tags": "&#151;"
+    },
+    {
+      "name": "Bucket (empty)",
+      "cost": "5 sp",
+      "dmg_s": "2 lb.</td>\n      </tr>\n      <!-- Table 21 Row 13 -->\n      <tr>\n        <td>Caltrops",
+      "dmg_m": "1 gp",
+      "critical": "2 lb.</td>\n      </tr>\n      <!-- Table 21 Row 14 -->\n      <tr>\n        <td>Candle",
+      "range": "1 cp",
+      "weight": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 15 -->\n      <tr>\n        <td>Canvas (sq. yd.)",
+      "type": "1 sp",
+      "tags": "1 lb."
+    },
+    {
+      "name": "Case, map or scroll",
+      "cost": "1 gp",
+      "dmg_s": "1/2 lb.</td>\n      </tr>\n      <!-- Table 21 Row 17 -->\n      <tr>\n        <td>Chain (10 ft.)",
+      "dmg_m": "30 gp",
+      "critical": "2 lb.</td>\n      </tr>\n      <!-- Table 21 Row 18 -->\n      <tr>\n        <td>Chalk, 1 piece",
+      "range": "1 cp",
+      "weight": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 19 -->\n      <tr>\n        <td>Chest (empty)",
+      "type": "2 gp",
+      "tags": "25 lb."
+    },
+    {
+      "name": "Crowbar",
+      "cost": "2 gp",
+      "dmg_s": "5 lb.</td>\n      </tr>\n      <!-- Table 21 Row 21 -->\n      <tr>\n        <td>Firewood (per day)",
+      "dmg_m": "1 cp",
+      "critical": "20 lb.</td>\n      </tr>\n      <!-- Table 21 Row 22 -->\n      <tr>\n        <td>Fishhook",
+      "range": "1 sp",
+      "weight": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 23 -->\n      <tr>\n        <td>Fishing net, 25 sq. ft.",
+      "type": "4 gp",
+      "tags": "5 lb."
+    },
+    {
+      "name": "Flask (empty)",
+      "cost": "3 cp",
+      "dmg_s": "1-1/2 lb.</td>\n      </tr>\n      <!-- Table 21 Row 25 -->\n      <tr>\n        <td>Flint and steel",
+      "dmg_m": "1 gp",
+      "critical": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 26 -->\n      <tr>\n        <td>Grappling hook",
+      "range": "1 gp",
+      "weight": "4 lb.</td>\n      </tr>\n      <!-- Table 21 Row 27 -->\n      <tr>\n        <td>Hammer",
+      "type": "5 sp",
+      "tags": "2 lb."
+    },
+    {
+      "name": "Ink (1 oz. vial)",
+      "cost": "8 gp",
+      "dmg_s": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 29 -->\n      <tr>\n        <td>Inkpen",
+      "dmg_m": "1 sp",
+      "critical": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 30 -->\n      <tr>\n        <td>Jug, clay",
+      "range": "3 cp",
+      "weight": "9 lb.</td>\n      </tr>\n      <!-- Table 21 Row 31 -->\n      <tr>\n        <td>Ladder, 10-foot",
+      "type": "5 cp",
+      "tags": "20 lb."
+    },
+    {
+      "name": "Lamp, common",
+      "cost": "1 sp",
+      "dmg_s": "1 lb.</td>\n      </tr>\n      <!-- Table 21 Row 33 -->\n      <tr>\n        <td>Lantern, bullseye",
+      "dmg_m": "12 gp",
+      "critical": "3 lb.</td>\n      </tr>\n      <!-- Table 21 Row 34 -->\n      <tr>\n        <td>Lantern, hooded",
+      "range": "7 gp",
+      "weight": "2 lb.</td>\n      </tr>\n      <!-- Table 21 Row 35 -->\n      <tr>\n        <td>Lock",
+      "type": "",
+      "tags": "1 lb."
+    },
+    {
+      "name": "Very simple",
+      "cost": "20 gp",
+      "dmg_s": "1 lb.</td>\n      </tr>\n      <!-- Table 21 Row 37 -->\n      <tr>\n        <td>Average",
+      "dmg_m": "40 gp",
+      "critical": "1 lb.</td>\n      </tr>\n      <!-- Table 21 Row 38 -->\n      <tr>\n        <td>Good",
+      "range": "80 gp",
+      "weight": "1 lb.</td>\n      </tr>\n      <!-- Table 21 Row 39 -->\n      <tr>\n        <td>Amazing",
+      "type": "150 gp",
+      "tags": "1 lb."
+    },
+    {
+      "name": "Manacles",
+      "cost": "15 gp",
+      "dmg_s": "2 lb.</td>\n      </tr>\n      <!-- Table 21 Row 41 -->\n      <tr>\n        <td>Manacles, masterwork",
+      "dmg_m": "50 gp",
+      "critical": "2 lb.</td>\n      </tr>\n      <!-- Table 21 Row 42 -->\n      <tr>\n        <td>Mirror, small steel",
+      "range": "10 gp",
+      "weight": "1/2 lb.</td>\n      </tr>\n      <!-- Table 21 Row 43 -->\n      <tr>\n        <td>Mug/Tankard, clay",
+      "type": "2 cp",
+      "tags": "1 lb."
+    },
+    {
+      "name": "Oil (1-pint flask)",
+      "cost": "1 sp",
+      "dmg_s": "1 lb.</td>\n      </tr>\n      <!-- Table 21 Row 45 -->\n      <tr>\n        <td>Paper (sheet)",
+      "dmg_m": "4 sp",
+      "critical": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 46 -->\n      <tr>\n        <td>Parchment (sheet)",
+      "range": "2 sp",
+      "weight": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 47 -->\n      <tr>\n        <td>Pick, miner's",
+      "type": "3 gp",
+      "tags": "10 lb."
+    },
+    {
+      "name": "Pitcher, clay",
+      "cost": "2 cp",
+      "dmg_s": "5 lb.</td>\n      </tr>\n      <!-- Table 21 Row 49 -->\n      <tr>\n        <td>Piton",
+      "dmg_m": "1 sp",
+      "critical": "1/2 lb.</td>\n      </tr>\n      <!-- Table 21 Row 50 -->\n      <tr>\n        <td>Pole, 10-foot",
+      "range": "2 sp",
+      "weight": "8 lb.</td>\n      </tr>\n      <!-- Table 21 Row 51 -->\n      <tr>\n        <td>Pot, iron",
+      "type": "5 sp",
+      "tags": "10 lb."
+    },
+    {
+      "name": "Pouch, belt (empty)",
+      "cost": "1 gp",
+      "dmg_s": "1/2 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 53 -->\n      <tr>\n        <td>Ram, portable",
+      "dmg_m": "10 gp",
+      "critical": "20 lb.</td>\n      </tr>\n      <!-- Table 21 Row 54 -->\n      <tr>\n        <td>Rations, trail (per day)",
+      "range": "5 sp",
+      "weight": "1 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 55 -->\n      <tr>\n        <td>Rope, hempen (50 ft.)",
+      "type": "1 gp",
+      "tags": "10 lb."
+    },
+    {
+      "name": "Rope, silk (50 ft.)",
+      "cost": "10 gp",
+      "dmg_s": "5 lb.</td>\n      </tr>\n      <!-- Table 21 Row 57 -->\n      <tr>\n        <td>Sack (empty)",
+      "dmg_m": "1 sp",
+      "critical": "1/2 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 58 -->\n      <tr>\n        <td>Sealing wax",
+      "range": "1 gp",
+      "weight": "1 lb.</td>\n      </tr>\n      <!-- Table 21 Row 59 -->\n      <tr>\n        <td>Sewing needle",
+      "type": "5 sp",
+      "tags": "&#151;"
+    },
+    {
+      "name": "Signal whistle",
+      "cost": "8 sp",
+      "dmg_s": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 61 -->\n      <tr>\n        <td>Signet ring",
+      "dmg_m": "5 gp",
+      "critical": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 62 -->\n      <tr>\n        <td>Sledge",
+      "range": "1 gp",
+      "weight": "10 lb.</td>\n      </tr>\n      <!-- Table 21 Row 63 -->\n      <tr>\n        <td>Soap (per lb.)",
+      "type": "5 sp",
+      "tags": "1 lb."
+    },
+    {
+      "name": "Spade or shovel",
+      "cost": "2 gp",
+      "dmg_s": "8 lb.</td>\n      </tr>\n      <!-- Table 21 Row 65 -->\n      <tr>\n        <td>Spyglass",
+      "dmg_m": "1,000 gp",
+      "critical": "1 lb.</td>\n      </tr>\n      <!-- Table 21 Row 66 -->\n      <tr>\n        <td>Tent",
+      "range": "10 gp",
+      "weight": "20 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 67 -->\n      <tr>\n        <td>Torch",
+      "type": "1 cp",
+      "tags": "1 lb."
+    },
+    {
+      "name": "Vial, ink or potion",
+      "cost": "1 gp",
+      "dmg_s": "1/10 lb.</td>\n      </tr>\n      <!-- Table 21 Row 69 -->\n      <tr>\n        <td>Waterskin",
+      "dmg_m": "1 gp",
+      "critical": "4 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 70 -->\n      <tr>\n        <td>Whetstone",
+      "range": "2 cp",
+      "weight": "1 lb.</td>\n      </tr>\n      <!-- Table 21 Row 71 -->\n      <tr>\n        <td><B>Special Substances and Items</B>",
+      "type": "&nbsp;",
+      "tags": "&nbsp;"
+    },
+    {
+      "name": "<B>Item</B>",
+      "cost": "<B>Cost</B>",
+      "dmg_s": "<B>Weight</B></td>\n      </tr>\n      <!-- Table 21 Row 73 -->\n      <tr>\n        <td>Acid (flask)",
+      "dmg_m": "10 gp",
+      "critical": "1 lb.</td>\n      </tr>\n      <!-- Table 21 Row 74 -->\n      <tr>\n        <td>Alchemist's fire (flask)",
+      "range": "20 gp",
+      "weight": "1 lb.</td>\n      </tr>\n      <!-- Table 21 Row 75 -->\n      <tr>\n        <td>Antitoxin (vial)",
+      "type": "50 gp",
+      "tags": "&#151;"
+    },
+    {
+      "name": "Everburning torch",
+      "cost": "110 gp",
+      "dmg_s": "1 lb.</td>\n      </tr>\n      <!-- Table 21 Row 77 -->\n      <tr>\n        <td>Holy water (flask)",
+      "dmg_m": "25 gp",
+      "critical": "1 lb.</td>\n      </tr>\n      <!-- Table 21 Row 78 -->\n      <tr>\n        <td>Smokestick",
+      "range": "20 gp",
+      "weight": "1/2 lb.</td>\n      </tr>\n      <!-- Table 21 Row 79 -->\n      <tr>\n        <td>Sunrod",
+      "type": "2 gp",
+      "tags": "1 lb."
+    },
+    {
+      "name": "Tanglefoot bag",
+      "cost": "50 gp",
+      "dmg_s": "4 lb.</td>\n      </tr>\n      <!-- Table 21 Row 81 -->\n      <tr>\n        <td>Thunderstone",
+      "dmg_m": "30 gp",
+      "critical": "1 lb.</td>\n      </tr>\n      <!-- Table 21 Row 82 -->\n      <tr>\n        <td>Tindertwig",
+      "range": "1 gp",
+      "weight": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 83 -->\n      <tr>\n        <td><B>Tools and Skill Kits</B>",
+      "type": "&nbsp;",
+      "tags": "&nbsp;"
+    },
+    {
+      "name": "<B>Item</B>",
+      "cost": "<B>Cost</B>",
+      "dmg_s": "<B>Weight</B></td>\n      </tr>\n      <!-- Table 21 Row 85 -->\n      <tr>\n        <td>Alchemist's lab",
+      "dmg_m": "500 gp",
+      "critical": "40 lb.</td>\n      </tr>\n      <!-- Table 21 Row 86 -->\n      <tr>\n        <td>Artisan's tools",
+      "range": "5 gp",
+      "weight": "5 lb.</td>\n      </tr>\n      <!-- Table 21 Row 87 -->\n      <tr>\n        <td>Artisan's tools, masterwork",
+      "type": "55 gp",
+      "tags": "5 lb."
+    },
+    {
+      "name": "Climber's kit",
+      "cost": "80 gp",
+      "dmg_s": "5 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 89 -->\n      <tr>\n        <td>Disguise kit",
+      "dmg_m": "50 gp",
+      "critical": "8 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 90 -->\n      <tr>\n        <td>Healer's kit",
+      "range": "50 gp",
+      "weight": "1 lb.</td>\n      </tr>\n      <!-- Table 21 Row 91 -->\n      <tr>\n        <td>Holly and mistletoe",
+      "type": "&#151;",
+      "tags": "&#151;"
+    },
+    {
+      "name": "Holy symbol, wooden",
+      "cost": "1 gp",
+      "dmg_s": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 93 -->\n      <tr>\n        <td>Holy symbol, silver",
+      "dmg_m": "25 gp",
+      "critical": "1 lb.</td>\n      </tr>\n      <!-- Table 21 Row 94 -->\n      <tr>\n        <td>Hourglass",
+      "range": "25 gp",
+      "weight": "1 lb.</td>\n      </tr>\n      <!-- Table 21 Row 95 -->\n      <tr>\n        <td>Magnifying glass",
+      "type": "100 gp",
+      "tags": "&#151;"
+    },
+    {
+      "name": "Musical instrument, common",
+      "cost": "5 gp",
+      "dmg_s": "3 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 97 -->\n      <tr>\n        <td>Musical instrument, masterwork",
+      "dmg_m": "100 gp",
+      "critical": "3 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 98 -->\n      <tr>\n        <td>Scale, merchant's",
+      "range": "2 gp",
+      "weight": "1 lb.</td>\n      </tr>\n      <!-- Table 21 Row 99 -->\n      <tr>\n        <td>Spell component pouch",
+      "type": "5 gp",
+      "tags": "2 lb."
+    },
+    {
+      "name": "Spellbook, wizard's (blank)",
+      "cost": "15 gp",
+      "dmg_s": "3 lb.</td>\n      </tr>\n      <!-- Table 21 Row 101 -->\n      <tr>\n        <td>Thieves' tools",
+      "dmg_m": "30 gp",
+      "critical": "1 lb.</td>\n      </tr>\n      <!-- Table 21 Row 102 -->\n      <tr>\n        <td>Thieves' tools, masterwork",
+      "range": "100 gp",
+      "weight": "2 lb.</td>\n      </tr>\n      <!-- Table 21 Row 103 -->\n      <tr>\n        <td>Tool, masterwork",
+      "type": "50 gp",
+      "tags": "1 lb."
+    },
+    {
+      "name": "Water clock",
+      "cost": "1,000 gp",
+      "dmg_s": "200 lb.</td>\n      </tr>\n      <!-- Table 21 Row 105 -->\n      <tr>\n        <td><B>Clothing</B>",
+      "dmg_m": "&nbsp;",
+      "critical": "&nbsp;</td>\n      </tr>\n      <!-- Table 21 Row 106 -->\n      <tr>\n        <td><B>Item</B>",
+      "range": "<B>Cost</B>",
+      "weight": "<B>Weight</B></td>\n      </tr>\n      <!-- Table 21 Row 107 -->\n      <tr>\n        <td>Artisan's outfit",
+      "type": "1 gp",
+      "tags": "4 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B>"
+    },
+    {
+      "name": "Cleric's vestments",
+      "cost": "5 gp",
+      "dmg_s": "6 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 109 -->\n      <tr>\n        <td>Cold weather outfit",
+      "dmg_m": "8 gp",
+      "critical": "7 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 110 -->\n      <tr>\n        <td>Courtier's outfit",
+      "range": "30 gp",
+      "weight": "6 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 111 -->\n      <tr>\n        <td>Entertainer's outfit",
+      "type": "3 gp",
+      "tags": "4 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B>"
+    },
+    {
+      "name": "Explorer's outfit",
+      "cost": "10 gp",
+      "dmg_s": "8 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 113 -->\n      <tr>\n        <td>Monk's outfit",
+      "dmg_m": "5 gp",
+      "critical": "2 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 114 -->\n      <tr>\n        <td>Noble's outfit",
+      "range": "75 gp",
+      "weight": "10 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 115 -->\n      <tr>\n        <td>Peasant's outfit",
+      "type": "1 sp",
+      "tags": "2 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B>"
+    },
+    {
+      "name": "Royal outfit",
+      "cost": "200 gp",
+      "dmg_s": "15 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 117 -->\n      <tr>\n        <td>Scholar's outfit",
+      "dmg_m": "5 gp",
+      "critical": "6 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 118 -->\n      <tr>\n        <td>Traveler's outfit",
+      "range": "1 gp",
+      "weight": "5 lb.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 119 -->\n      <tr>\n        <td><B>Food, Drink, and Lodging</B>",
+      "type": "&nbsp;",
+      "tags": "&nbsp;"
+    },
+    {
+      "name": "<B>Item</B>",
+      "cost": "<B>Cost</B>",
+      "dmg_s": "<B>Weight</B></td>\n      </tr>\n      <!-- Table 21 Row 121 -->\n      <tr>\n        <td>Ale",
+      "dmg_m": "&nbsp;",
+      "critical": "&nbsp;</td>\n      </tr>\n      <!-- Table 21 Row 122 -->\n      <tr>\n        <td>Gallon",
+      "range": "2 sp",
+      "weight": "8 lb.</td>\n      </tr>\n      <!-- Table 21 Row 123 -->\n      <tr>\n        <td>Mug",
+      "type": "4 cp",
+      "tags": "1 lb."
+    },
+    {
+      "name": "Banquet (per person)",
+      "cost": "10 gp",
+      "dmg_s": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 125 -->\n      <tr>\n        <td>Bread, per loaf",
+      "dmg_m": "2 cp",
+      "critical": "1/2 lb.</td>\n      </tr>\n      <!-- Table 21 Row 126 -->\n      <tr>\n        <td>Cheese, hunk of",
+      "range": "1 sp",
+      "weight": "1/2 lb.</td>\n      </tr>\n      <!-- Table 21 Row 127 -->\n      <tr>\n        <td>Inn stay (per day)",
+      "type": "&nbsp;",
+      "tags": "&nbsp;"
+    },
+    {
+      "name": "Good",
+      "cost": "2 gp",
+      "dmg_s": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 129 -->\n      <tr>\n        <td>Common",
+      "dmg_m": "5 sp",
+      "critical": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 130 -->\n      <tr>\n        <td>Poor",
+      "range": "2 sp",
+      "weight": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 131 -->\n      <tr>\n        <td>Meals (per day)",
+      "type": "&nbsp;",
+      "tags": "&nbsp;"
+    },
+    {
+      "name": "Good",
+      "cost": "5 sp",
+      "dmg_s": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 133 -->\n      <tr>\n        <td>Common",
+      "dmg_m": "3 sp",
+      "critical": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 134 -->\n      <tr>\n        <td>Poor",
+      "range": "1 sp",
+      "weight": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 135 -->\n      <tr>\n        <td>Meat, chunk of",
+      "type": "3 sp",
+      "tags": "1/2 lb."
+    },
+    {
+      "name": "Wine",
+      "cost": "&nbsp;",
+      "dmg_s": "&nbsp;</td>\n      </tr>\n      <!-- Table 21 Row 137 -->\n      <tr>\n        <td>Common (pitcher)",
+      "dmg_m": "2 sp",
+      "critical": "6 lb.</td>\n      </tr>\n      <!-- Table 21 Row 138 -->\n      <tr>\n        <td>Fine (bottle)",
+      "range": "10 gp",
+      "weight": "1-1/2 lb.</td>\n      </tr>\n      <!-- Table 21 Row 139 -->\n      <tr>\n        <td><B>Mounts and Related Gear</B>",
+      "type": "&nbsp;",
+      "tags": "&nbsp;"
+    },
+    {
+      "name": "<B>Item</B>",
+      "cost": "<B>Cost</B>",
+      "dmg_s": "<B>Weight</B></td>\n      </tr>\n      <!-- Table 21 Row 141 -->\n      <tr>\n        <td>Barding",
+      "dmg_m": "&nbsp;",
+      "critical": "&nbsp;</td>\n      </tr>\n      <!-- Table 21 Row 142 -->\n      <tr>\n        <td>Medium creature",
+      "range": "x2",
+      "weight": "x1</td>\n      </tr>\n      <!-- Table 21 Row 143 -->\n      <tr>\n        <td>Large creature",
+      "type": "x4",
+      "tags": "x2"
+    },
+    {
+      "name": "Bit and bridle",
+      "cost": "2 gp",
+      "dmg_s": "1 lb.</td>\n      </tr>\n      <!-- Table 21 Row 145 -->\n      <tr>\n        <td>Dog, guard",
+      "dmg_m": "25 gp",
+      "critical": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 146 -->\n      <tr>\n        <td>Dog, riding",
+      "range": "150 gp",
+      "weight": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 147 -->\n      <tr>\n        <td>Donkey or mule",
+      "type": "8 gp",
+      "tags": "&#151;"
+    },
+    {
+      "name": "Feed (per day)",
+      "cost": "5 cp",
+      "dmg_s": "10 lb.</td>\n      </tr>\n      <!-- Table 21 Row 149 -->\n      <tr>\n        <td>Horse",
+      "dmg_m": "&nbsp;",
+      "critical": "&nbsp;</td>\n      </tr>\n      <!-- Table 21 Row 150 -->\n      <tr>\n        <td>Horse, heavy",
+      "range": "200 gp",
+      "weight": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 151 -->\n      <tr>\n        <td>Horse, light",
+      "type": "75 gp",
+      "tags": "&#151;"
+    },
+    {
+      "name": "Pony",
+      "cost": "30 gp",
+      "dmg_s": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 153 -->\n      <tr>\n        <td>Warhorse, heavy",
+      "dmg_m": "400 gp",
+      "critical": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 154 -->\n      <tr>\n        <td>Warhorse, light",
+      "range": "150 gp",
+      "weight": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 155 -->\n      <tr>\n        <td>Warpony",
+      "type": "100 gp",
+      "tags": "&#151;"
+    },
+    {
+      "name": "Saddle",
+      "cost": "&nbsp;",
+      "dmg_s": "&nbsp;</td>\n      </tr>\n      <!-- Table 21 Row 157 -->\n      <tr>\n        <td>Military",
+      "dmg_m": "20 gp",
+      "critical": "30 lb.</td>\n      </tr>\n      <!-- Table 21 Row 158 -->\n      <tr>\n        <td>Pack",
+      "range": "5 gp",
+      "weight": "15 lb.</td>\n      </tr>\n      <!-- Table 21 Row 159 -->\n      <tr>\n        <td>Riding",
+      "type": "10 gp",
+      "tags": "25 lb."
+    },
+    {
+      "name": "Saddle, Exotic",
+      "cost": "&nbsp;",
+      "dmg_s": "&nbsp;</td>\n      </tr>\n      <!-- Table 21 Row 161 -->\n      <tr>\n        <td>Military",
+      "dmg_m": "60 gp",
+      "critical": "40 lb.</td>\n      </tr>\n      <!-- Table 21 Row 162 -->\n      <tr>\n        <td>Pack",
+      "range": "15 gp",
+      "weight": "20 lb.</td>\n      </tr>\n      <!-- Table 21 Row 163 -->\n      <tr>\n        <td>Riding",
+      "type": "30 gp",
+      "tags": "30 lb."
+    },
+    {
+      "name": "Saddlebags",
+      "cost": "4 gp",
+      "dmg_s": "8 lb.</td>\n      </tr>\n      <!-- Table 21 Row 165 -->\n      <tr>\n        <td>Stabling (per day)",
+      "dmg_m": "5 sp",
+      "critical": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 166 -->\n      <tr>\n        <td><B>Transport</B>",
+      "range": "&nbsp;",
+      "weight": "&nbsp;</td>\n      </tr>\n      <!-- Table 21 Row 167 -->\n      <tr>\n        <td><B>Item</B>",
+      "type": "<B>Cost</B>",
+      "tags": "<B>Weight</B>"
+    },
+    {
+      "name": "Carriage",
+      "cost": "100 gp",
+      "dmg_s": "600 lb.</td>\n      </tr>\n      <!-- Table 21 Row 169 -->\n      <tr>\n        <td>Cart",
+      "dmg_m": "15 gp",
+      "critical": "200 lb.</td>\n      </tr>\n      <!-- Table 21 Row 170 -->\n      <tr>\n        <td>Galley",
+      "range": "30,000 gp",
+      "weight": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 171 -->\n      <tr>\n        <td>Keelboat",
+      "type": "3,000 gp",
+      "tags": "&#151;"
+    },
+    {
+      "name": "Longship",
+      "cost": "10,000 gp",
+      "dmg_s": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 173 -->\n      <tr>\n        <td>Rowboat",
+      "dmg_m": "50 gp",
+      "critical": "100 lb.</td>\n      </tr>\n      <!-- Table 21 Row 174 -->\n      <tr>\n        <td>Oar",
+      "range": "2 gp",
+      "weight": "10 lb.</td>\n      </tr>\n      <!-- Table 21 Row 175 -->\n      <tr>\n        <td>Sailing ship",
+      "type": "10,000 gp",
+      "tags": "&#151;"
+    },
+    {
+      "name": "Sled",
+      "cost": "20 gp",
+      "dmg_s": "300 lb.</td>\n      </tr>\n      <!-- Table 21 Row 177 -->\n      <tr>\n        <td>Wagon",
+      "dmg_m": "35 gp",
+      "critical": "400 lb.</td>\n      </tr>\n      <!-- Table 21 Row 178 -->\n      <tr>\n        <td>Warship",
+      "range": "25,000 gp",
+      "weight": "&#151;</td>\n      </tr>\n      <!-- Table 21 Row 179 -->\n      <tr>\n        <td><B>Spellcasting and Services</B>",
+      "type": "&nbsp;",
+      "tags": "&nbsp;"
+    },
+    {
+      "name": "<B>Service</B>",
+      "cost": "<B>Cost</B></td>\n      </tr>\n      <!-- Table 21 Row 181 -->\n      <tr>\n        <td>Coach cab",
+      "dmg_s": "3 cp per mile</td>\n      </tr>\n      <!-- Table 21 Row 182 -->\n      <tr>\n        <td>Hireling, trained",
+      "dmg_m": "3 sp per day</td>\n      </tr>\n      <!-- Table 21 Row 183 -->\n      <tr>\n        <td>Hireling, untrained",
+      "critical": "1 sp per day</td>\n      </tr>\n      <!-- Table 21 Row 184 -->\n      <tr>\n        <td>Messenger",
+      "range": "2 cp per mile</td>\n      </tr>\n      <!-- Table 21 Row 185 -->\n      <tr>\n        <td>Road or gate toll",
+      "weight": "1 cp</td>\n      </tr>\n      <!-- Table 21 Row 186 -->\n      <tr>\n        <td>Ship's passage",
+      "type": "1 sp per mile</td>\n      </tr>\n      <!-- Table 21 Row 187 -->\n      <tr>\n        <td>Spell, Tier 0",
+      "tags": "5 gp<B><sup>\n              <font size=\"2\">2</font>\n            </sup></B>"
+    },
+    {
+      "name": "Spell, Tier 1",
+      "cost": "10 gp<B><sup>\n              <font size=\"2\">2</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 189 -->\n      <tr>\n        <td>Spell, Tier 2",
+      "dmg_s": "50 gp<B><sup>\n              <font size=\"2\">2</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 190 -->\n      <tr>\n        <td>Spell, Tier 3",
+      "dmg_m": "150 gp<B><sup>\n              <font size=\"2\">2</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 191 -->\n      <tr>\n        <td>Spell, Tier 4",
+      "critical": "300 gp<B><sup>\n              <font size=\"2\">2</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 192 -->\n      <tr>\n        <td>Spell, Tier 5",
+      "range": "450 gp<B><sup>\n              <font size=\"2\">2</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 193 -->\n      <tr>\n        <td>Spell, Tier 6",
+      "weight": "650 gp<B><sup>\n              <font size=\"2\">2</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 194 -->\n      <tr>\n        <td>Spell, Tier 7",
+      "type": "900 gp<B><sup>\n              <font size=\"2\">2</font>\n            </sup></B></td>\n      </tr>\n      <!-- Table 21 Row 195 -->\n      <tr>\n        <td>Spell, Tier 8",
+      "tags": "1200 gp<B><sup>\n              <font size=\"2\">2</font>\n            </sup></B>"
+    },
+    {
+      "name": "Spell, Tier 9",
+      "cost": "1500 gp<B><sup>\n              <font size=\"2\">2</font>\n            </sup></B></td>\n      </tr>\n    </table>\n    &#151; No weight, or no weight worth noting.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>\n    1 These items weigh one-quarter this amount when made for Small characters. Containers for Small characters also\n    carry one-quarter the normal amount.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>\n    2 See spell description for additional costs. If the additional costs put the spell's total cost above 3,000 gp,\n    that spell is not generally available.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>\n    <br>\n    ADVENTURING GEAR<br>\n    few of the pieces of adventuring gear found on Table: Goods and Services are described below, along with any special\n    benefits they confer on the user (&#147;you&#148;).<br>\n    <B>Caltrops:</B> A caltrop is a four-pronged iron spike crafted so that one prong faces up no matter how the caltrop\n    comes to rest. You scatter caltrops on the ground in the hope that your enemies step on them or are at least forced\n    to slow down to avoid them. One 2- pound bag of caltrops covers an area 5 feet square.<br>\n    Each time a creature moves into an area covered by caltrops (or spends a round fighting while standing in such an\n    area), it might step on one. The caltrops make an attack roll (using caltrops skill if possessed, counts as weapon)\n    against the creature. For this attack, the creature's shield, armor, and deflection bonuses do not count. If the\n    creature is wearing shoes or other footwear, it gets a +2 armor bonus to AC. If the caltrops succeed on the attack,\n    the creature has stepped on one. The caltrop deals 1 point of damage, and the creature's speed is reduced by\n    one-half because its foot is wounded. This movement penalty lasts for 24 hours, or until the creature is\n    successfully treated with a DC 15 Heal check, or until it receives at least 1 point of magical curing. A charging or\n    running creature must immediately stop if it steps on a caltrop. Any creature moving at half speed or slower can\n    pick its way through a bed of caltrops with no trouble.<br>\n    Caltrops may not be effective against unusual opponents.<br>\n    <B>Candle:</B> A candle dimly illuminates a 5-foot radius and burns for 1 hour.<br>\n    <B>Chain:</B> Chain has hardness 10 and 5 hit points. It can be burst with a DC 26 Strength check.<br>\n    <B>Crowbar:</B> A crowbar it grants a +2 circumstance bonus on Strength checks made for such purposes. If used in\n    combat, treat a crowbar as a one-handed improvised weapon that deals bludgeoning damage equal to that of a club of\n    its size.<br>\n    <B>Flint and Steel:</B> Lighting a torch with flint and steel is a full-round action, and lighting any other fire\n    with them takes at least that long.<br>\n    <B>Grappling Hook:</B> Throwing a grappling hook successfully requires a Use Rope check (DC 10, +2 per 10 feet of\n    distance thrown).<br>\n    <B>Hammer:</B> If a hammer is used in combat, treat it as a one-handed improvised weapon that deals bludgeoning\n    damage equal to that of a spiked gauntlet of its size.<br>\n    <B>Ink:</B> This is black ink. You can buy ink in other colors, but it costs twice as much.<br>\n    <B>Jug, Clay:</B> This basic ceramic jug is fitted with a stopper and holds 1 gallon of liquid.<br>\n    <B>Lamp, Common:</B> A lamp clearly illuminates a 15-foot radius, provides shadowy illumination out to a 30-foot\n    radius, and burns for 6 hours on a pint of oil. You can carry a lamp in one hand. <br>\n    <B>Lantern, Bullseye:</B> A bullseye lantern provides clear illumination in a 60-foot cone and shadowy illumination\n    in a 120-foot cone. It burns for 6 hours on a pint of oil. You can carry a bullseye lantern in one hand.<br>\n    <B>Lantern, Hooded:</B> A hooded lantern clearly illuminates a 30-foot radius and provides shadowy illumination in a\n    60-foot radius. It burns for 6 hours on a pint of oil. You can carry a hooded lantern in one hand.<br>\n    <B>Lock:</B> The DC to open a lock with the Open Lock skill depends on the lock's quality: simple (DC 20), average\n    (DC 25), good (DC 30), or superior (DC 40).<br>\n    <B>Manacles and Manacles, Masterwork:</B> Manacles can bind a Medium creature. A manacled creature can use the\n    Escape Artist skill to slip free (DC 30, or DC 35 for masterwork manacles). Breaking the manacles requires a\n    Strength check (DC 26, or DC 28 for masterwork manacles). Manacles have hardness 10 and 10 hit points.<br>\n    Most manacles have locks; add the cost of the lock you want to the cost of the manacles.<br>\n    For the same cost, you can buy manacles for a Small creature.<br>\n    For a Large creature, manacles cost ten times the indicated amount, and for a Huge creature, one hundred times this\n    amount. Gargantuan, Colossal, Tiny, Diminutive, and Fine creatures can be held only by specially made manacles.<br>\n    <B>Oil:</B> A pint of oil burns for 6 hours in a lantern. You can use a flask of oil as a splash weapon. Use the\n    rules for alchemist's fire, except that it takes a full round action to prepare a flask with a fuse. Once it is\n    thrown, there is a 50% chance of the flask igniting successfully.<br>\n    You can pour a pint of oil on the ground to cover an area 5 feet square, provided that the surface is smooth. If\n    lit, the oil burns for 2 rounds and deals 1d3 points of fire damage to each creature in the area.<br>\n    <B>Ram, Portable:</B> This iron-shod wooden beam gives you a +2 circumstance bonus on Strength checks made to break\n    open a door and it allows a second person to help you without having to roll, increasing your bonus by 2.<br>\n    <B>Rope, Hempen:</B> This rope has 2 hit points and can be burst with a DC 23 Strength check.<br>\n    <B>Rope, Silk:</B> This rope has 4 hit points and can be burst with a DC 24 Strength check. It is so supple that it\n    provides a +2 circumstance bonus on Use Rope checks.<br>\n    <B>Spyglass:</B> Objects viewed through a spyglass are magnified to twice their size.<br>\n    <B>Torch:</B> A torch burns for 1 hour, clearly illuminating a 20-foot radius and providing shadowy illumination out\n    to a 40- foot radius. If a torch is used in combat, treat it as a one-handed improvised weapon that deals\n    bludgeoning damage equal to that of a gauntlet of its size, plus 1 point of fire damage.<br>\n    <B>Vial:</B> A vial holds 1 ounce of liquid. The stoppered container usually is no more than 1 inch wide and 3\n    inches high.<br>\n    <br>\n    SPECIAL SUBSTANCES AND ITEMS<br>\n    Any of these substances except for the everburning torch and holy water can be made by a character with the Craft\n    (alchemy) skill.<br>\n    <B>Acid: </B>You can throw a flask of acid as a splash weapon. Treat this attack as a ranged touch attack with a\n    range increment of 10 feet. A direct hit deals 1d6 points of acid damage. Every creature within 5 feet of the point\n    where the acid hits takes 1 point of acid damage from the splash.<br>\n    <B>Alchemist's Fire:</B> You can throw a flask of alchemist's fire as a splash weapon. Treat this attack as a ranged\n    touch attack with a range increment of 10 feet.<br>\n    A direct hit deals 1d6 points of fire damage. Every creature within 5 feet of the point where the flask hits takes 1\n    point of fire damage from the splash. On the round following a direct hit, the target takes an additional 1d6 points\n    of damage. If desired, the target can use a full-round action to attempt to extinguish the flames before taking this\n    additional damage. Extinguishing the flames requires a DC 15 Reflex save. Rolling on the ground provides the target\n    a +2 bonus on the save. Leaping into a lake or magically extinguishing the flames automatically smothers the\n    fire.<br>\n    <B>Antitoxin:</B> If you drink antitoxin, you get a +5 alchemical bonus on Fortitude saving throws against poison\n    for 1 hour.<br>\n    <B>Everburning Torch:</B> This otherwise normal torch has a <I>continual flame </I>spell cast upon it. An\n    everburning torch clearly illuminates a 20-foot radius and provides shadowy illumination out to a 40-foot\n    radius.<br>\n    <B>Holy Water:</B> Holy water damages undead creatures and evil outsiders almost as if it were acid. A flask of holy\n    water can be thrown as a splash weapon.<br>\n    Treat this attack as a ranged touch attack with a range increment of 10 feet. A flask breaks if thrown against the\n    body of a corporeal creature, but to use it against an incorporeal creature, you must open the flask and pour the\n    holy water out onto the target. Thus, you can douse an incorporeal creature with holy water only if you are adjacent\n    to it. Doing so is a ranged touch attack that does not provoke attacks of opportunity.<br>\n    A direct hit by a flask of holy water deals 2d4 points of damage to an undead creature or an evil outsider. Each\n    such creature within 5 feet of the point where the flask hits takes 1 point of damage from the splash.<br>\n    Temples to good deities sell holy water at cost (making no profit).<br>\n    <B>Smokestick:</B> This alchemically treated wooden stick instantly creates thick, opaque smoke when ignited. The\n    smoke fills a 10- foot cube (treat the effect as a <I>fog cloud </I>spell, except that a moderate or stronger wind\n    dissipates the smoke in 1 round). The stick is consumed after 1 round, and the smoke dissipates naturally.<br>\n    <B>Sunrod:</B> This 1-foot-long, gold-tipped, iron rod glows brightly when struck. It clearly illuminates a 30-foot\n    radius and provides shadowy illumination in a 60-foot radius. It glows for 6 hours, after which the gold tip is\n    burned out and worthless.<br>\n    <B>Tanglefoot Bag:</B> When you throw a tanglefoot bag at a creature (as a ranged touch attack with a range\n    increment of 10 feet), the bag comes apart and the goo bursts out, entangling the target and then becoming tough and\n    resilient upon exposure to air. An entangled creature takes a &#150;2 penalty on attack rolls and a &#150;4 penalty\n    to Dexterity and must make a DC 15 Reflex save or be glued to the floor, unable to move. Even on a successful save,\n    it can move only at half speed. Huge or larger creatures are unaffected by a tanglefoot bag. A flying creature is\n    not stuck to the floor, but it must make a DC 15 Reflex save or be unable to fly (assuming it uses its wings to fly)\n    and fall to the ground. A tanglefoot bag does not function underwater.<br>\n    A creature that is glued to the floor (or unable to fly) can break free by making a DC 17 Strength check or by\n    dealing 15 points of damage to the goo with a slashing weapon. A creature trying to scrape goo off itself, or\n    another creature assisting, does not need to make an attack roll; hitting the goo is automatic, after which the\n    creature that hit makes a damage roll to see how much of the goo was scraped off. Once free, the creature can move\n    (including flying) at half speed. A character capable of spellcasting who is bound by the goo must make a DC 15\n    Concentration check to cast a spell. The goo becomes brittle and fragile after 2d4 rounds, cracking apart and losing\n    its effectiveness. An application of <I>universal solvent</I> to a stuck creature dissolves the alchemical goo\n    immediately.<br>\n    <B>Thunderstone:</B> You can throw this stone as a ranged attack with a range increment of 20 feet. When it strikes\n    a hard surface (or is struck hard), it creates a deafening bang that is treated as a sonic attack. Each creature\n    within a 10-foot-radius spread must make a DC 15 Fortitude save or be deafened for 1 hour. A deafened creature, in\n    addition to the obvious effects, takes a &#150;4 penalty on initiative and has a 20% chance to miscast and lose any\n    spell with a verbal component that it tries to cast.<br>\n    Since you don't need to hit a specific target, you can simply aim at a particular 5-foot square. Treat the target\n    square as AC 5.<br>\n    <B>Tindertwig:</B> The alchemical substance on the end of this small, wooden stick ignites when struck against a\n    rough surface. Creating a flame with a tindertwig is much faster than creating a flame with flint and steel (or a\n    magnifying glass) and tinder. Lighting a torch with a tindertwig is a standard action (rather than a full-round\n    action), and lighting any other fire with one is at least a standard action.<br>\n    <br>\n    TOOLS AND SKILL KITS<br>\n    <B>Alchemist's Lab:</B> An alchemist's lab always has the perfect tool for making alchemical items, so it provides a\n    +2 circumstance bonus on Craft (alchemy) checks. It has no bearing on the costs related to the Craft (alchemy)\n    skill. Without this lab, a character with the Craft (alchemy) skill is assumed to have enough tools to use the skill\n    but not enough to get the +2 bonus that the lab provides.<br>\n    <B>Artisan's Tools:</B> These special tools include the items needed to pursue any craft. Without them, you have to\n    use improvised tools (&#150;2 penalty on Craft checks), if you can do the job at all.<br>\n    <B>Artisan's Tools, Masterwork:</B> These tools serve the same purpose as artisan's tools (above), but masterwork\n    artisan's tools are the perfect tools for the job, so you get a +2 circumstance bonus on Craft checks made with\n    them.<br>\n    <B>Climber's Kit:</B> This is the perfect tool for climbing and gives you a +2 circumstance bonus on Climb\n    checks.<br>\n    <B>Disguise Kit:</B> The kit is the perfect tool for disguise and provides a +2 circumstance bonus on Disguise\n    checks. A disguise kit is exhausted after ten uses.<br>\n    <B>Healer's Kit: </B>It is the perfect tool for healing and provides a +2 circumstance bonus on Heal checks. A\n    healer's kit is exhausted after ten uses.<br>\n    <B>Holy Symbol, Silver or Wooden: </B>A holy symbol focuses positive energy. A cleric or paladin uses it as the\n    focus for his spells and as a tool for turning undead. Each religion has its own holy symbol.<br>\n    <I>Unholy Symbols: </I>An unholy symbol is like a holy symbol except that it focuses negative energy and is used by\n    evil clerics (or by neutral clerics who want to cast evil spells or command undead).<br>\n    <B>Magnifying Glass:</B> This simple lens allows a closer look at small objects. It is also useful as a substitute\n    for flint and steel when starting fires. Lighting a fire with a magnifying glass requires light as bright as\n    sunlight to focus, tinder to ignite, and at least a full-round action. A magnifying glass grants a +2 circumstance\n    bonus on Appraise checks<br>\n    involving any item that is small or highly detailed.<br>\n    <B>Musical Instrument, Common or Masterwork:</B> A masterwork instrument grants a +2 circumstance bonus on Perform\n    checks involving its use.<br>\n    <B>Scale, Merchant's: </B>A scale grants a +2 circumstance bonus on Appraise checks involving items that are valued\n    by weight, including anything made of precious metals.<br>\n    <B>Spell Component Pouch: </B>A spellcaster with a spell component pouch is assumed to have all the material\n    components and focuses needed for spellcasting, except for those components that have a specific cost, divine\n    focuses, and focuses that wouldn't fit in a pouch.<br>\n    <B>Spellbook, Wizard's (Blank):</B> A spellbook has 100 pages of parchment, and each spell takes up one page per\n    tier (one page each for 0-tier spells).<br>\n    <B>Thieves' Tools: </B>This kit contains the tools you need to use the Disable Device and Open Lock skills. Without\n    these tools, you must improvise tools, and you take a &#150;2 circumstance penalty on Disable Device and Open Locks\n    checks.<br>\n    <B>Thieves' Tools, Masterwork:</B> This kit contains extra tools and tools of better make, which grant a +2\n    circumstance bonus on Disable Device and Open Lock checks.<br>\n    <B>Tool, Masterwork:</B> This well-made item is the perfect tool for the job. It grants a +2 circumstance bonus on a\n    related skill check (if any). Bonuses provided by multiple masterwork items used toward the same skill check do not\n    stack.<br>\n    <B>Water Clock: </B>This large, bulky contrivance gives the time accurate to within half an hour per day since it\n    was last set. It requires a source of water, and it must be kept still because it marks time by the regulated flow\n    of droplets of water.<br>\n    <br>\n    CLOTHING<br>\n    <B>Artisan's Outfit: </B>This outfit includes a shirt with buttons, a skirt or pants with a drawstring, shoes, and\n    perhaps a cap or hat. It may also include a belt or a leather or cloth apron for carrying tools.<br>\n    <B>Cleric's Vestments: </B>These ecclesiastical clothes are for performing priestly functions, not for\n    adventuring.<br>\n    <B>Cold Weather Outfit:</B> A cold weather outfit includes a wool coat, linen shirt, wool cap, heavy cloak, thick\n    pants or skirt, and<br>\n    boots. This outfit grants a +5 circumstance bonus on Fortitude saving throws against exposure to cold weather.<br>\n    <B>Courtier's Outfit:</B> This outfit includes fancy, tailored clothes in whatever fashion happens to be the current\n    style in the courts of the nobles. Anyone trying to influence nobles or courtiers while wearing street dress will\n    have a hard time of it (&#150;2 penalty on Charisma-based skill checks to influence such individuals). If you wear\n    this outfit without jewelry (costing an additional 50 gp), you look like an out-of-place commoner.<br>\n    <B>Entertainer's Outfit:</B> This set of flashy, perhaps even gaudy, clothes is for entertaining. While the outfit\n    looks whimsical, its practical design lets you tumble, dance, walk a tightrope, or just run (if the audience turns\n    ugly).<br>\n    <B>Explorer's Outfit:</B> This is a full set of clothes for someone who never knows what to expect. It includes\n    sturdy boots, leather breeches or a skirt, a belt, a shirt (perhaps with a vest or jacket), gloves, and a cloak.\n    Rather than a leather skirt, a leather overtunic may be worn over a cloth skirt. The clothes have plenty of pockets\n    (especially the cloak). The outfit also includes any extra items you might need, such as a scarf or a wide-brimmed\n    hat.<br>\n    <B>Monk's Outfit:</B> This simple outfit includes sandals, loose breeches, and a loose shirt, and is all bound\n    together with sashes. The outfit is designed to give you maximum mobility, and it's made of high-quality fabric. You\n    can hide small weapons in pockets hidden in the folds, and the sashes are strong enough to serve as short ropes.<br>\n    <B>Noble's Outfit:</B> This set of clothes is designed specifically to be expensive and to show it. Precious metals\n    and gems are worked into the clothing. To fit into the noble crowd, every would-be noble also needs a signet ring\n    (see Adventuring Gear, above) and jewelry (worth at least 100 gp).<br>\n    <B>Peasant's Outfit:</B> This set of clothes consists of a loose shirt and baggy breeches, or a loose shirt and\n    skirt or overdress. Cloth wrappings are used for shoes.<br>\n    <B>Royal Outfit:</B> This is just the clothing, not the royal scepter, crown, ring, and other accoutrements. Royal\n    clothes are ostentatious, with gems, gold, silk, and fur in abundance.<br>\n    <B>Scholar's Outfit: </B>Perfect for a scholar, this outfit includes a robe, a belt, a cap, soft shoes, and possibly\n    a cloak.<br>\n    <B>Traveler's Outfit:</B> This set of clothes consists of boots, a wool skirt or breeches, a sturdy belt, a shirt\n    (perhaps with a vest or jacket), and an ample cloak with a hood.<br>\n    <br>\n    FOOD, DRINK, AND LODGING<br>\n    <B>Inn:</B> Poor accommodations at an inn amount to a place on the floor near the hearth. Common accommodations\n    consist of a place on a raised, heated floor, the use of a blanket and a pillow. Good accommodations consist of a\n    small, private room with one bed, some amenities, and a covered chamber pot in the corner.<br>\n    <B>Meals:</B> Poor meals might be composed of bread, baked turnips, onions, and water. Common meals might consist of\n    bread, chicken stew, carrots, and watered-down ale or wine. Good meals might be composed of bread and pastries,\n    beef, peas, and ale or wine.<br>\n    <br>\n    MOUNTS AND RELATED GEAR<br>\n    <B>Barding, Medium Creature and Large Creature: </B>Barding is a type of armor that covers the head, neck, chest,\n    body, and possibly legs of a horse or other mount. Barding made of medium or heavy armor provides better protection\n    than light barding, but at the expense of speed. Barding can be made of any of the armor types found on Table: Armor\n    and Shields.<br>\n    Armor for a horse (a Large nonhumanoid creature) costs four times as much as armor for a human (a Medium humanoid\n    creature) and also weighs twice as much as the armor found on Table: Armor and Shields (see Armor for Unusual\n    Creatures). If the barding is for a pony or other Medium mount, the cost is only double, and the weight is the same\n    as for Medium armor worn by a humanoid. Medium or heavy barding slows a mount that wears it, as shown on the table\n    below.<br>\n    <br>\n    <table width=\"95%\" border=\"1\">\n      <!-- Table 22 Row 01 -->\n      <tr>\n        <td><B> </B></td>\n        <td align=\"center\" colspan=\"3\"><B>&#151;&#151;&#151;&#151; Base Speed &#151;&#150;&#150;&#151;&#151;</B></td>\n      </tr>\n      <!-- Table 22 Row 02 -->\n      <tr>\n        <td><B>Barding</B>",
+      "dmg_s": "<B>(40 ft.)</B>",
+      "dmg_m": "<B>(50 ft.)</B>",
+      "critical": "<B>(60 ft.)</B></td>\n      </tr>\n      <!-- Table 22 Row 03 -->\n      <tr>\n        <td>Medium",
+      "range": "30 ft.",
+      "weight": "35 ft.",
+      "type": "40 ft.</td>\n      </tr>\n      <!-- Table 22 Row 04 -->\n      <tr>\n        <td>Heavy",
+      "tags": "30 ft.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n        <td>35 ft.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B></td>\n        <td>40 ft.<B><sup>\n              <font size=\"2\">1</font>\n            </sup></B>"
+    }
+  ]
+}
