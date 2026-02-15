@@ -1940,6 +1940,13 @@ const gameData = {
             "tags": "Stagger"
         },
         {
+            "name": "Hammer, light",
+            "cost": "1 gp",
+            "dmg_m": "1d4",
+            "weight": "2 lb.",
+            "tags": "Thrown, Stagger"
+        },
+        {
             "name": "Morningstar",
             "cost": "8 gp",
             "dmg_m": "1d8",
@@ -1996,11 +2003,81 @@ const gameData = {
             "tags": "Finesse, Impale"
         },
         {
-            "name": "Greatsword",
-            "cost": "50 gp",
-            "dmg_m": "2d6",
+            "name": "Greataxe",
+            "cost": "20 gp",
+            "dmg_m": "1d12",
+            "weight": "12 lb.",
+            "tags": "Two-Handed, Brutal, Bleed, Sunder"
+        },
+        {
+            "name": "Battleaxe",
+            "cost": "10 gp",
+            "dmg_m": "1d8",
+            "weight": "6 lb.",
+            "tags": "Brutal, Bleed, Sunder"
+        },
+        {
+            "name": "Warhammer",
+            "cost": "12 gp",
+            "dmg_m": "1d8",
+            "weight": "5 lb.",
+            "tags": "Bash, Stagger"
+        },
+        {
+            "name": "Longbow",
+            "cost": "75 gp",
+            "dmg_m": "1d8",
+            "weight": "3 lb.",
+            "tags": "Two-Handed, Impale, Piercing(2)"
+        },
+        {
+            "name": "Shortsword",
+            "cost": "10 gp",
+            "dmg_m": "1d6",
+            "weight": "2 lb.",
+            "tags": "Finesse, Reliable, Bleed, Impale"
+        },
+        {
+            "name": "Handaxe",
+            "cost": "6 gp",
+            "dmg_m": "1d6",
+            "weight": "3 lb.",
+            "tags": "Thrown, Bleed"
+        },
+        {
+            "name": "Greatclub",
+            "cost": "5 gp",
+            "dmg_m": "1d10",
             "weight": "8 lb.",
-            "tags": "Two-Handed, Reliable, Bleed"
+            "tags": "Two-Handed, Bash, Stagger"
+        },
+        {
+            "name": "Halberd",
+            "cost": "10 gp",
+            "dmg_m": "1d10",
+            "weight": "12 lb.",
+            "tags": "Two-Handed, Reach, Piercing(2), Bleed, Impale, Sunder"
+        },
+        {
+            "name": "Glaive",
+            "cost": "8 gp",
+            "dmg_m": "1d10",
+            "weight": "10 lb.",
+            "tags": "Two-Handed, Reach, Bleed, Sunder"
+        },
+        {
+            "name": "Falchion",
+            "cost": "75 gp",
+            "dmg_m": "2d4",
+            "weight": "8 lb.",
+            "tags": "Two-Handed, Bleed"
+        },
+        {
+            "name": "Scythe",
+            "cost": "18 gp",
+            "dmg_m": "2d4",
+            "weight": "10 lb.",
+            "tags": "Two-Handed, Bleed, Sunder, Trip"
         },
         {
             "name": "Leather Armor",
@@ -2017,10 +2094,38 @@ const gameData = {
             "tags": "Light Armor"
         },
         {
+            "name": "Studded leather",
+            "cost": "25 gp",
+            "dmg_m": "+3 AC",
+            "weight": "20 lb.",
+            "tags": "Light Armor"
+        },
+        {
+            "name": "Breastplate",
+            "cost": "200 gp",
+            "dmg_m": "+5 AC",
+            "weight": "30 lb.",
+            "tags": "Medium Armor"
+        },
+        {
+            "name": "Full plate",
+            "cost": "1500 gp",
+            "dmg_m": "+8 AC",
+            "weight": "50 lb.",
+            "tags": "Heavy Armor"
+        },
+        {
             "name": "Shield, light steel",
             "cost": "9 gp",
             "dmg_m": "+1 AC",
             "weight": "6 lb.",
+            "tags": "Shield"
+        },
+        {
+            "name": "Shield, heavy steel",
+            "cost": "20 gp",
+            "dmg_m": "+2 AC",
+            "weight": "15 lb.",
             "tags": "Shield"
         },
         {
@@ -2142,9 +2247,7 @@ function populateSkills() {
     Object.entries(gameData.extraordinary_skills).forEach(([name, skill]) => {
         const existing = character.skills.find(s => s.name === name);
         const nextLevel = existing ? existing.level + 1 : 1;
-        const cost = skill.increasable ? (existing ? skill.cost_xr : skill.cost_xr) : skill.cost_xr;
-        // Note: Extraordinary skills usually have flat cost or specific rules. 
-        // For now using flat cost unless specified otherwise.
+        const cost = getSkillCost(name, 'extraordinary', nextLevel);
         if (!existing || skill.increasable) {
             extList.appendChild(createSkillItem(name, cost, 'extraordinary'));
         }
@@ -2153,8 +2256,10 @@ function populateSkills() {
     // Supernatural
     Object.entries(gameData.supernatural_skills).forEach(([name, skill]) => {
         const existing = character.skills.find(s => s.name === name);
+        const nextLevel = existing ? existing.level + 1 : 1;
+        const cost = getSkillCost(name, 'supernatural', nextLevel);
         if (!existing || skill.increasable) {
-            supSpellsList.appendChild(createSkillItem(name, skill.cost_xr, 'supernatural'));
+            supSpellsList.appendChild(createSkillItem(name, cost, 'supernatural'));
         }
     });
 
@@ -2162,7 +2267,7 @@ function populateSkills() {
     gameData.spells.forEach(spell => {
         const existing = character.skills.find(s => s.name === spell.name);
         const nextLevel = existing ? existing.level + 1 : 1;
-        const cost = existing ? getSkillCost(spell.name, 'spell', nextLevel) : calculateSpellXR(spell.tier);
+        const cost = getSkillCost(spell.name, 'spell', nextLevel);
         supSpellsList.appendChild(createSkillItem(spell.name, cost, 'spell', spell.tier));
     });
 }
@@ -2172,7 +2277,8 @@ function populateCoreSkills() {
     coreList.innerHTML = '';
     Object.entries(gameData.core_skills).forEach(([name, skill]) => {
         const existing = character.skills.find(s => s.name === name);
-        const cost = skill.cost_xr;
+        const nextLevel = existing ? existing.level + 1 : 1;
+        const cost = getSkillCost(name, 'core', nextLevel);
         coreList.appendChild(createSkillItem(name, cost, 'core'));
     });
 }
@@ -2181,6 +2287,7 @@ function populateFeats() {
     const featList = document.getElementById('feats-list');
     featList.innerHTML = '';
     gameData.feats.forEach(feat => {
+        const existing = character.skills.find(s => s.name === feat.name);
         const div = document.createElement('div');
         div.className = 'skill-item';
         div.innerHTML = `
@@ -2189,7 +2296,10 @@ function populateFeats() {
                 <span class="skill-cost">Cost: ${feat.cost_xr} XR</span>
                 ${feat.prerequisites ? `<small class="prereq">Prereq: ${feat.prerequisites}</small>` : ''}
             </div>
-            <button class="btn-buy" onclick="buySkill('${feat.name}', ${feat.cost_xr}, 'feat')">Add</button>
+            <div class="skill-actions">
+                ${existing ? `<button class="btn-sell" onclick="sellSkill('${feat.name}', 'feat')">-</button>` : ''}
+                <button class="btn-buy" onclick="buySkill('${feat.name}', ${feat.cost_xr}, 'feat')">${existing ? '+' : 'Add'}</button>
+            </div>
         `;
         featList.appendChild(div);
     });
@@ -2200,6 +2310,7 @@ function populateEquipment() {
     equipList.innerHTML = '';
     gameData.weapons.forEach(w => {
         if (!w.name || w.name.includes('<B>')) return;
+        const existingIndex = character.skills.findIndex(s => s.name === w.name && s.type === 'equipment');
         const div = document.createElement('div');
         div.className = 'skill-item';
         div.innerHTML = `
@@ -2208,14 +2319,40 @@ function populateEquipment() {
                 <span class="skill-cost">${w.cost} | ${w.dmg_m} | ${w.weight}</span>
                 <small class="tags">${w.tags}</small>
             </div>
-            <button class="btn-buy" onclick="buyEquipment('${w.name}', '${w.cost}', '${w.weight}')">Buy</button>
+            <div class="skill-actions">
+                ${existingIndex !== -1 ? `<button class="btn-sell" onclick="sellEquipment(${existingIndex})">-</button>` : ''}
+                <button class="btn-buy" onclick="buyEquipment('${w.name}', '${w.cost}', '${w.weight}')">${existingIndex !== -1 ? '+' : 'Buy'}</button>
+            </div>
         `;
         equipList.appendChild(div);
     });
 }
 
 function buyEquipment(name, cost, weight) {
+    const item = gameData.weapons.find(w => w.name === name);
+    if (item && item.tags) {
+        if (item.tags.includes('Light Armor') && !character.skills.some(s => s.name === "Armor Proficiency (Light)")) {
+            alert("You need the feat 'Armor Proficiency (Light)' to use this armor.");
+            return;
+        }
+        if (item.tags.includes('Medium Armor') && !character.skills.some(s => s.name === "Armor Proficiency (Medium)")) {
+            alert("You need the feat 'Armor Proficiency (Medium)' to use this armor.");
+            return;
+        }
+        if (item.tags.includes('Heavy Armor') && !character.skills.some(s => s.name === "Armor Proficiency (Heavy)")) {
+            alert("You need the feat 'Armor Proficiency (Heavy)' to use this armor.");
+            return;
+        }
+    }
+
     character.skills.push({ name, cost, weight, type: 'equipment' });
+    populateEquipment();
+    updateUI();
+}
+
+function sellEquipment(index) {
+    character.skills.splice(index, 1);
+    populateEquipment();
     updateUI();
 }
 
@@ -2235,7 +2372,6 @@ function createSkillItem(name, cost, type, tier = null) {
     const div = document.createElement('div');
     div.className = 'skill-item';
 
-    // Check if it's already owned to show current level
     const existing = character.skills.find(s => s.name === name);
     const levelStr = existing && existing.level ? ` (Level ${existing.level})` : '';
 
@@ -2244,16 +2380,34 @@ function createSkillItem(name, cost, type, tier = null) {
             <span class="skill-name">${name}${levelStr}${tier !== null ? ` (Tier ${tier})` : ''}</span>
             <span class="skill-cost">Cost: ${cost} XR</span>
         </div>
-        <button class="btn-buy" onclick="buySkill('${name}', ${cost}, '${type}')">${existing ? 'Level Up' : 'Add'}</button>
+        <div class="skill-actions">
+            ${existing ? `<button class="btn-sell" onclick="sellSkill('${name}', '${type}')">-</button>` : ''}
+            <button class="btn-buy" onclick="buySkill('${name}', ${cost}, '${type}')">${existing ? '+' : 'Add'}</button>
+        </div>
     `;
     return div;
 }
 
 function getSkillCost(name, type, nextLevel) {
     let progressionType = 'd20_based_skill';
+    let multiplier = 1;
 
     if (type === 'spell') {
         progressionType = 'spells';
+        const spell = gameData.spells.find(s => s.name === name);
+        multiplier = spell ? (spell.tier === 0 ? 1 : spell.tier * 2) : 1;
+    } else if (type === 'core') {
+        progressionType = 'd20_based_skill';
+        multiplier = gameData.core_skills[name].cost_xr;
+    } else if (type === 'extraordinary') {
+        progressionType = 'd20_based_skill';
+        multiplier = gameData.extraordinary_skills[name].cost_xr;
+    } else if (type === 'supernatural') {
+        progressionType = 'd20_based_skill';
+        multiplier = gameData.supernatural_skills[name].cost_xr;
+    } else if (type === 'feat') {
+        const feat = gameData.feats.find(f => f.name === name);
+        return feat ? feat.cost_xr : 2;
     } else if (gameData.ordinary_skills[name]) {
         const skill = gameData.ordinary_skills[name];
         if (skill.category === 'simple') {
@@ -2262,34 +2416,16 @@ function getSkillCost(name, type, nextLevel) {
     }
 
     const progression = gameData.average_xr_progression[progressionType];
-    return progression[nextLevel] || progression[Object.keys(progression).length];
+    const currentVal = progression[nextLevel] || progression[Object.keys(progression).length];
+    const prevVal = nextLevel > 1 ? (progression[nextLevel - 1] || progression[Object.keys(progression).length]) : 0;
+
+    return (currentVal - prevVal) * multiplier;
 }
 
 function buySkill(name, cost, type) {
     const existingIndex = character.skills.findIndex(s => s.name === name);
 
-    if (type === 'core' || type === 'ordinary' || type === 'extraordinary' || type === 'supernatural') {
-        if (existingIndex !== -1) {
-            const existing = character.skills[existingIndex];
-            existing.level = (existing.level || 1) + 1;
-
-            // Re-calculate cost for next level if it's an ordinary skill (weapon) or core
-            let nextCost = cost;
-            if (type === 'ordinary') {
-                nextCost = getSkillCost(name, type, existing.level);
-            } else if (type === 'core') {
-                nextCost = gameData.core_skills[name].cost_xr;
-            }
-            // For simplicity, we add the cost of the level up
-            existing.cost += nextCost;
-            character.spentXR += nextCost;
-        } else {
-            character.skills.push({ name, cost, type, level: 1 });
-            character.spentXR += cost;
-        }
-    } else if (type === 'spell') {
-        // Spells usually bought once? Or leveled? 
-        // SRD suggests they have their own progression if leveled.
+    if (type === 'core' || type === 'ordinary' || type === 'extraordinary' || type === 'supernatural' || type === 'feat' || type === 'spell') {
         if (existingIndex !== -1) {
             const existing = character.skills[existingIndex];
             existing.level = (existing.level || 1) + 1;
@@ -2305,7 +2441,30 @@ function buySkill(name, cost, type) {
         character.spentXR += cost;
     }
 
-    populateSkills(); // Refresh costs in the list
+    populateSkills();
+    populateCoreSkills();
+    populateFeats();
+    updateUI();
+}
+
+function sellSkill(name, type) {
+    const existingIndex = character.skills.findIndex(s => s.name === name);
+    if (existingIndex === -1) return;
+
+    const existing = character.skills[existingIndex];
+    if (existing.level > 1) {
+        const refundCost = getSkillCost(name, type, existing.level);
+        existing.level -= 1;
+        existing.cost -= refundCost;
+        character.spentXR -= refundCost;
+    } else {
+        // Level 1 or un-leveled item
+        const refundCost = existing.cost;
+        character.skills.splice(existingIndex, 1);
+        character.spentXR -= refundCost;
+    }
+
+    populateSkills();
     populateCoreSkills();
     populateFeats();
     updateUI();
@@ -2443,15 +2602,33 @@ function updateUI() {
         sizeBonus = 1;
     }
 
-    let shieldBonus = 0;
+    let armorBonus = 0;
     character.skills.forEach(s => {
-        if (s.name.includes('Shield')) {
-            if (s.name.includes('heavy')) shieldBonus = 2;
-            else if (s.name.includes('light')) shieldBonus = 1;
+        if (s.type === 'equipment') {
+            const item = gameData.weapons.find(w => w.name === s.name);
+            if (item && item.tags && item.tags.includes('Armor')) {
+                // Extract bonus from dmg_m (e.g. "+2 AC")
+                const bonusMatch = item.dmg_m.match(/\+(\d+)/);
+                if (bonusMatch) {
+                    const bonus = parseInt(bonusMatch[1]);
+                    if (bonus > armorBonus) armorBonus = bonus;
+                }
+            }
         }
     });
 
-    const acBonus = dexMod + dodgeValue + sizeBonus + shieldBonus;
+    let shieldBonus = 0;
+    character.skills.forEach(s => {
+        if (s.name.includes('Shield')) {
+            if (s.name.includes('heavy')) {
+                if (2 > shieldBonus) shieldBonus = 2;
+            } else if (s.name.includes('light')) {
+                if (1 > shieldBonus) shieldBonus = 1;
+            }
+        }
+    });
+
+    const acBonus = dexMod + dodgeValue + sizeBonus + shieldBonus + armorBonus;
     document.getElementById('summary-ac').textContent = (acBonus >= 0 ? '+' : '') + acBonus;
 
     // Defences
